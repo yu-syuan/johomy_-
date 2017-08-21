@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+img{ width: 100%; height: auto; }
+hr{	margin: 0; }
+
+.Border{
+	/*border:1px solid #888;*/
+}
+.main_wrap {
+	width: 100%;
+	margin: 0 auto;
+	position:relative;
+}
+/*-----gotop icon 共用-----*/
+.gotop_icon {
+	position: fixed;
+	right: 0;
+	top: 70%;
+	z-index: 3;
+}
+.gotop_icon img {
+	width:45px;
+	height:45px;
+}
+/*-----header_wrap 共用-----*/
+.header_wrap {
+	width:100%;
+	height:60px;
+	position:fixed;
+	z-index: 5;
+}
+/*-----hamburger icon-----*/
+.hamburger_icon {
+	width:15%;
+	height:60px;
+	padding:13px 0 0 12px;
+	cursor:pointer;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.icon_bar {
+	display:block;
+	width:24px;
+	height:3px;
+	margin-top:6px;
+}
+/*-----header 網站名稱-----*/
+.header_mid {
+	width:55%;
+	margin: 0 auto;
+	overflow:hidden;
+}
+.header_logo {
+	text-align: center;
+}
+/*-----首頁 icon-----*/
+.home_icon{
+	width:12%;
+	height:60px;
+	cursor:pointer;
+	position: fixed;
+	top: 0;
+	right: 12%;
+}
+.home_icon a {	
+	text-align:center;
+	padding-top:17.5px;	
+}
+.home_icon img {
+	width:25px;
+	height:25px;
+}
+/*-----搜尋 icon-----*/
+.search_icon{
+	width:12%;
+	height:60px;
+	cursor:pointer;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+.search_icon a{
+	text-align:center;
+	padding-top:17.5px;
+}
+.search_icon img {
+	width:25px;
+	height:25px;
+}
+/*-----搜尋 content-----*/
+.search_wrap {
+	width:100%;
+	position:absolute;
+	top:60px;
+	right: 0px;
+	z-index:10;
+}
+.search_bar {
+	margin:10px 5px;
+}
+.search_bar input {
+	width:80%;
+	height:36px;
+	padding:0 5px;
+	float:left;
+}
+.search_btn {
+	width:15%;
+	height:34px;
+	float:right;
+	text-align:center;
+	margin:1px 1px 0 0;
+}
+/*-----hamburger content-----*/
+.content_left {
+	display:none;
+}
+.hamburger_list_wrap {
+	width:100%;
+	position:relative;
+	z-index: 5;
+}
+.hamburger_list_wrap > ul{
+	width: 100%;
+	cursor:pointer;
+}
+.hamburger_list_wrap > ul > li{
+	width: 100%;
+	padding: 15px;
+}
+.hamburger_list_wrap > ul > ul{
+	display: none;
+	width: 100%;
+}
+.hamburger_list_wrap > ul > ul > li{
+	padding: 15px;
+}
+.copyright {
+	width: 100%;
+	height: 130px;
+	text-align:center;
+	padding:20px 0;
+}
+/*-----footer_menu_wrap-----*/
+.footer_menu_wrap {
+	width:100%;
+	height:50px;
+	position:fixed;
+	bottom:0;
+	z-index:5;
+}
+.menu_icon{
+	width: 20%;
+	text-align: center;
+	float: left;
+}
+.menu_icon a {
+	height:50px;
+	padding-top:30px;
+}
+.member a{
+	background-image: url(../images/menu_icon_member.png);
+	background-repeat: no-repeat;
+	background-position: center 4px;
+	background-size: 28px 28px;
+}
+.order a{
+	background-image: url(../images/menu_icon_order.png);
+	background-repeat: no-repeat;
+	background-position: center 2px;
+	background-size: 28px 28px;
+}
+.buy a{
+	background-image: url(../images/menu_icon_buy.png);
+	background-repeat: no-repeat;
+	background-position: center 4px;
+	background-size: 28px 28px;
+}
+.fbmsg a{
+	background-image: url(../images/menu_icon_fbmsg.png);
+	background-repeat: no-repeat;
+	background-position: center 2px;
+	background-size: 28px 28px;
+}
+.contact a {
+	background-image: url(../images/menu_icon_contact.png);
+	background-repeat: no-repeat;
+	background-position: center 4px;
+	background-size: 28px 28px;
+}
+/*-----會員專區 member header-----*/
+.member_header_wrap{
+	width:100%;
+	text-align:center;
+}
+.member_icon {
+	margin:0 3px;
+}
+.member_icon img {
+	width:25px;
+	height:25px;
+	vertical-align:-5px;
+}
+.logout_btn{
+	width: 60px;
+	margin-top: 7px;
+	text-align: center;
+}
+/*-----紅利館 bonus header-----*/
+.bonus_header_wrap{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 4;
+}
+.dividend_wrap{
+	position: absolute;
+	top: 0px;
+	left: 12px;
+}
+.dividend{
+	width: 55px;
+	position: absolute;
+	top: 0px;
+	left: 25px;
+}
+.dividend_img{
+	width: 20px;
+	height: auto;
+	position: absolute;
+	top: 15px;
+	left: 0px;
+}
+.bonus_header_logo{
+	text-align: center;
+}
+/*-----共用圖片尺寸-----*/
+.activity_wrap{
+	text-align: center;
+}
+.activity_img{
+	max-width: 768px;
+}
+.product_photo_img220{
+	max-width: 220px;
+	max-height: 220px;
+}
+.product_photo_img400{
+	max-width: 400px;
+	max-height: 400px;
+}
+.product_photo_img600{
+	max-width: 600px;
+	max-height: 600px;
+}
+.step_img{
+	max-width: 300px;
+}
+/*-----大標設定-----*/
+.top_title{
+	text-align: center;
+	height: 40px;
+}
+/*-----橫向商品列表-----*/
+.horizontal_list_photo{
+	width: 38%;
+	max-width: 220px;
+	max-height: 220px;
+	margin: 5px 10px 5px 0;
+}
+.Product_content_wrap{
+	width: 58%;
+	float: left;
+}
+.prod_title_wrap{
+	height: 60px;
+	overflow: hidden;
+	margin: 5px 0;
+}
+.horizontal_product_description{
+	height: 40px;
+}
+.horizontal_Quantity_wrap{
+	height: 50px;
+	overflow: hidden;
+}
+.bonus_Quantity_wrap{
+	height: 150px;
+	overflow: hidden;
+}
+.Quantity_wrap_input{
+	width: 45px;
+	height: 30px;
+	margin: 5px 0;
+}
+.Quantity_wrap_button{
+	width: 45px;
+	height: 30px;
+	font-size: 20px;
+	margin-bottom: 0.5px;
+}
+.button_style{
+	width: 57px;
+	height: 30px;
+}
+.button_wrap{
+	position: absolute;
+	bottom: 10px;
+	right: 5px;
+}
+.horizontal_shopping{
+	width: 15%;
+	position: absolute;
+	bottom: 10px;
+	right: 5px;
+}
+/*-----雙品商品列表-----*/
+.even_product_content_wrap{
+	margin-top: 10px;
+}
+.even_product_content{
+	max-width: 220px;
+	margin: 0 auto;
+}
+.even_photo_wrap{
+	max-width: 220px;
+	max-height: 220px;
+}
+.even_Quantity_wrap{
+	height: 30px;
+	overflow: hidden;
+}
+.shopping_img{
+	width: 35px;
+	height: 35px;
+}
+/*-----單品商品列表-----*/
+.odd_product_content_wrap{
+	margin-top: 10px;
+}
+.odd_product_content{
+	max-width: 400px;
+	margin: 0 auto;
+}
+.odd_photo_wrap{
+	max-width: 400px;
+	max-height: 400px;
+}
+.odd_Quantity_wrap{
+	height: 30px;
+	overflow: hidden;
+}

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/*-----會員專區 member function-----*/
+.member_function_wrap{
+	background: #f4f4f4;
+}
+.member_function_wrap li{
+	border-color: #898989;
+}
+/*NEW*/
+.member_button{
+	border-color: #b3b3b3;
+	background: #fff;
+}
+.member_button{
+	color: #666;
+}

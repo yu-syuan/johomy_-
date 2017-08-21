@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+img{ width: 100%; height: auto; }
+
+/*-----特別企劃區START-----*/
+.activity_wrap >ul >li{
+	margin-bottom: 10px;
+}
+/*-----特別企劃區END-----*/
+
+/*-----紅利商品兌換區START-----*/
+.Product_content_wrap{
+	width: 58%;
+	float: left;
+}
+
+.prod_title_wrap{
+	height: 60px;
+	overflow: hidden;
+}
+
+.list_photo{
+	width: 38%;
+	max-width: 220px;
+	margin: 5px 10px 5px 0;
+}
+
+.list_photo_img{
+	max-width: 220px;
+	max-height: 220px;
+}
+
+.Quantity_wrap{
+	height: 150px;
+	overflow: hidden;
+}
+
+.Quantity_wrap input{
+	width: 45px;
+	height: 30px;
+	margin: 5px 0;
+}
+
+.Quantity_wrap button{
+	width: 45px;
+	height: 30px;
+	padding: 0;
+	line-height: 0px;
+	margin-bottom: 0.5px;
+	font-size: 20px;
+}
+
+.button_style{
+	width: 57px;
+	height: 30px;
+}
+
+.button_wrap{
+	position: absolute;
+	bottom: 10px;
+	right: 5px;
+}
+/*-----紅利商品兌換區END-----*/
+
+/*-----搜尋結果頁用-----*/
+.positionR{
+	position: relative;
+}
+.filter_wrap{
+	width: 60px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.filter_img{
+	width: 20px;
+	height: 28.56px;
+	margin: 5px 5px 5px 20px;
+}
+
+/*-----雙品-----*/
+hr{margin: 0;}
+
+.double_photo_wrap{
+	max-width: 220px;
+}
+
+.double_photo_img{
+	max-width: 220px;
+	max-height: 220px;
+}
+
+.double_Quantity_wrap{
+	height: 30px;
+	overflow: hidden;
+}
+
+.shopping_img{
+	width: 35px;
+	height: 35px;
+}

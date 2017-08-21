@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*-----會員專區 member function-----*/
+.member_function_wrap{
+	width: 100%;
+}
+.member_function_wrap li{
+	height: 50px;
+}
+/*NEW*/
+.member_information_wrap{
+	padding: 20px;
+}
+.member_information_wrap ul li{
+	margin: 10px 0;
+}
+.member_information_img{
+	width: 25px;
+	height: 25px;
+}
+.member_button{
+	width: 100%;
+	height: 40px;
+	margin: 0 auto;
+}

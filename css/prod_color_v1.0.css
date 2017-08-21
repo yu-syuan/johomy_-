@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*----------產品介紹頁面(for prod.html)----------*/
+
+/*-----產品介紹頁-----*/
+.product_introduction_wrap{
+	background-color: #fff;
+}
+/*-----產品頁籤-----*/
+.controls li{
+	background-color: #b3b3b3;
+	border-color: #ddd;
+}
+.controls li a{
+	color: #fff;
+}
+/*-----google_map-----*/
+.google_map_wrap{
+	border-color: #ddd;
+}
+/*-----商品介紹頁 footer-----*/
+.Border_r{
+	border-color: #b3b3b3;
+}
+.menu_icon_buy a{
+	color: #fff;
+}
+
+/*----------加入購物車頁面(for shopping_cart.html)----------*/
+
+.shopping_button_wrap a{
+	color: #fff;
+}

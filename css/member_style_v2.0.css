@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*-----會員專區 member function-----*/
+.member_function_wrap li{
+	font-size: 16px;
+	line-height: 50px;
+	border-bottom: 1px solid;
+}
+/*NEW*/
+.member_button{
+	text-align: center;
+	font-size: 16px;
+	line-height: 40px;
+	border: 1px solid;
+	border-radius: 5px;
+}

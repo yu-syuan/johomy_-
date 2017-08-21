@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NEWART-加入購物車</title>
+<link rel="stylesheet" type="text/css" href="css/eric_meyer_reset.min.css" />
+<link rel="stylesheet" type="text/css" href="css/Normalize_v1.0.min.css" />
+<!-- <link rel="stylesheet" type="text/css" href="css/jquery_ui.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.1.12.0.css" /> -->
+<script type="text/javascript" src="js/jquery_1.11.0.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery_migrate_1.2.1.min.js"></script> -->
+<script type="text/javascript" src="js/jquery_ui.min.js"></script>
+<!-- self page -->
+<link rel="stylesheet" type="text/css" href="js/bootstrap3/css/bootstrap.css" />
+<script type="text/javascript" src="js/bootstrap3/js/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="css/reset_and_fast.css"><!-- bootstrap清除+fast便利包 -->
+<link rel="stylesheet" type="text/css" href="css/web_struct_v1.0.css" />
+<link rel="stylesheet" type="text/css" href="css/web_style_v1.0.css" />
+<link rel="stylesheet" type="text/css" href="css/web_color_v1.0.css" />
+<link rel="stylesheet" type="text/css" href="css/prod_struct_v1.0.css" />
+<link rel="stylesheet" type="text/css" href="css/prod_style_v1.0.css" />
+<link rel="stylesheet" type="text/css" href="css/prod_color_v1.0.css" />
+<script type="text/javascript" src="js/newart_main.min.js"></script>
+
+</head>
+<body class="background_white">
+  <section class="main_wrap Border">
+    <!-- main content -->
+    <article>
+      <div class="inner_box Border">
+        <!--大標-->
+        <div class="inner_box top_title basic_color font_size_18">加入購物車</div><!-- 320x568顯示中文17位數 -->
+        <a href="#">
+          <img src="images/close.png" class="close_icon">
+        </a>
+      </div>
+      <div class="Border product_introduction_wrap">
+        <ul class="Border p-b-15">
+          <li><img src="images/prod1.jpg" class="product_photo_img600"></li>
+          <li>
+            <h4 class="line_height_30 blank30 overflow_h font_size_16 font_color_Black m-t-10 p-l-5 p-r-5">
+              ✦全台首創降溫護膚香水✦
+            </h4>
+          <li><!-- max words 19(繁體中文) -->
+          <li class="blank40 overflow_h p-l-5 p-r-5">
+            3度C冰鎮舒緩青春露禮盒_6支裝
+          <li><!-- max words 44(繁體中文) -->
+        </ul>
+        <hr>
+        <form class="Border p-b-20 p-l-5 p-r-5">
+          <input type="hidden" name="prod_id" value="" id="prod_id">
+          <input type="hidden" name="prod_name" value="" id="prod_name">
+          <input type="hidden" name="tax" value="" id="tax">
+          <div class="m-t-5 m-b-5">
+            <label for="prod_size">規格：</label>
+            <select name="prod_model" id="prod_model">
+              <option>3度C冰鎮青春露禮盒 $1680</option>
+              <option>【買六送一】3度C冰鎮青春露禮盒 $10080</option>
+            </select>
+          </div>
+          <hr>
+          <div class="m-t-5 m-b-5">
+            <label for="prod_choose">數量：</label>
+            <select name="prod_qty" id="prod_qty">
+              <option>1</option>
+              <option>20</option>
+            </select>
+          </div>
+          <hr>
+          <div class="m-t-5 m-b-5">
+            <label for="prod_transport">配送：</label>
+            <select name="prod_delivery" id="prod_delivery">
+              <option>全家超商取貨</option>
+              <option>宅配</option>
+            </select>
+          </div>
+          <hr>
+        </form>
+        <h4 class="Border font_size_16 font_color_Black m-b-10 p-l-5 p-r-5">提醒您：訂單金額若超過五千元，運送方式將自動轉為『宅配』，謝謝。</h4>
+        <div class="shopping_button_wrap">
+          <div class="shopping_button_left basic_color Border p-t-5">
+            <img src="images/shopping-01.png" class="shopping_cart_photo">
+            <a href="#" id="add_cart">加入購物車<br>並繼續購買</a>
+          </div>
+          <div class="shopping_button_right basic_color Border line_height_50">
+            <img src="images/menu_icon_buy.png" class="buy_now_photo">
+            <a href="#" id="checkout_cart">立即購買</a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="copyright">
+        <p>秒創超網訂購專線</p>
+        <p>(02)8228-0580</p>
+      </div> -->
+    </article>
+
+    <!-- <footer class="footer_menu_wrap Border">
+      <ul>
+        <li class="menu_icon member"><a href="#">會員專區</a></li>
+        <li class="menu_icon order"><a href="#">訂單查詢</a></li>
+        <li class="menu_icon buy"><a href="#">結帳</a></li>
+        <li class="menu_icon fbmsg"><a href="#">線上客服</a></li>
+        <li class="menu_icon contact"><a href="#">聯絡我們</a></li>
+      </ul>
+    </footer> -->
+  </section>
+</body>
+</html>
