@@ -1,16 +1,126 @@
 @charset "UTF-8";
 
-/*-----會員專區 member function-----*/
-.member_function_wrap li{
-	font-size: 16px;
-	line-height: 50px;
-	border-bottom: 1px solid;
-}
-/*NEW*/
+/*-----會員專區 member function (for member.html)-----*/
+
 .member_button{
 	text-align: center;
 	font-size: 16px;
 	line-height: 40px;
 	border: 1px solid;
 	border-radius: 5px;
+}
+
+/*-----會員基本資料 (for member_profile.html)-----*/
+
+/*-----member form-----*/
+.merber_form_wrap{
+	padding: 20px;
+}
+.merber_form_wrap h4{
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+.account_wrap span{
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+.account_button{
+	border-radius: 5px;
+}
+.account_button a{
+	font-size: 16px;
+	line-height: 40px;
+}
+.name_wrap input,
+.gender_wrap input + label,
+.email_wrap input,
+.address_wrap input,
+select option,
+select {
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 5px;
+	-webkit-transition: 0.35s ease-in-out;
+	-moz-transition: 0.35s ease-in-out;
+	-o-transition: 0.35s ease-in-out;
+	transition: 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+input:focus {
+	outline: 0;
+}
+select:focus{
+	outline: 0;
+}
+.gender_wrap input + label{
+  border-radius: 0;
+}
+.gender_wrap input + label:first-of-type {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.gender_wrap input + label:last-of-type {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.edm_enabled_wrap label{
+	font-size: 16px;
+}
+/*-----member button-----*/
+.FB_button{
+	border-radius: 5px;
+}
+.FB_button a{
+	font-size: 16px;
+	line-height: 40px;
+}
+.confirm_button{
+	border-radius: 5px;
+}
+.confirm_button a{
+	font-size: 16px;
+	line-height: 40px;
+}
+
+/*-----會員手機認證 (for sms_send.html)-----*/
+
+.authentication_Code_wrap{
+	padding: 20px;
+}
+.authentication_Code_wrap input{
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 5px;
+	-webkit-transition: 0.35s ease-in-out;
+	-moz-transition: 0.35s ease-in-out;
+	-o-transition: 0.35s ease-in-out;
+	transition: 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+
+/*-----會員修改密碼 (for member_pwd.html)-----*/
+
+.password_form_wrap{
+	padding: 20px;
+}
+.password_form_wrap h4{
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+.password_form_wrap input{
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 5px;
+	-webkit-transition: 0.35s ease-in-out;
+	-moz-transition: 0.35s ease-in-out;
+	-o-transition: 0.35s ease-in-out;
+	transition: 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+.new_password_wrap dd{
+	font-size: 14px;
+	padding-left: 10px;
 }

@@ -14,6 +14,9 @@
 	text-align: center;
 }
 /*-----google_map-----*/
+.google_map_select{
+	border-radius: 5px;
+}
 .google_map_wrap{
 	border: 1px solid;
 }

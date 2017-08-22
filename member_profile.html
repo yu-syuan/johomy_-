@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>NEWART-header,footer</title>
+<title>NEWART- 會員基本資料</title>
 <link rel="stylesheet" type="text/css" href="css/eric_meyer_reset.min.css" />
 <link rel="stylesheet" type="text/css" href="css/Normalize_v1.0.min.css" />
 <!-- <link rel="stylesheet" type="text/css" href="css/jquery_ui.css" /> -->
@@ -18,10 +18,13 @@
 <link rel="stylesheet" type="text/css" href="css/web_struct_v1.0.css" />
 <link rel="stylesheet" type="text/css" href="css/web_style_v1.0.css" />
 <link rel="stylesheet" type="text/css" href="css/web_color_v1.0.css" />
+<link rel="stylesheet" type="text/css" href="css/member_struct_v2.0.css" />
+<link rel="stylesheet" type="text/css" href="css/member_style_v2.0.css" />
+<link rel="stylesheet" type="text/css" href="css/member_color_v2.0.css" />
 <script type="text/javascript" src="js/newart_main.min.js"></script>
 
 </head>
-<body>
+<body class="background_white">
   <section class="main_wrap Border">
     <!-- gotop icon 共用 -->
     <div class="gotop_icon Border">
@@ -64,7 +67,7 @@
         </div>
       </div>
       <!-- 會員專區 member header -->
-      <div class="member_header_wrap"><!-- 與紅利館做切換 -->
+      <!-- <div class="member_header_wrap">與紅利館做切換
         <div class="inner_box95 mg-c">
           <div class="float-l">
             <span class="member_icon">
@@ -75,7 +78,7 @@
           <span class="logout_btn float-r"><a href="#">登出</a></span>
           <p class="clear"></p>
         </div>
-      </div>
+      </div> -->
       <!-- 紅利館 bonus header -->
       <!-- <div class="bonus_header_wrap bonus_header_color">與會員專區做切換
         <div class="dividend_wrap">
@@ -90,7 +93,7 @@
     </header>
 
     <div class="blank60"></div><!-- 官網header用 -->
-    <div class="blank50"></div><!-- 會員專區與紅利館共用 -->
+    <!-- <div class="blank50"></div>會員專區與紅利館共用 -->
 
     <section class="content_wrap">
       <!-- hamburger content -->
@@ -119,84 +122,107 @@
       </article>
       <!-- main content -->
       <article class="content_right">
-        <div class="block_type_wrap"><!--橫向商品列表 Wrap Start-->
-          <!--大標-->
-          <div class="inner_box Border">
-            <div class="inner_box blank40 background_gray font_color_White font_size_16 line_height_40 p-l-5">
-              <span>搜尋 ></span>
-              <span>搜尋關鍵字</span>
-            </div><!-- max words 15(繁體中文) -->
-          </div>
-          <!-- 橫向商品列表 -->
-          <ul class="row horizontal_product_wrap background_white Border">
-            <li class="col-xs-12 horizontal_product_content Border">
-              <!-- 左邊產品圖片區 -->
-              <div class="horizontal_list_photo Border float-l">
-                <a href="#">
-                  <img src="images/prod3.jpg" class="product_photo_img220">
-                </a>
+        <!--大標-->
+        <div class="inner_box Border">
+          <div class="member_header_wrap p-l-5">
+            <div class="arrow_left_wrap">
+              <a href="#">
+                <img src="images/arrow_left_white.png" class="arrow_left_photo">
+              </a>
+            </div>
+            <span>會員基本資料</span>
+          </div><!-- max words 15(繁體中文) -->
+        </div>
+        <form class="merber_form_wrap">
+          <ul>
+            <li class="account_wrap m-b-10">
+              <h4>帳號</h4>
+              <div class="inner_box blank30 overflow_h">
+                <span >0912345678</span><!-- max words 22(數字) -->
               </div>
-              <!-- 右邊產品資訊區 -->
-              <div class="Product_content_wrap">
-                <!-- 右邊產品內文 -->
-                <div class="prod_title_wrap">
-                  <div class="blank20 inner_box overflow_h">
-                    <h4 class="horizontal_product_name">壹貳參肆伍陸柒捌玖拾壹貳</h4><!-- max word 12(繁體中文) -->
-                  </div>
-                  <div class="horizontal_product_description">
-                    <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾壹貳參肆</p><!-- max word 14(繁體中文) -->
-                  </div>
-                </div>
-                <!-- 右邊產品價格區 -->
-                <div class="horizontal_Quantity_wrap">
-                  <!-- <span class="unit_price_text">單價：</span> -->
-                  <span class="horizontal_price_style">$</span>
-                  <span class="horizontal_price_style price" sn="a" unit_price="100">100</span> <!-- unit_price為單價設定 -->
-                  <span class="MICRO Original_price">$400</span>
-                </div>
-                <!-- 加入購物車連結 -->
-                <div class="horizontal_shopping ta-r">
-                  <a href="#">
-                    <img src="images/shopping.png" class="shopping_img">
-                  </a>
-                </div>
+              <div class="account_button">
+                <a href="#" id="sms_send">前往手機認證</a>
               </div>
             </li>
-            <li class="col-xs-12 horizontal_product_content Border">
-              <!-- 左邊產品圖片區 -->
-              <div class="horizontal_list_photo Border float-l">
+            <li class="name_wrap m-t-10 m-b-10">
+              <h4>姓名</h4>
+              <input type="text" name="name" value="會員姓名" id="name">
+              <p class="font_color_Red" name="name_error" id="name_error"></p>
+            </li>
+            <li class="gender_wrap m-t-10 m-b-10">
+              <h4>性別</h4>
+              <input type="radio" name="gender" value="1" id="gender1">
+              <label for="gender1">男</label>
+              <input type="radio" name="gender" value="2" id="gender2">
+              <label for="gender2">女</label>
+              <div class="clear"></div>
+              <p class="font_color_Red" name="gender_error"></p>
+            </li>
+            <li class="m-t-10 m-b-10">
+              <h4>生日 (年/月/日)</h4>
+              <select name="year" id="year">
+                <option>年</option>
+                <option>1950</option>
+                <option>2017</option>
+              </select>
+              <select name="month" id="month">
+                <option>月</option>
+                <option>01</option>
+                <option>12</option>
+              </select>
+              <select name="day" id="day">
+                <option>日</option>
+                <option>01</option>
+                <option>31</option>
+              </select>
+              <p class="font_color_Red" name="birthday_error" id="birthday_error"></p>
+            </li>
+            <li class="email_wrap m-t-10 m-b-10">
+              <h4>電子信箱</h4>
+              <input type="text" name="email" id="email">
+              <p class="font_color_Red" name="email_error" id="email_error"></p>
+            </li>
+            <li class="address_wrap m-t-10 m-b-10">
+              <h4>地址</h4>
+              <select>
+                <option>--請選擇縣市--</option>
+                <option>基隆市</option>
+                <option>台北市</option>
+                <option>新北市</option>
+              </select>
+              <select>
+                <option>--請選擇區域--</option>
+                <option>100-中正區</option>
+                <option>103-大同區</option>
+                <option>104-中山區</option>
+              </select>
+              <input type="text" name="address" id="address">
+              <p class="font_color_Red" name="address_error" id="address_error"></p>
+            </li>
+            <li class="edm_enabled_wrap m-t-10 m-b-20">
+              <input type="checkbox" name="edm_enabled" value="1" id="edm_enabled" class="float-l">
+              <label>我要收到活動情報</label><br>
+              <div class="clear"></div>
+              <p class="font_color_Red" name="edm_enabled_error"></p>
+            </li>
+            <li>
+              <div class="FB_button mg-c m-b-10">
                 <a href="#">
-                  <img src="images/prod3.jpg" class="product_photo_img220">
+                  <img src="images/FB_img.png">
+                  FB帳號綁定
                 </a>
               </div>
-              <!-- 右邊產品資訊區 -->
-              <div class="Product_content_wrap">
-                <!-- 右邊產品內文 -->
-                <div class="prod_title_wrap">
-                  <div class="blank20 inner_box overflow_h">
-                    <h4 class="horizontal_product_name">壹貳參肆伍陸柒捌玖拾壹貳</h4><!-- max word 12(繁體中文) -->
-                  </div>
-                  <div class="horizontal_product_description">
-                    <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾壹貳參肆</p><!-- max word 14(繁體中文) -->
-                  </div>
-                </div>
-                <!-- 右邊產品價格區 -->
-                <div class="horizontal_Quantity_wrap">
-                  <!-- <span class="unit_price_text">單價：</span> -->
-                  <span class="horizontal_price_style">$</span>
-                  <span class="horizontal_price_style price" sn="a" unit_price="100">100</span> <!-- unit_price為單價設定 -->
-                  <span class="MICRO Original_price">$400</span>
-                </div>
-                <!-- 加入購物車連結 -->
-                <div class="horizontal_shopping ta-r">
-                  <a href="#">
-                    <img src="images/shopping.png" class="shopping_img">
-                  </a>
-                </div>
+            </li>
+            <li>
+              <input type="hidden" name="csrf_newart" value="">
+              <div class="confirm_button mg-c m-b-10" id="save_profile">
+                <a href="#">
+                  確認修改
+                </a>
               </div>
             </li>
           </ul>
-        </div><!--橫向商品列表 Wrap End-->
+        </form>
         <div class="copyright">
           <p>秒創超網訂購專線</p>
           <p>(02)8228-0580</p>

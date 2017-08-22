@@ -12,13 +12,16 @@ body {font-family:"微軟正黑體", "蘋果儷中黑", "Microsoft JhengHei", Ar
 /*-----搜尋 icon-----*/
 .search_bar {
 	border:1px solid;
+	border-radius: 5px;
 }
 .search_bar input {
 	font-size:16px;
 	border:0;
+	border-radius: 5px;
 }
 .search_btn {
 	border:0;
+	border-radius: 5px;
 	font-size:15px;
 }
 /*-----hamburger content-----*/
@@ -111,6 +114,7 @@ body {font-family:"微軟正黑體", "蘋果儷中黑", "Microsoft JhengHei", Ar
     font-weight: bold;
 }
 /*-----快速共用-----*/
+.border_radius_5{ border-radius: 5px; }
 .font_size_14{ font-size: 14px; }
 .font_size_16{ font-size: 16px; }
 .font_size_18{ font-size: 18px; }
