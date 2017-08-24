@@ -105,3 +105,44 @@ select {
 	width: 100%;
 	margin: 10px 0;
 }
+
+/*-----會員訂單紀錄 (for member_order.html)-----*/
+
+/*-----尚無訂單資料-----*/
+.no_order_wrap{
+	text-align: center;
+}
+/*-----訂單資料-----*/
+.order_content_wrap{
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	position: relative;
+}
+/*-----訂單狀態-----*/
+.order_status_wrap{
+	position: absolute;
+	bottom:12px;
+	right: 10px;
+}
+.order_status_style{
+	width: 50px;
+	height: 50px;
+	text-align: center;
+}
+
+/*-----會員註冊 (for member_register.html)-----*/
+
+.merber_register_form_wrap input{
+	width: 100%;
+	margin: 10px 0;
+}
+.accept_wrap input{
+	width: 25px;
+	height: 25px;
+	margin: 0;
+}
+.accept_wrap label{
+	margin: 1px 0 0 6px;
+}

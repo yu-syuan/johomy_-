@@ -17,6 +17,14 @@ hr{
 .active{
 	background-color: #9bd5e0;
 }
+input:focus {
+	border-color: #9bd5e0;
+	box-shadow: 0 0 5px #9bd5e0;
+}
+select:focus{
+	border-color: #9bd5e0;
+	box-shadow: 0 0 5px #9bd5e0;
+}
 /*-----大標整體色系-----*/
 .bonus_basic_color{
 	background: #f09290;
@@ -87,9 +95,6 @@ hr{
 	color: #fff;
 }
 /*-----橫向商品列表-----*/
-.horizontal_product_content{
-	border-color: #ddd;
-}
 .horizontal_price_style{
 	color: #f78c00;
 }

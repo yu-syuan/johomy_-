@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>NEWART-會員專區</title>
+<title>NEWART- 會員註冊</title>
 <link rel="stylesheet" type="text/css" href="css/eric_meyer_reset.min.css" />
 <link rel="stylesheet" type="text/css" href="css/Normalize_v1.0.min.css" />
 <!-- <link rel="stylesheet" type="text/css" href="css/jquery_ui.css" /> -->
@@ -67,7 +67,7 @@
         </div>
       </div>
       <!-- 會員專區 member header -->
-      <div class="member_header_wrap"><!-- 與紅利館做切換 -->
+      <!-- <div class="member_header_wrap">與紅利館做切換
         <div class="inner_box95 mg-c">
           <div class="float-l">
             <span class="member_icon">
@@ -78,7 +78,7 @@
           <span class="logout_btn float-r"><a href="#">登出</a></span>
           <p class="clear"></p>
         </div>
-      </div>
+      </div> -->
       <!-- 紅利館 bonus header -->
       <!-- <div class="bonus_header_wrap bonus_header_color">與會員專區做切換
         <div class="dividend_wrap">
@@ -93,7 +93,7 @@
     </header>
 
     <div class="blank60"></div><!-- 官網header用 -->
-    <div class="blank50"></div><!-- 會員專區與紅利館共用 -->
+    <!-- <div class="blank50"></div>會員專區與紅利館共用 -->
 
     <section class="content_wrap">
       <!-- hamburger content -->
@@ -122,42 +122,54 @@
       </article>
       <!-- main content -->
       <article class="content_right">
-        <!-- 會員專區 member function new -->
-        <div class="member_information_wrap">
-          <div class="m-b-30">
-            <div>
-              <img src="images/member.png" class="member_information_img m-b-5 m-r-5 float-l">
-              <h4 class="font_color_Black font_size_16 blank30 line_height_30">會員設定</h4>
-            </div>
-            <ul>
-              <li class="member_button"><a href="#">會員基本資料</a></li><!-- max words 18(繁體中文) -->
-              <!-- <li class="member_button"><a href="#">常用收件人</a></li>
-              <li class="member_button"><a href="#">常用統一編號</a></li> -->
-              <li class="member_button"><a href="#">修改密碼</a></li>
-              <li class="member_button"><a href="#">會員隱私權 / 權益說明</a></li>
-            </ul>
-          </div>
-          <div class="m-b-30">
-            <div>
-              <img src="images/order.png" class="member_information_img m-b-5 m-r-5 float-l">
-              <h4 class="font_color_Black font_size_16 blank30 line_height_30">訂單資訊</h4>
-            </div>
-            <ul>
-              <li class="member_button"><a href="#">訂單紀錄</a></li>
-              <!-- <li class="member_button"><a href="#">退貨紀錄</a></li> -->
-            </ul>
-          </div>
-          <div class="p-b-30">
-            <div>
-              <img src="images/bonus.png" class="member_information_img m-b-5 m-r-5 float-l">
-              <h4 class="font_color_Black font_size_16 blank30 line_height_30">紅利館</h4>
-            </div>
-            <ul>
-              <li class="member_button"><a href="#">前往紅利館</a></li>
-              <li class="member_button"><a href="#">紅利點兌換紀錄</a></li>
-            </ul>
-          </div>
+        <!--大標-->
+        <div class="inner_box Border">
+          <div class="member_header_wrap p-l-5">
+            <span>會員註冊</span>
+          </div><!-- max words 15(繁體中文) -->
         </div>
+        <form class="merber_register_form_wrap">
+          <ul>
+            <li class="account_wrap m-b-10">
+              <h4>帳號</h4>
+              <input type="text" name="mobile" id="mobile" placeholder="請輸入手機號碼">
+              <p class="font_color_Red" name="mobile_error" id="mobile_error"></p>
+              <div class="account_button m-b-30">
+                <a href="#" id="check_account">檢查帳號是否重複</a>
+              </div>
+            </li>
+            <li class="new_password_wrap">
+              <h4>密碼</h4>
+              <input type="password" name="password" id="pwd" placeholder="請輸入密碼">
+              <p class="font_color_Red" name="pwd_error" id="pwd_error"></p>
+              <dd>1. 密碼必須為六位數</dd>
+              <dd>2. 英文字與數字混合</dd>
+              <dd class="p-b-30">3. 英文需區分大小寫</dd>
+            </li>
+            <li class="confirm_password_wrap">
+              <h4>確認密碼</h4>
+              <input type="password" name="cpassword" id="cpwd" placeholder="確認新密碼">
+              <p class="font_color_Red" name="cpwd_error" id="cpwd_error"></p>
+            </li>
+            <li>
+            <li class="accept_wrap m-t-10 m-b-20">
+              <input type="hidden" name="csrf_newart" value="">
+              <input type="checkbox" name="accept" value="1" id="accept" checked="checked" class="float-l">
+              <label class="float-l">我已閱讀並同意</label>
+              <label><a href="#">使用條款</a></label>
+              <div class="clear"></div>
+              <p class="font_color_Red" name="accept_error"></p>
+            </li>
+            <li>
+              <input type="hidden" name="csrf_newart" value="">
+              <div class="confirm_button mg-c m-b-10" id="member_register">
+                <a href="#">
+                  確認註冊
+                </a>
+              </div>
+            </li>
+          </ul>
+        </form>
         <div class="copyright">
           <p>秒創超網訂購專線</p>
           <p>(02)8228-0580</p>

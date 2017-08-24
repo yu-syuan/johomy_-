@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>NEWART-會員專區</title>
+<title>NEWART- 會員登入</title>
 <link rel="stylesheet" type="text/css" href="css/eric_meyer_reset.min.css" />
 <link rel="stylesheet" type="text/css" href="css/Normalize_v1.0.min.css" />
 <!-- <link rel="stylesheet" type="text/css" href="css/jquery_ui.css" /> -->
@@ -67,7 +67,7 @@
         </div>
       </div>
       <!-- 會員專區 member header -->
-      <div class="member_header_wrap"><!-- 與紅利館做切換 -->
+      <!-- <div class="member_header_wrap">與紅利館做切換
         <div class="inner_box95 mg-c">
           <div class="float-l">
             <span class="member_icon">
@@ -78,7 +78,7 @@
           <span class="logout_btn float-r"><a href="#">登出</a></span>
           <p class="clear"></p>
         </div>
-      </div>
+      </div> -->
       <!-- 紅利館 bonus header -->
       <!-- <div class="bonus_header_wrap bonus_header_color">與會員專區做切換
         <div class="dividend_wrap">
@@ -93,7 +93,7 @@
     </header>
 
     <div class="blank60"></div><!-- 官網header用 -->
-    <div class="blank50"></div><!-- 會員專區與紅利館共用 -->
+    <!-- <div class="blank50"></div>會員專區與紅利館共用 -->
 
     <section class="content_wrap">
       <!-- hamburger content -->
@@ -122,42 +122,48 @@
       </article>
       <!-- main content -->
       <article class="content_right">
-        <!-- 會員專區 member function new -->
-        <div class="member_information_wrap">
-          <div class="m-b-30">
-            <div>
+        <form class="password_form_wrap" method="post" id="member_login_form">
+          <ul>
+            <li>
               <img src="images/member.png" class="member_information_img m-b-5 m-r-5 float-l">
-              <h4 class="font_color_Black font_size_16 blank30 line_height_30">會員設定</h4>
-            </div>
-            <ul>
-              <li class="member_button"><a href="#">會員基本資料</a></li><!-- max words 18(繁體中文) -->
-              <!-- <li class="member_button"><a href="#">常用收件人</a></li>
-              <li class="member_button"><a href="#">常用統一編號</a></li> -->
-              <li class="member_button"><a href="#">修改密碼</a></li>
-              <li class="member_button"><a href="#">會員隱私權 / 權益說明</a></li>
-            </ul>
-          </div>
-          <div class="m-b-30">
-            <div>
-              <img src="images/order.png" class="member_information_img m-b-5 m-r-5 float-l">
-              <h4 class="font_color_Black font_size_16 blank30 line_height_30">訂單資訊</h4>
-            </div>
-            <ul>
-              <li class="member_button"><a href="#">訂單紀錄</a></li>
-              <!-- <li class="member_button"><a href="#">退貨紀錄</a></li> -->
-            </ul>
-          </div>
-          <div class="p-b-30">
-            <div>
-              <img src="images/bonus.png" class="member_information_img m-b-5 m-r-5 float-l">
-              <h4 class="font_color_Black font_size_16 blank30 line_height_30">紅利館</h4>
-            </div>
-            <ul>
-              <li class="member_button"><a href="#">前往紅利館</a></li>
-              <li class="member_button"><a href="#">紅利點兌換紀錄</a></li>
-            </ul>
-          </div>
-        </div>
+              <h4 class="line_height_30">會員登入</h4>
+              <input type="text" name="account" id="account" placeholder="帳號：手機號碼">
+              <p class="font_color_Red" name="account_error" id="account_error"></p>
+            </li>
+            <li>
+              <input type="password" name="password" placeholder="密碼：英文字需區分大小寫">
+              <input type="hidden" name="csrf_newart" value="">
+              <p class="font_color_Red" name="pwd_error"></p>
+            </li>
+            <li>
+              <div class="confirm_button mg-c m-t-10 m-b-10" id="member_login">
+                <a href="#">
+                  登入
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="FB_button mg-c m-b-10">
+                <a href="#">
+                  <img src="images/FB_img.png">
+                  FB快速登入
+                </a>
+              </div>
+            </li>
+            <li>
+              <input type="hidden" name="csrf_newart" value="">
+              <div class="member_button mg-c m-b-10" id="save_profile">
+                <a href="#">
+                  立即註冊
+                </a>
+              </div>
+            </li>
+          </ul>
+        </form>
+        <form method="post" id="fb_login_form" action="/fb_login">
+          <input type="hidden" name="fb_id" id="fb_id">
+          <input type="hidden" name="csrf_newart" value="">
+        </form>
         <div class="copyright">
           <p>秒創超網訂購專線</p>
           <p>(02)8228-0580</p>

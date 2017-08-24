@@ -116,7 +116,7 @@ select {
 input,
 textarea,
 select {
-	*font-size:100%;
+	font-size:100%;
 }
 /*because legend doesn't inherit in IE */
 legend {
@@ -156,7 +156,12 @@ div,span{
 input{
 	padding: 0 5px;
 	}
-
+input:focus{
+	outline: none;
+	}
+select:focus{
+	outline: none;
+}
 .row {
 	margin: 0;
 }

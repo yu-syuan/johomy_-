@@ -12,16 +12,22 @@ body {font-family:"微軟正黑體", "蘋果儷中黑", "Microsoft JhengHei", Ar
 /*-----搜尋 icon-----*/
 .search_bar {
 	border:1px solid;
-	border-radius: 5px;
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
 }
 .search_bar input {
 	font-size:16px;
 	border:0;
-	border-radius: 5px;
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
 }
 .search_btn {
 	border:0;
-	border-radius: 5px;
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
 	font-size:15px;
 }
 /*-----hamburger content-----*/
@@ -48,7 +54,9 @@ body {font-family:"微軟正黑體", "蘋果儷中黑", "Microsoft JhengHei", Ar
 .logout_btn{
 	font-size:14px;
 	line-height:36px;
-	border-radius: 5px;
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
 }
 /*-----紅利館 bonus header-----*/
 .dividend_wrap span{
@@ -70,17 +78,18 @@ body {font-family:"微軟正黑體", "蘋果儷中黑", "Microsoft JhengHei", Ar
 /*-----橫向商品列表-----*/
 .horizontal_product_content{
 	padding: 10px 5px;
-	border-bottom: 1px solid;
 }
 .horizontal_product_name{
 	line-height: 20px;
 }
 .horizontal_price_style{
-	font-size: 20px;
+	font-size: 18px;
     font-weight: bold;
 }
 .Quantity_wrap_input{
-	border-radius: 5px;
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
 	border: 0.5px solid;
 }
 .Quantity_wrap_button{
@@ -90,7 +99,9 @@ body {font-family:"微軟正黑體", "蘋果儷中黑", "Microsoft JhengHei", Ar
 .button_style{
 	font-size: 12px;
 	line-height: 30px;
-	border-radius: 5px;
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
 	padding: 0;
 	border: 0;
 }
@@ -99,7 +110,7 @@ body {font-family:"微軟正黑體", "蘋果儷中黑", "Microsoft JhengHei", Ar
 	padding: 0 5px;	
 }
 .even_price_style{
-	font-size: 20px;
+	font-size: 18px;
     font-weight: bold;
 }
 .Original_price{
@@ -110,11 +121,15 @@ body {font-family:"微軟正黑體", "蘋果儷中黑", "Microsoft JhengHei", Ar
 	padding: 0 5px;	
 }
 .odd_price_style{
-	font-size: 20px;
+	font-size: 18px;
     font-weight: bold;
 }
 /*-----快速共用-----*/
-.border_radius_5{ border-radius: 5px; }
+.border_radius_5{ 
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */ 
+}
 .font_size_14{ font-size: 14px; }
 .font_size_16{ font-size: 16px; }
 .font_size_18{ font-size: 18px; }

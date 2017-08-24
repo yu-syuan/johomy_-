@@ -7,7 +7,9 @@
 	font-size: 16px;
 	line-height: 40px;
 	border: 1px solid;
-	border-radius: 5px;
+	border-radius: 5px; /* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
 }
 
 /*-----會員基本資料 (for member_profile.html)-----*/
@@ -27,7 +29,9 @@
 	padding-left: 10px;
 }
 .account_button{
-	border-radius: 5px;
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
 }
 .account_button a{
 	font-size: 16px;
@@ -41,21 +45,20 @@ select option,
 select {
 	padding: 10px;
 	border: 1px solid;
-	border-radius: 5px;
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+	transition: 0.35s ease-in-out;
 	-webkit-transition: 0.35s ease-in-out;
 	-moz-transition: 0.35s ease-in-out;
 	-o-transition: 0.35s ease-in-out;
-	transition: 0.35s ease-in-out;
 	transition: all 0.35s ease-in-out;
 }
-input:focus {
-	outline: 0;
-}
-select:focus{
-	outline: 0;
-}
 .gender_wrap input + label{
-  border-radius: 0;
+	border-radius: 0;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 0; /* Firefox */
+	-webkit-border-radius: 0; /* Safari, Chrome */
+
 }
 .gender_wrap input + label:first-of-type {
   border-top-left-radius: 5px;
@@ -70,14 +73,18 @@ select:focus{
 }
 /*-----member button-----*/
 .FB_button{
-	border-radius: 5px;
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
 }
 .FB_button a{
 	font-size: 16px;
 	line-height: 40px;
 }
 .confirm_button{
-	border-radius: 5px;
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
 }
 .confirm_button a{
 	font-size: 16px;
@@ -113,14 +120,75 @@ select:focus{
 .password_form_wrap input{
 	padding: 10px;
 	border: 1px solid;
-	border-radius: 5px;
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+	transition: 0.35s ease-in-out;
 	-webkit-transition: 0.35s ease-in-out;
 	-moz-transition: 0.35s ease-in-out;
-	-o-transition: 0.35s ease-in-out;
-	transition: 0.35s ease-in-out;
+	-o-transition: 0.35s ease-in-out;	
 	transition: all 0.35s ease-in-out;
 }
 .new_password_wrap dd{
 	font-size: 14px;
 	padding-left: 10px;
+}
+
+/*-----會員訂單紀錄 (for member_order.html)-----*/
+
+/*-----尚無訂單資料-----*/
+.no_order_wrap p{
+	font-size: 20px;
+	font-weight: bold;
+}
+/*-----訂單資料-----*/
+.order_content_wrap{
+	border: 1px solid;
+	border-radius: 5px; /* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+	padding: 15px 10px;
+}
+.order_top_wrap{
+	border-bottom: 1px dashed;
+}
+/*-----訂單狀態-----*/
+.order_status_style{
+	border-radius: 50%; /* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 50%; /* Firefox */
+	-webkit-border-radius: 50%; /* Safari, Chrome */
+	border:2px solid; 
+}
+.order_status_style span{
+	line-height: 50px;
+	font-weight: bold;
+}
+
+/*-----會員註冊 (for member_register.html)-----*/
+
+.merber_register_form_wrap{
+	padding: 20px;
+}
+.merber_register_form_wrap h4{
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+.merber_register_form_wrap input{
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+	transition: 0.35s ease-in-out;
+	-webkit-transition: 0.35s ease-in-out;
+	-moz-transition: 0.35s ease-in-out;
+	-o-transition: 0.35s ease-in-out;	
+	transition: all 0.35s ease-in-out;
+}
+.accept_wrap input{
+	padding: 0;
+}
+.accept_wrap label{
+	font-size: 16px;
 }
