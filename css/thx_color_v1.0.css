@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/*----------兌換確認頁 (thx.html)----------*/
+
+.step_wrap_style{
+	border-color: #f09290;
+}
+.step_arrow{
+	border-color: transparent transparent transparent #f09290; 
+}
+
+.order_status_style{
+	border-color: #f09290;
+}

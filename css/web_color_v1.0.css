@@ -84,6 +84,16 @@ select:focus{
 .logout_btn a{
 	color:#fff;
 }
+/*-----紅利館 整體色系-----*/
+.bonus_basic_color{
+	background: #f09290;
+}
+.bonus_basic_font_color{
+	color: #f09290;
+}
+.bonus_basic_border_color{
+	border-color: #f09290;
+}
 /*-----紅利館 bonus header-----*/
 .bonus_header_color{
 	background: #EE8072;
@@ -120,6 +130,7 @@ select:focus{
 .background_white{background: white;}
 .background_gray{background: #878787;}
 /*.Border_b{border-bottom: 1px solid #ddd;}*/
+.border_b_dashed{ border-color: #b3b3b3; }
 .font_color_Black{color: black; font-weight: bold;}
 .font_color_White{color: white; font-weight: bold;}
 .font_color_Red{color: red; font-weight: bold;}

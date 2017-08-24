@@ -11,6 +11,12 @@
 	-moz-border-radius: 5px; /* Firefox */
 	-webkit-border-radius: 5px; /* Safari, Chrome */
 }
+.btn{
+	padding: 0;
+}
+.btn-info{
+	border: 0;
+}
 
 /*-----會員基本資料 (for member_profile.html)-----*/
 

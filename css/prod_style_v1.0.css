@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
 /*----------產品介紹頁面(for prod.html)----------*/
+.btn{
+	padding: 0;
+}
+.btn-info{
+	border: 0;
+}
 
 /*-----產品頁籤-----*/
 .controls_tabl{

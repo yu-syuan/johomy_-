@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*----------兌換確認頁 (thx.html)----------*/
+
+.step_wrap_style{
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 36px;
+	border-radius: 10px;
+	border: 2px solid;
+}
+.step_arrow{
+	border-style: solid;
+}
+
+.order_status_style{
+	border-radius: 50%; /* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 50%; /* Firefox */
+	-webkit-border-radius: 50%; /* Safari, Chrome */
+	border:2px solid; 
+}
+.order_status_style span{
+	line-height: 50px;
+	font-weight: bold;
+}

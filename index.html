@@ -19,7 +19,21 @@
 <link rel="stylesheet" type="text/css" href="css/web_style_v1.0.css" />
 <link rel="stylesheet" type="text/css" href="css/web_color_v1.0.css" />
 <script type="text/javascript" src="js/newart_main.min.js"></script>
-
+<link rel="stylesheet" type="text/css" href="css/slick/slick.css"><!-- 輪播圖 -->
+<link rel="stylesheet" type="text/css" href="css/slick/slick_theme.css"><!-- 輪播圖 -->
+<script type="text/javascript" src="js/slick.min.js"></script><!-- 輪播圖 -->
+<script type="text/javascript">     
+$(document).on('ready', function() {
+  $(".regular").slick({    //輪播 star
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+  });   //輪播 end
+});
+</script>
 </head>
 <body>
   <section class="main_wrap Border">
@@ -119,22 +133,32 @@
       </article>
       <!-- main content -->
       <article class="content_right"> 
-        <!-- 特別企劃區 -->
+        <!-- 輪播圖 開始 (圖片大小768x375) -->
+        <!-- <div class="big_bn_wrap">
+          <div class="block_model">
+              <section class="regular slider inner_box"> 
+                <div class="slider_bn"><a href="#"><img src="images/bn1.jpg"></a></div>
+                <div class="slider_bn"><a href="#"><img src="images/bn2.jpg"></a></div>
+                <div class="slider_bn"><a href="#"><img src="images/bn3.jpg"></a></div>
+              </section>
+          </div>
+        </div> -->
+        <!-- 特別企劃區 (圖片大小768x375) -->
         <!-- <div class="activity_wrap">
-          <ul class="row"> 圖片大小768x375
+          <ul class="row"> 
             <li class="col-md-12 p-l-0 p-r-0"><a href="#"><img src="images/bn1.jpg" class="activity_img"></a></li>
             <li class="col-md-12 p-l-0 p-r-0"><a href="#"><img src="images/bn2.jpg" class="activity_img"></a></li>
             <li class="col-md-12 p-l-0 p-r-0"><a href="#"><img src="images/bn3.jpg" class="activity_img"></a></li>
             <li class="col-md-12 p-l-0 p-r-0"><a href="#"><img src="images/bn1.jpg" class="activity_img"></a></li>
           </ul>        
         </div> -->
-        <!-- 四格小方圖片 -->
+        <!-- 四格小方圖片(圖片220x220) -->
         <!-- <div>
-          <ul class="row ta-c"> 圖片220x220
-            <li class="col-xs-3 p-l-0 p-r-0"><a href="#"><img src="images/prod3.jpg" class="product_photo_img220"></a></li>
-            <li class="col-xs-3 p-l-0 p-r-0"><a href="#"><img src="images/prod3.jpg" class="product_photo_img220"></a></li>
-            <li class="col-xs-3 p-l-0 p-r-0"><a href="#"><img src="images/prod3.jpg" class="product_photo_img220"></a></li>
-            <li class="col-xs-3 p-l-0 p-r-0"><a href="#"><img src="images/prod3.jpg" class="product_photo_img220"></a></li>
+          <ul class="row ta-c"> 
+            <li class="col-xs-3 p-l-0 p-r-0 Border"><a href="#"><img src="images/prod3.jpg" class="product_photo_img220"></a></li>
+            <li class="col-xs-3 p-l-0 p-r-0 Border"><a href="#"><img src="images/prod3.jpg" class="product_photo_img220"></a></li>
+            <li class="col-xs-3 p-l-0 p-r-0 Border"><a href="#"><img src="images/prod3.jpg" class="product_photo_img220"></a></li>
+            <li class="col-xs-3 p-l-0 p-r-0 Border"><a href="#"><img src="images/prod3.jpg" class="product_photo_img220"></a></li>
           </ul>
         </div> -->
         <!--商品頁面區-->
