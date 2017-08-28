@@ -31,3 +31,20 @@
 .shopping_button_wrap a{
 	color: #fff;
 }
+
+/*----------購買資訊頁面(for checkout.html)----------*/
+
+/*-----步驟圖-----*/
+.step_wrap_style{
+	border-color: #9bd5e0;
+}
+.step_arrow{
+	border-color: transparent transparent transparent #9bd5e0; 
+}
+
+.checkout_color{
+	background: #999;
+}
+.checkout_border_color{
+	border-color: #999;
+}

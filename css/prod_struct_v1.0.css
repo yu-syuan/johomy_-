@@ -70,3 +70,107 @@
 	float: left;
 	margin: 10px 0 10px 10px;
 }
+
+/*----------購買資訊頁面(for checkout.html)----------*/
+
+/*-----步驟圖-----*/
+.step_diagram_wrap li{
+	display: inline-block;
+}
+.step_wrap_style{
+	width: 85px;
+	height: 40px;
+	text-align: center;
+	margin: 20px 2px 10px 2px;
+}
+.step_arrow{
+	width: 0;
+	height: 0;
+	border-width: 10px 0 10px 15px;
+}
+/*-----右邊產品價格區-----*/
+.horizontal_Quantity_wrap select{
+	width: 60px;
+	height: 30px;
+	padding: 0 10px;
+}
+/*-----delete-----*/
+.prod_delete_button{
+	height: 45px;
+	position: absolute;
+	top: 40%;
+	right: 5px;
+}
+.prod_delete_button img{
+	width: 25px;
+	height: 25px;
+}
+/*-----消費計算-----*/
+.calculation_wrap{
+	margin: 5px;
+}
+.calculation_wrap li{
+	margin: 10px 5px;
+}
+/*-----付款方式-----*/
+.payment_method_wrap{
+	margin: 5px;
+}
+.payment_method_wrap li{
+	margin: 10px 5px;
+}
+.payment_method_wrap input{
+	display: none;
+}
+.payment_method_wrap input + label,
+.buyer_wrap input,
+.receive_wrap input,
+select option,
+select{
+	width: 100%;
+	margin: 5px 0;
+}
+.checkbox_input_wrap input{
+	width: 25px;
+	height: 25px;
+}
+.payment_method_wrap input + label,
+.buyer_wrap input,
+.receive_wrap input,
+select option,
+select{
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+	transition: 0.35s ease-in-out;
+	-webkit-transition: 0.35s ease-in-out;
+	-moz-transition: 0.35s ease-in-out;
+	-o-transition: 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+.payment_method_wrap input + label,
+.buyer_wrap input,
+.receive_wrap input,
+select option,
+select{
+	background-color: #f9f9f9;
+	border-color: #b3b3b3;
+	color: #666;
+}
+input:focus {
+	border-color: #9bd5e0;
+	box-shadow: 0 0 5px #9bd5e0;
+}
+select:focus{
+	border-color: #9bd5e0;
+	box-shadow: 0 0 5px #9bd5e0;
+}
+.payment_method_wrap input:checked + label,
+input:checked{
+	background-color: #9bd5e0;
+	border-color: #fff;
+	box-shadow: 0 0 5px #9bd5e0;
+	color: #fff;
+}

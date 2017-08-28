@@ -172,8 +172,8 @@
                   <p class="font_color_Red">★已達數量限制</p><!-- max word 12(繁體中文) -->
                 </div>
                 <!-- delete -->
-                <button type="button" style="width: 45px; height: 45px; position: absolute; top: 40%; right: 5px; border: 0; background: 0; outline: 0;">
-                  <img src="images/prod_delete.png" style="width: 25px;">
+                <button type="button" class="prod_delete_button">
+                  <img src="images/prod_delete.png">
                 </button>
               </div>
             </li>
@@ -198,11 +198,11 @@
                 <!-- 右邊產品價格區 -->
                 <div class="bonus_Quantity_wrap blank110">
                   <span class="unit_price_text">單價：</span>
-                  <span class="horizontal_price_style price" sn="a" unit_price="100">100</span> <!-- unit_price為單價設定 -->
+                  <span class="horizontal_price_style price" sn="b" unit_price="100">100</span> <!-- unit_price為單價設定 -->
                   <span class="horizontal_price_style">點</span>
                   <br>                
                   <span class="Subtotal_tetx">小計：</span>
-                  <span class="horizontal_price_style Subtotal_tetx points" id="point_a">100</span><!-- 單價計算顯示 id="point_要互相對應上層的sn -->
+                  <span class="horizontal_price_style Subtotal_tetx points" id="point_b">100</span><!-- 單價計算顯示 id="point_要互相對應上層的sn -->
                   <span class="horizontal_price_style Subtotal_tetx">點</span>
                   <!-- <span class="f_size16">數量</span> -->
                   <br>
@@ -212,60 +212,62 @@
                   <p class="font_color_Red">★已達數量限制</p><!-- max word 12(繁體中文) -->
                 </div>
                 <!-- delete -->
-                <button type="button" style="position: absolute; top: 50%; right: 5px;">
-                  <img src="images/prod_delete.png" style="width: 25px;">
+                <button type="button" class="prod_delete_button">
+                  <img src="images/prod_delete.png">
                 </button>
               </div>
             </li>
             <div class="clear"></div>
             <hr>
           </ul>
-          <ul>
+          <!-- 兌換紅利計算 -->
+          <ul class="bonus_calculation_wrap">
             <li>
-              <h1 class="float-l m-l-5">目前紅利點數</h1>
-              <div class="ta-r m-r-5">
+              <h1 class="float-l">目前紅利點數</h1>
+              <div class="ta-r">
                 <span>8,888</span>
                 <span>點</span>
               </div>
             </li>
             <li>
-              <h1 class="float-l m-l-5">兌換總計點數</h1>
-              <div class="ta-r m-r-5">
+              <h1 class="float-l">兌換總計點數</h1>
+              <div class="ta-r">
                 <span>8,888</span>
                 <span>點</span>
               </div>
             </li>
             <li>
-              <h1 class="float-l m-l-5">運費</h1>
-              <div class="ta-r m-r-5">
+              <h1 class="float-l">運費</h1>
+              <div class="ta-r">
                 <span>$</span>
                 <span>80</span>
               </div>
             </li>
-            <hr class="m-r-5 m-l-5">
+            <hr>
             <li>
-              <div class="m-l-5 float-l">
+              <div class="float-l">
                 <span>共</span>
                 <span>0</span>
                 <span>件</span>
               </div>
-              <p class="font_color_Red ta-r p-r-5" name="birthday_error" id="birthday_error">紅利點數不足</p>
+              <p class="font_color_Red ta-r" name="" id="">紅利點數不足</p>
             </li>
             <li>
-              <h1 class="float-l m-l-5">剩餘點數</h1>
-              <div class="ta-r m-r-5">
-                <span>8,888</span>
-                <span>點</span>
+              <h1 class="float-l">剩餘點數</h1>
+              <div class="ta-r">
+                <span class="horizontal_price_style">8,888</span>
+                <span class="horizontal_price_style">點</span>
               </div>
             </li>
           </ul>
         </article>
+        <!-- 付款方式 -->
         <article class="block_type_wrap inner_box95 border_radius_5 border_solid bonus_basic_border_color mg-c m-t-10 m-b-10">
           <!--大標-->
           <div class="inner_box Border">
             <div class="inner_box top_title bonus_basic_color">付費方式</div><!-- 320x568顯示中文17位數 -->
           </div>
-          <div class="p-t-10 p-b-10 p-l-5 p-r-5">
+          <div class="payment_method_wrap">
             <h4>未具3D驗證功能之信用卡，可能導致刷卡失敗，建議使用其它信用卡或採用其它付款方式。</h4>
             <input type="radio" name="" value="1" id="">
             <label for="">ATM</label>

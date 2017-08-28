@@ -14,6 +14,9 @@ hr{
 .basic_font_color{
 	color: #9bd5e0;
 }
+.basic_border_color{
+	border-color: #9bd5e0;
+}
 .active{
 	background-color: #9bd5e0;
 }
@@ -25,7 +28,7 @@ select:focus{
 	border-color: #9bd5e0;
 	box-shadow: 0 0 5px #9bd5e0;
 }
-/*-----大標整體色系-----*/
+/*-----紅利館大標整體色系-----*/
 .bonus_basic_color{
 	background: #f09290;
 }

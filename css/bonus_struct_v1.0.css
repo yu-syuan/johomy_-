@@ -2,6 +2,34 @@
 
 /*----------兌換頁 (bonus_exchange.html)----------*/
 
+.prod_delete_button{
+	height: 45px;
+	position: absolute;
+	top: 40%;
+	right: 5px;
+}
+.prod_delete_button img{
+	width: 25px;
+	height: 25px;
+}
+/*-----兌換紅利計算-----*/
+.bonus_calculation_wrap{
+	margin: 5px;
+}
+.bonus_calculation_wrap li{
+	margin: 10px 0;
+}
+/*-----付款方式-----*/
+.payment_method_wrap{
+	margin: 5px;
+}
+.payment_method_wrap input{
+	width: 25px;
+	height: 25px;
+}
+.payment_method_wrap h4,label{
+	margin: 10px 0px;
+}
 
 /*----------兌換確認頁及感謝頁 (bonus_thx.html)----------*/
 
