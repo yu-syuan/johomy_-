@@ -1,34 +1,28 @@
 @charset "UTF-8";
-/* CSS Document */
-body {
-	font-family:"微軟正黑體","蘋果儷中黑",Arial;
-	word-break: normal;
-	text-align:justify;
-	background: #E6E6E6;
-	}
 
-/*---紅利館Top title 整體顏色---*/
-/*.Overall_color{ background: #f09290; }
-.top_title_logo{ color: #fff; }*/
+/*----------兌換頁 (bonus_exchange.html)----------*/
 
-/*-----紅利商品兌換區-----*/
-.price_style{
-	color: #f78c00;
-	font-size: 20px;
-    font-weight: bold;
+
+/*----------兌換確認頁及感謝頁 (bonus_thx.html)----------*/
+
+.step_wrap_style{
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 36px;
+	border-radius: 10px;
+	border: 2px solid;
+}
+.step_arrow{
+	border-style: solid;
 }
 
-.Quantity_wrap input{
-	border-radius: 5px;
-	border: 0.5px solid #ccc;
+.order_status_style{
+	border-radius: 50%; /* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 50%; /* Firefox */
+	-webkit-border-radius: 50%; /* Safari, Chrome */
+	border:2px solid; 
 }
-
-.button_style{
-	background: #f09290;
-	border-radius: 5px;
-	font-size: 12px;
-	color: #fff;
-	padding: 0;
-	border: 0;
-	line-height: 30px;
+.order_status_style span{
+	line-height: 50px;
+	font-weight: bold;
 }

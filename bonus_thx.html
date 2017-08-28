@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>NEWART-確認頁及感謝頁</title>
+<title>NEWART-兌換感謝頁</title>
 <link rel="stylesheet" type="text/css" href="css/eric_meyer_reset.min.css" />
 <link rel="stylesheet" type="text/css" href="css/Normalize_v1.0.min.css" />
 <!-- <link rel="stylesheet" type="text/css" href="css/jquery_ui.css" /> -->
@@ -18,9 +18,9 @@
 <link rel="stylesheet" type="text/css" href="css/web_style_v1.0.css" />
 <link rel="stylesheet" type="text/css" href="css/web_color_v1.0.css" />
 <link rel="stylesheet" type="text/css" href="css/reset_and_fast.css"><!-- bootstrap清除+fast便利包 -->
-<link rel="stylesheet" type="text/css" href="css/thx_struct_v1.0.css" />
-<link rel="stylesheet" type="text/css" href="css/thx_style_v1.0.css" />
-<link rel="stylesheet" type="text/css" href="css/thx_color_v1.0.css" />
+<link rel="stylesheet" type="text/css" href="css/bonus_struct_v1.0.css" />
+<link rel="stylesheet" type="text/css" href="css/bonus_style_v1.0.css" />
+<link rel="stylesheet" type="text/css" href="css/bonus_color_v1.0.css" />
 <script type="text/javascript" src="js/newart_main.min.js"></script>
 
 </head>
@@ -138,48 +138,58 @@
           </h1>
           <ul class="border_b_dashed p-b-10 m-t-10 m-b-10 m-l-10 m-r-10">
             <li class="float-l">
-              <span class="font_color_Black font_size_16">訂單編號</span>
+              <h1 class="font_color_Black font_size_16 p-b-5">訂單編號</h1>
               <span>2017082412345</span>
             </li>
-            <li class="float-r">2017-08-24</li>
+            <li class="float-r">
+              <h1 class="font_color_Black font_size_16 ta-r p-b-5">訂購日期</h1>
+              <span>2017-08-24</span>
+            </li>
             <li class="clear"></li>
           </ul>
           <ul class="border_b_dashed p-b-10 m-t-10 m-b-10 m-l-10 m-r-10">
-            <li class="float-l">
-              <span class="font_color_Black font_size_16 m-r-10">付款方式</span>
+            <li>
+              <span class="font_color_Black font_size_16 m-r-5">付款方式</span>
               <span>ATM</span>
             </li>
-            <li class="float-r">
-              <!-- <span class="font_color_Black font_size_16">付款日期</span> -->
-              <span>2017-08-24</span>
-            </li>
-            <li class="clear"></li>
             <li>
-              <span class="font_color_Black font_size_16 m-r-10">付款金額</span>
+              <span class="font_color_Black font_size_16 m-r-5">付款金額</span>
               <span>$ 80</span>
             </li>
-          </ul>
-          <ul class="m-t-10 m-b-10 m-l-10 m-r-10">
-            <li class="float-l">
-              <span class="font_color_Black font_size_16 m-r-25">運送方式</span>
-              <span>宅配</span>
+            <li>
+              <span class="font_color_Black font_size_16 m-r-5 p-b-5">付款到期日</span>
+              <span>2017-08-24</span>
             </li>
-            <li class="float-r">
-              <!-- <span class="font_color_Black font_size_16">出貨日期</span> -->
+            <li>
+              <span class="font_color_Black font_size_16 m-r-5 p-b-5">付款日期</span>
               <span>2017-08-24</span>
             </li>
             <li class="clear"></li>
+          </ul>
+          <ul class="m-t-10 m-b-10 m-l-10 m-r-10">
             <li>
-              <span class="font_color_Black font_size_16 m-r-10">收件人姓名</span>
+              <span class="font_color_Black font_size_16 m-r-20">運送方式</span>
+              <span>宅配</span>
+            </li>
+            
+            <li class="clear"></li>
+            <li>
+              <span class="font_color_Black font_size_16 m-r-5">收件人姓名</span>
               <span>某某某</span>
             </li>
             <li>
-              <span class="font_color_Black font_size_16 m-r-10">收件人電話</span>
+              <span class="font_color_Black font_size_16 m-r-5">收件人電話</span>
               <span>0912345678</span>
             </li>
             <li>
-              <span class="font_color_Black font_size_16 m-r-10">收件人地址</span>
+              <span class="font_color_Black font_size_16 m-r-5">收件人地址</span>
               <span>新北市中和區中正路700號2樓</span>
+            </li>
+            <li>
+              <div>
+                <span class="font_color_Black font_size_16 m-r-20">出貨日期</span>
+                <span>2017-08-24</span>
+              </div>
             </li>
             <!-- 訂單狀態 -->
             <li class="order_status_wrap m-t-10">
@@ -197,12 +207,12 @@
           </h1>
           <ul class="border_b_dashed p-b-10 m-t-10 m-b-10 m-l-10 m-r-10">
             <li class="float-l">
-              <span class="font_color_Black font_size_16 m-r-10">發票號碼</span>
+              <h1 class="font_color_Black font_size_16 p-b-5">發票號碼</h1>
               <span>AA-88888888</span>
             </li>
-            <li class="float-r">
-              <!-- <span class="font_color_Black font_size_16">開立日期</span> -->
-              <span>2017-08-24</span>
+            <li class="float-r ta-r">
+              <h1 class="font_color_Black font_size_16 p-b-5">開立日期</h1>
+              <span>2017-08-25</span>
             </li>
             <li class="clear"></li>
           </ul>
@@ -297,21 +307,25 @@
             <li class="clear"></li>
           </ul>
         </article>
-        <div class="block_model"><!--大標Start-->
-            <!-- <div class="inner_box Thx_color top_title">★兌換商品成功，感謝您的兌換！</div> --><!-- 320x568顯示中文17位數 -->
-            <ul class="inner_box blank80 ta-c">
-              <li class="col-xs-6 m-t-30">
-                <button type="button" class="bonus_basic_color bonus_basic_border_color btn btn-danger">
-                  返回更新資料
-                </button>
-              </li>
-              <li class="col-xs-6 m-t-30">
-                <button type="button" class="bonus_basic_color bonus_basic_border_color btn btn-danger">
-                  確認清單送出
-                </button>
-              </li>
-            </ul>
-          </div><!--大標End-->
+        <article>
+          <!-- 確認頁使用 -->
+          <ul class="inner_box blank80 ta-c">
+            <li class="col-xs-6 m-t-30">
+              <button type="button" class="bonus_basic_color bonus_basic_border_color btn btn-danger">
+                返回更新資料
+              </button>
+            </li>
+            <li class="col-xs-6 m-t-30">
+              <button type="button" class="bonus_basic_color bonus_basic_border_color btn btn-danger">
+                確認清單送出
+              </button>
+            </li>
+          </ul>
+          <!-- 兌換成功使用 max words 17(繁體中文) -->
+          <div class="inner_box blank40 background_gray font_color_White line_height_40 font_size_18 ta-c m-t-10">
+            ★兌換商品成功，感謝您的兌換！
+          </div>
+        </article>
         <div class="copyright">
           <p>秒創超網訂購專線</p>
           <p>(02)8228-0580</p>
