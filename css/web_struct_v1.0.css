@@ -351,3 +351,19 @@ hr{	margin: 0; }
 	height: 30px;
 	overflow: hidden;
 }
+
+.embed-container {
+	width: 100%;
+	height: 355px;
+	text-align:center;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	width: 100%;
+	height: 100%;
+	max-width:600px;
+	max-height:355px;
+}
