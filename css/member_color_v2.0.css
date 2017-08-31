@@ -120,3 +120,26 @@ input:focus {
 .accept_wrap label{
 	color: #666;
 }
+
+/*-----footer 關於我們 (for brand.html,shipping.html,return.html,contact.html)-----*/
+
+/*-----品牌介紹(brand.html)-----*/
+.brand_introduction_wrap li{
+	color: #666;
+}
+/*-----運送方式(shipping.html)-----*/
+.transport_wrap li{
+	color: #666;
+}
+/*-----退貨說明(return.html)-----*/
+.Anti-cheat_wrap ul{
+	border-color: #F78C00;
+}
+.Anti-cheat_NO{
+	background: #F78C00;
+	color: #fff;
+}
+/*-----聯絡我們(contact.html)-----*/
+.customer_service_content{
+	border-color: #666;
+}

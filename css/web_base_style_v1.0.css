@@ -1,6 +1,6 @@
-/*@charset "utf-8";*/
+@charset "utf-8";*/
 /*body {font-family:Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif; background:#E6E6E6;}*/
-/*a {color:#000;}*/
+a {color:#000;}
 /*.icon_bar {background:#fff;}*/
 /*.header_logo {
 	color:#fff;
@@ -8,18 +8,18 @@
 	font-weight:bold;
 	line-height:60px;
 }*/ /*20170715修改height:50px;*/
-/*.search_icon p {font-size:8px; color:#fff;}
-.top_home_icon p {font-size:8px; color:#fff;}
-.search_bar {border:1px solid #666; background:#fff;}
-.search_bar input {background:#fff; font-size:16px; border:0;}
-.search_btn {font-size:15px; background:#666; color:#fff;}
-.hot_search {font-size:14px; color:#fff;}
-.hot_search a {color:#fff;}
-.hot_title {font-size:14px;}*/
+/*.search_icon p {font-size:8px; color:#fff;}*/
+/*.top_home_icon p {font-size:8px; color:#fff;}*/
+/*.search_bar {border:1px solid #666; background:#fff;}*/
+/*.search_bar input {background:#fff; font-size:16px; border:0;}*/
+/*.search_btn {font-size:15px; background:#666; color:#fff;}*/
+/*.hot_search {font-size:14px; color:#fff;}*/
+/*.hot_search a {color:#fff;}*/
+/*.hot_title {font-size:14px;}*/
 /*.hamburger_list_wrap {background:#f4f4f4;}*/
 /*.hamburger_login_bar {background:#51ab55;}*/
-/*.hamburger_login_bar li a {color: #fff; font-size: 16px;}
-.hamburger_type_item h3 {
+/*.hamburger_login_bar li a {color: #fff; font-size: 16px;}*/
+/*.hamburger_type_item h3 {
 	border-bottom:1px solid #B3B3B3;
 	line-height:55px;
 	font-size:20px;
@@ -29,19 +29,19 @@
 	border-bottom:0.5px solid #ccc;
 	color:#fff;
 	font-size:17px;
-}
-.ui-widget-content {border:none;}
-.copyright {color:#666; font-size:12px; line-height:16px;}
+}*/
+/*.ui-widget-content {border:none;}*/
+/*.copyright {color:#666; font-size:12px; line-height:16px;}*/
 .breadcrumb {background:#f4f4f4;}
-.breadcrumb h1 {font-size:15px; color:#333; line-height:20px; padding:5px;}*/
+.breadcrumb h1 {font-size:15px; color:#333; line-height:20px; padding:5px;}
 
 /* 下bar */
-/*.footer_menu_bar_wrap {background:#B3B2B2; border-top:1px solid #ccc;}
-.menu_icon h6 {font-size:12px; color:#fff;}
+/*.footer_menu_bar_wrap {background:#B3B2B2; border-top:1px solid #ccc;}*/
+/*.menu_icon h6 {font-size:12px; color:#fff;}*/
 
 .unactive{background-color:#C8C8C8;}
-.keep {}
-.keep p {font-size:14px; color:#666; text-align:center; line-height:18px;}*/
+/*.keep {}*/
+.keep p {font-size:14px; color:#666; text-align:center; line-height:18px;}
 
 /*商品內頁下bar*/
 /*.menu_icon15 h6 {font-size:12px; color:#fff;}
@@ -73,13 +73,13 @@ label {font-size:16px;}
 .ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {border-bottom-left-radius:0;}
 .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {border-top-right-radius:0;}
 .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {border-top-left-radius:0;}
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active,ui-button:active, .ui-button.ui-state-active:hover {border:none;}*/
-
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active,ui-button:active, .ui-button.ui-state-active:hover {border:none;}
+*/
 /* 整體色系 */
-/*.basic_color {background:#97CED8;}
-.basic_font_color {color:#c30d23; border:#c30d23;}
-.active{background-color:#97CED8;}
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active,ui-button:active, .ui-button.ui-state-active:hover {	
+/*.basic_color {background:#97CED8;}*/
+/*.basic_font_color {color:#c30d23; border:#c30d23;}*/
+/*.active{background-color:#97CED8;}*/
+/*.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active,ui-button:active, .ui-button.ui-state-active:hover {	
 	background:#c30d23;
 }*/ /*商品內頁 prod_content.html手風琴背景色*/
 
@@ -87,8 +87,8 @@ label {font-size:16px;}
 
 
 /*20170425新增*/
-/*.sold_color {color:#C00;}*/
-/*.prod_original_price {font-size:10px; color:#666;}*/
+/*.sold_color {color:#C00;}
+.prod_original_price {font-size:10px; color:#666;}*/
 
 /*20170428 修改購買對話框*/
 /*.buy_dialog_top {color:#fff;}*/
@@ -137,116 +137,5 @@ label {font-size:16px;}
 	font-weight: bold;
 	line-height: 50px;
 }*/
-/*----------20170816版面整理----------*/
-@charset "utf-8";
-/* CSS Document */
-body {font-family:"微軟正黑體", "蘋果儷中黑", "Microsoft JhengHei", Arial, sans-serif; word-break: normal;
-	text-align:justify; background:#E6E6E6;}
 
-/*-----header 網站名稱-----*/
-.header_logo {
-	font-size:22px;
-	font-weight:bold;
-	line-height:60px;
-}
-/*-----搜尋 icon-----*/
-.search_bar {
-	border:1px solid;
-}
-.search_bar input {
-	font-size:16px;
-	border:0;
-}
-.search_btn {
-	border:0;
-	font-size:15px;
-}
-/*-----hamburger content-----*/
-.hamburger_list_wrap > ul > li{
-	font-size: 16px;
-	font-weight: bold;
-	border-bottom: 1px solid;
-}
-.hamburger_list_wrap > ul > ul > li{
-	font-size: 16px;
-	/*font-weight: bold;*/
-	border-bottom: 1px solid;
-}
-/*-----footer_menu_wrap-----*/
-.menu_icon a{
-	font-size: 12px;
-}
-/*-----會員專區 member header-----*/
-.member_header_wrap{
-	font-size:18px;
-	font-weight: bold;
-	line-height:50px;
-}
-.logout_btn{
-	font-size:14px;
-	line-height:36px;
-	border-radius: 5px;
-}
-/*-----紅利館 bonus header-----*/
-.dividend_wrap span{
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 50px;
-}
-.bonus_header_logo{
-	font-size: 18px;
-	font-weight: bold;
-	line-height: 50px;
-}
-/*-----大標設定-----*/
-.top_title{
-	font-size: 16px;
-	line-height: 40px;
-	font-weight: bold;
-}
-/*-----橫向商品列表-----*/
-.horizontal_product_content{
-	padding: 10px 5px;
-	border-bottom: 1px solid;
-}
-.horizontal_product_name{
-	line-height: 20px;
-}
-.horizontal_price_style{
-	font-size: 20px;
-    font-weight: bold;
-}
-.Quantity_wrap_input{
-	border-radius: 5px;
-	border: 0.5px solid;
-}
-.Quantity_wrap_button{
-	line-height: 0px;
-	padding: 0;
-}
-.button_style{
-	font-size: 12px;
-	line-height: 30px;
-	border-radius: 5px;
-	padding: 0;
-	border: 0;
-}
-/*-----雙品商品列表-----*/
-.even_product_content_wrap{
-	padding: 0 5px;	
-}
-.even_price_style{
-	font-size: 20px;
-    font-weight: bold;
-}
-.Original_price{
-	text-decoration: line-through;
-}
-/*-----單品商品列表-----*/
-.odd_product_content_wrap{
-	padding: 0 5px;	
-}
-.odd_price_style{
-	font-size: 20px;
-    font-weight: bold;
-}
+/*-------------------Web_base_style 整理--------------------*/

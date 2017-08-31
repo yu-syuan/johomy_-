@@ -30,11 +30,11 @@
 .arrow_left_wrap{
 	width: 15%;
 	position: absolute;
-	top: 60px;
+	top: 0px;
 	left: 0;
 }
 .arrow_left_wrap a{
-	padding: 12px;
+	padding: 8px 12px;
 }
 .arrow_left_photo{
 	width: 25px;
@@ -108,6 +108,10 @@ select {
 
 /*-----會員訂單紀錄 (for member_order.html)-----*/
 
+/*-----member top-----*/
+.member_top_wrap{
+	position: relative;
+}
 /*-----尚無訂單資料-----*/
 .no_order_wrap{
 	text-align: center;
@@ -145,4 +149,24 @@ select {
 }
 .accept_wrap label{
 	margin: 1px 0 0 6px;
+}
+
+/*-----footer 關於我們 (for brand.html,shipping.html,return.html,contact.html)-----*/
+
+.about_us_wrap img{
+	width: 30px;
+}
+/*-----退貨說明(return.html)-----*/
+.Anti-cheat_wrap img{
+	width: 120px;
+}
+.Anti-cheat_NO{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	float: left;
+}
+/*-----聯絡我們(contact.html)-----*/
+.service_img{
+	width: 100px;
 }

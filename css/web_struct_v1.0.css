@@ -254,8 +254,10 @@ hr{	margin: 0; }
 	max-width: 600px;
 	max-height: 600px;
 }
-.step_img{
-	max-width: 300px;
+/*-----外框共用-----*/
+.max_width_600{
+	width: 100%;
+	max-width: 600px;
 }
 /*-----大標設定-----*/
 .top_title{
@@ -351,7 +353,7 @@ hr{	margin: 0; }
 	height: 30px;
 	overflow: hidden;
 }
-
+/*-----youtube影片規格-----*/
 .embed-container {
 	width: 100%;
 	height: 355px;

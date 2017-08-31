@@ -183,6 +183,7 @@ select:focus{
 .ta-r{ text-align: right; }
 
 .overflow_h{overflow: hidden;}
+.position_r{ position: relative; }
 
 .p-t-0 {  padding-top:0px; }
 .p-t-5 {  padding-top:5px; }
