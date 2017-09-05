@@ -628,7 +628,7 @@ hr{	margin: 0; }
 	left: 12px;
 }
 .dividend{
-	width: 55px;
+	width: 70px;
 	position: absolute;
 	top: 0px;
 	left: 25px;
@@ -696,7 +696,7 @@ hr{	margin: 0; }
 	overflow: hidden;
 }
 .bonus_Quantity_wrap{
-	height: 150px;
+	height: 165px;
 	overflow: hidden;
 }
 .Quantity_wrap_input{
@@ -714,16 +714,28 @@ hr{	margin: 0; }
 	width: 57px;
 	height: 30px;
 }
-.button_wrap{
-	position: absolute;
-	bottom: 10px;
-	right: 5px;
-}
 .horizontal_shopping{
 	width: 15%;
 	position: absolute;
 	bottom: 10px;
 	right: 5px;
+}
+/*-----選擇數量-----*/
+.horizontal_Quantity_wrap select{
+	width: 60px;
+	height: 30px;
+	padding: 0 10px;
+}
+/*-----delete-----*/
+.prod_delete_button{
+	height: 45px;
+	position: absolute;
+	top: 40%;
+	right: 5px;
+}
+.prod_delete_button img{
+	width: 25px;
+	height: 25px;
 }
 /*-----雙品商品列表-----*/
 .even_product_content_wrap{
@@ -776,4 +788,18 @@ hr{	margin: 0; }
 	height: 100%;
 	max-width:600px;
 	max-height:355px;
+}
+/*-----任務紅利通知-----*/
+.gift_img{
+	width: 25px;
+}
+.gift_img_jump_position{
+	position: absolute;
+	bottom: 5px;
+	animation: jump_position .8s infinite linear; 
+}
+@keyframes jump_position{ 
+	0%{ bottom: 10px; }
+	50%{ bottom: 5px; }
+	100%{ bottom: 10px; }
 }

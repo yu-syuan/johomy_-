@@ -88,23 +88,6 @@
 	height: 0;
 	border-width: 10px 0 10px 15px;
 }
-/*-----右邊產品價格區-----*/
-.horizontal_Quantity_wrap select{
-	width: 60px;
-	height: 30px;
-	padding: 0 10px;
-}
-/*-----delete-----*/
-.prod_delete_button{
-	height: 45px;
-	position: absolute;
-	top: 40%;
-	right: 5px;
-}
-.prod_delete_button img{
-	width: 25px;
-	height: 25px;
-}
 /*-----消費計算-----*/
 .calculation_wrap{
 	margin: 5px;

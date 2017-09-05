@@ -25,19 +25,9 @@
 <link rel="stylesheet" type="text/css" href="css/slick/slick.css"><!-- 輪播圖 -->
 <link rel="stylesheet" type="text/css" href="css/slick/slick_theme.css"><!-- 輪播圖 -->
 <script type="text/javascript" src="js/slick.min.js"></script><!-- 輪播圖 -->
+<script type="text/javascript" src="js/index_v1.js"></script><!-- 輪播圖 -->
 
-<script type="text/javascript">     
-$(document).on('ready', function() {
-  $(".regular").slick({    //輪播 star
-    dots: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
-  });   //輪播 end
-});
-</script>
+
 </head>
 <body>
   <section class="main_wrap Border">
@@ -81,8 +71,8 @@ $(document).on('ready', function() {
           <div class="clear"></div>
         </div>
       </div>
-      <!-- 會員專區 member header -->
-      <div class="member_header_wrap"><!-- 與紅利館做切換 -->
+      <!-- 會員專區 member header (與紅利館做切換)-->
+      <div class="member_header_wrap">
         <div class="inner_box95 mg-c">
           <div class="float-l">
             <span class="member_icon">
@@ -94,8 +84,8 @@ $(document).on('ready', function() {
           <p class="clear"></p>
         </div>
       </div>
-      <!-- 紅利館 bonus header -->
-      <!-- <div class="bonus_header_wrap bonus_header_color">與會員專區做切換
+      <!-- 紅利館 bonus header (與會員專區做切換)-->
+      <!-- <div class="bonus_header_wrap bonus_header_color">
         <div class="dividend_wrap">
           <span><img src="images/shipment.png" class="dividend_img"></span>
           <div class="dividend">
@@ -115,18 +105,27 @@ $(document).on('ready', function() {
       <article class="content_left Border">
         <div class="hamburger_list_wrap Border">
           <ul id="hamburger_menu" class="Border">
-            <li class="basic_font_color Border">頭皮出油</li> <!-- max words 18(繁體中文) -->
-            <ul class="hamburger_show basic_color Border">
+            <li class="basic_font_color Border" ui_id="1">頭皮出油</li> <!-- max words 18(繁體中文) -->
+            <ul class="hamburger_show basic_color Border" id="ui_id_1">
               <li><a href="#">全套加強調理組</a></li><!-- max words 18(繁體中文) -->
               <li><a href="#">控油頭皮保養液</a></li>
               <li><a href="#">油脂調理洗髮精</a></li>
               <li><a href="#">油脂調理護髮素</a></li>
             </ul>
-            <li class="basic_font_color Border">頭皮屑癢</li> <!-- max words 18(繁體中文) -->
-            <ul class="hamburger_show basic_color Border">
+            <li class="basic_font_color Border" ui_id="2">頭皮屑癢</li> <!-- max words 18(繁體中文) -->
+            <ul class="hamburger_show basic_color Border" id="ui_id_2">
               <li><a href="#">全套加強調理組</a></li><!-- max words 18(繁體中文) -->
               <li><a href="#">止癢頭皮保養液</a></li>
               <li><a href="#">去屑止癢洗髮精</a></li>
+            </ul>
+            <li class="basic_font_color Border" ui_id="3">毛躁打結</li> <!-- max words 18(繁體中文) -->
+            <ul class="hamburger_show basic_color Border" id="ui_id_3">
+              <li><a href="#">★萬人見證★10秒瞬護霜</a></li><!-- max words 18(繁體中文) -->
+              <li><a href="#">免沖洗護髮</a></li>
+              <li><a href="#">染燙洗護組</a></li>
+              <li><a href="#">洗髮精</a></li>
+              <li><a href="#">護髮素</a></li>
+              <li><a href="#">護髮霜</a></li>
             </ul>
           </ul>
           <div class="copyright">
@@ -140,11 +139,11 @@ $(document).on('ready', function() {
         <!-- 輪播圖 開始 (圖片大小768x375) -->
         <div class="big_bn_wrap">
           <div class="block_model">
-              <section class="regular slider inner_box"> 
-                <div class="slider_bn"><a href="#"><img src="images/bn1.jpg"></a></div>
-                <div class="slider_bn"><a href="#"><img src="images/bn2.jpg"></a></div>
-                <div class="slider_bn"><a href="#"><img src="images/bn3.jpg"></a></div>
-              </section>
+            <section class="regular slider inner_box"> 
+              <div class="slider_bn"><a href="#"><img src="images/bn1.jpg"></a></div>
+              <div class="slider_bn"><a href="#"><img src="images/bn2.jpg"></a></div>
+              <div class="slider_bn"><a href="#"><img src="images/bn3.jpg"></a></div>
+            </section>
           </div>
         </div>
         <!-- 特別企劃區 (圖片大小768x375) -->
@@ -154,7 +153,7 @@ $(document).on('ready', function() {
             <li class="col-md-12 p-l-0 p-r-0"><a href="#"><img src="images/bn2.jpg" class="activity_img"></a></li>
             <li class="col-md-12 p-l-0 p-r-0"><a href="#"><img src="images/bn3.jpg" class="activity_img"></a></li>
             <li class="col-md-12 p-l-0 p-r-0"><a href="#"><img src="images/bn1.jpg" class="activity_img"></a></li>
-          </ul>        
+          </ul>
         </div> -->
         <!-- 四格小方圖片(圖片220x220) -->
         <!-- <div>
@@ -165,11 +164,11 @@ $(document).on('ready', function() {
             <li class="col-xs-3 p-l-0 p-r-0 Border"><a href="#"><img src="images/prod3.jpg" class="product_photo_img220"></a></li>
           </ul>
         </div> -->
-        <!--商品頁面區-->
-        <div class="block_type_wrap"><!--橫向商品列表(for紅利館) Wrap Start-->
+        <!-- 商品頁面區 -->
+        <article class="block_type_wrap"><!--橫向商品列表(for紅利館) Wrap Start-->
           <!--大標-->
           <div class="inner_box Border">
-            <div class="inner_box top_title bonus_basic_color">橫向商品列表(for紅利館)</div><!-- 320x568顯示中文17位數 -->
+            <div class="inner_box top_title bonus_basic_color">橫向商品列表</div><!-- 320x568顯示中文17位數 -->
           </div>
           <!-- 橫向商品列表(for紅利館) -->
           <ul class="row horizontal_product_wrap background_white Border">
@@ -183,35 +182,42 @@ $(document).on('ready', function() {
                 <!-- 右邊產品內文 -->
                 <div class="prod_title_wrap">
                   <div class="blank20 inner_box overflow_h">
-                    <h4 class="horizontal_product_name">壹貳參肆伍陸柒捌玖拾壹貳</h4><!-- max word 12(繁體中文) -->
+                    <h4 class="horizontal_product_name">紅寶石能量瞬護隔離霜</h4><!-- max word 12(繁體中文) -->
                   </div>
                   <div class="horizontal_product_description">
-                    <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾壹貳參肆</p><!-- max word 14(繁體中文) -->
+                    <p>紅寶石隔離霜5ml</p><!-- max word 24(繁體中文) -->
                   </div>
                 </div>
                 <!-- 右邊產品價格區 -->
                 <div class="bonus_Quantity_wrap">
-                  <span class="unit_price_text">單價：</span>
-                  <span class="horizontal_price_style price" sn="a" unit_price="100">100</span> <!-- unit_price為單價設定 -->
+                  <label>售　價：$ 49</label>
+                  <br>
+                  <label class="unit_price_text">紅利點：</label>
+                  <span class="horizontal_price_style price" sn="a" unit_price="1">1</span> <!-- unit_price為單價設定 -->
                   <span class="horizontal_price_style">點</span>
-                  <br>                
-                  <span class="Subtotal_tetx">小計：</span>
-                  <span class="horizontal_price_style Subtotal_tetx points" id="point_a">100</span><!-- 單價計算顯示 id="point_要互相對應上層的sn -->
+                  <br>              
+                  <label class="Subtotal_tetx">小　計：</label>
+                  <span class="horizontal_price_style Subtotal_tetx points" id="point_a">1</span><!-- 單價計算顯示 id="point_要互相對應上層的sn -->
                   <span class="horizontal_price_style Subtotal_tetx">點</span>
-                  <!-- <span class="f_size16">數量</span> -->
                   <br>
                   <button type="button" name="cut_back" class="Quantity_wrap_button btn btn-default cut_back">-</button>
                   <input type="text" name="Quantity" value="1" readonly="readonly" class="Quantity_wrap_input Quantity" />
                   <button type="button" name="addition" class="Quantity_wrap_button btn btn-default addition">+</button>
-                  <p class="font_color_Red">★已達數量限制</p><!-- max word 12(繁體中文) -->
-                </div>
-                <!-- 右邊button區 -->
-                <div class="blank30 Border button_wrap">
-                  <button type="button" class="button_style btn btn-danger">立即兌換</button><!-- 直接前往兌換清單 -->
-                  <button type="button" class="button_style btn btn-danger">加入清單</button><!-- 將兌換商品加入購物車 -->
-                  <a href="#" class="button_style btn btn-danger">商城購買</a><!-- 前往商城購買 -->
+                  <p class="font_color_Red blank20"></p><!-- max word 12(繁體中文) -->
+                  <!-- 右邊button區 -->
+                  <div class="blank30 Border button_wrap">
+                    <button type="button" class="button_style btn btn-danger">立即兌換</button><!-- 直接前往兌換清單 -->
+                    <button type="button" class="button_style btn btn-danger">加入清單</button><!-- 將兌換商品加入購物車 -->
+                    <a href="#" class="button_style btn btn-danger">官網購買</a><!-- 前往商城購買 -->
+                  </div>
+                  <!-- delete -->
+                  <!-- <button type="button" class="prod_delete_button" sn="1" deliver_id="1">
+                    <img src="images/prod_delete.png">
+                  </button> -->
                 </div>
               </div>
+              <!-- 預留留白 -->
+              <!-- <div class="Product_content_wrap float-l"></div> -->
             </li>
             <div class="clear"></div>
             <hr>
@@ -228,38 +234,47 @@ $(document).on('ready', function() {
                     <h4 class="horizontal_product_name">壹貳參肆伍陸柒捌玖拾壹貳</h4><!-- max word 12(繁體中文) -->
                   </div>
                   <div class="horizontal_product_description">
-                    <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾壹貳參肆</p><!-- max word 14(繁體中文) -->
+                    <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾壹貳參肆</p><!-- max word 24(繁體中文) -->
                   </div>
                 </div>
                 <!-- 右邊產品價格區 -->
                 <div class="bonus_Quantity_wrap">
-                  <span class="unit_price_text">單價：</span>
+                  <label>售　價：</label>
+                  <span>$888</span>
+                  <br>
+                  <label class="unit_price_text">紅利點：</label>
                   <span class="horizontal_price_style price" sn="b" unit_price="100">100</span> <!-- unit_price為單價設定 -->
                   <span class="horizontal_price_style">點</span>
-                  <br>                
-                  <span class="Subtotal_tetx">小計：</span>
+                  <br>            
+                  <label class="Subtotal_tetx">小　計：</label>
                   <span class="horizontal_price_style Subtotal_tetx points" id="point_b">100</span><!-- 單價計算顯示 id="point_要互相對應上層的sn -->
                   <span class="horizontal_price_style Subtotal_tetx">點</span>
-                  <!-- <span class="f_size16">數量</span> -->
                   <br>
                   <button type="button" name="cut_back" class="Quantity_wrap_button btn btn-default cut_back">-</button>
                   <input type="text" name="Quantity" value="1" readonly="readonly" class="Quantity_wrap_input Quantity" />
                   <button type="button" name="addition" class="Quantity_wrap_button btn btn-default addition">+</button>
-                  <p class="font_color_Red">★已達數量限制</p><!-- max word 12(繁體中文) -->
-                </div>
-                <!-- 右邊button區 -->
-                <div class="blank30 Border button_wrap">
-                  <button type="button" class="button_style btn btn-danger">立即兌換</button><!-- 直接前往兌換清單 -->
-                  <button type="button" class="button_style btn btn-danger">加入清單</button><!-- 將兌換商品加入購物車 -->
-                  <a href="#" class="button_style btn btn-danger">商城購買</a><!-- 前往商城購買 -->
+                  <p class="font_color_Red blank20"></p><!-- max word 12(繁體中文) -->
+                  <!-- 右邊button區 -->
+                  <div class="blank30 Border button_wrap">
+                    <button type="button" class="button_style btn btn-danger">立即兌換</button><!-- 直接前往兌換清單 -->
+                    <button type="button" class="button_style btn btn-danger">加入清單</button><!-- 將兌換商品加入購物車 -->
+                    <a href="#" class="button_style btn btn-danger">官網購買</a><!-- 前往商城購買 -->
+                  </div>
+                  <!-- delete -->
+                  <!-- <button type="button" class="prod_delete_button" sn="1" deliver_id="1">
+                    <img src="images/prod_delete.png">
+                  </button> -->
                 </div>
               </div>
+              <!-- 預留留白 -->
+              <!-- <div class="Product_content_wrap float-l"></div> -->
             </li>
             <div class="clear"></div>
             <hr>
           </ul>
-        </div><!--橫向商品列表(for紅利館) Wrap End-->
-        <div class="block_type_wrap"><!--橫向商品列表 Wrap Start-->
+        </article><!--橫向商品列表(for紅利館) Wrap End-->
+
+        <article class="block_type_wrap"><!--橫向商品列表 Wrap Start-->
           <!--大標-->
           <div class="inner_box Border">
             <div class="inner_box top_title basic_color">橫向商品列表</div><!-- 320x568顯示中文17位數 -->
@@ -281,12 +296,12 @@ $(document).on('ready', function() {
                     <h4 class="horizontal_product_name">壹貳參肆伍陸柒捌玖拾壹貳</h4><!-- max word 12(繁體中文) -->
                   </div>
                   <div class="horizontal_product_description">
-                    <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾壹貳參肆</p><!-- max word 14(繁體中文) -->
+                    <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾壹貳參肆</p><!-- max word 24(繁體中文) -->
                   </div>
                 </div>
                 <!-- 右邊產品價格區 -->
                 <div class="horizontal_Quantity_wrap">
-                  <!-- <span class="unit_price_text">單價：</span> -->
+                  <!-- <label class="unit_price_text">單價：</label> -->
                   <span class="horizontal_price_style">$</span>
                   <span class="horizontal_price_style price" sn="a" unit_price="100">100</span> <!-- unit_price為單價設定 -->
                   <span class="MICRO Original_price">$400</span>
@@ -297,7 +312,26 @@ $(document).on('ready', function() {
                     <img src="images/shopping.png" class="shopping_img">
                   </a>
                 </div>
+                <!-- 選擇數量 -->
+                <!-- <div class="horizontal_Quantity_wrap blank40 p-t-5">
+                  <label for="prod_qty" class="unit_price_text">數　量：</label>
+                  <select class="border_radius_5" name="prod_qty" sn="1" unit_price="860" deliver_id="1">
+                    <option>1</option>
+                    <option>20</option>
+                  </select>
+                </div> -->
+                <!-- 小計 -->
+                <!-- <div class="horizontal_Quantity_wrap blank40 p-t-5">
+                  <label class="unit_price_text">小計：</label>
+                  <span class="horizontal_price_style" id="fee_1">$ 860</span>
+                </div> -->
+                <!-- delete -->
+                <!-- <button type="button" class="prod_delete_button" sn="1" deliver_id="1">
+                  <img src="images/prod_delete.png">
+                </button> -->
               </div>
+              <!-- 預留留白 -->
+              <!-- <div class="Product_content_wrap"></div> -->
             </li>
             <div class="clear"></div>
             <hr>
@@ -316,12 +350,12 @@ $(document).on('ready', function() {
                     <h4 class="horizontal_product_name">壹貳參肆伍陸柒捌玖拾壹貳</h4><!-- max word 12(繁體中文) -->
                   </div>
                   <div class="horizontal_product_description">
-                    <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾壹貳參肆</p><!-- max word 14(繁體中文) -->
+                    <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾壹貳參肆</p><!-- max word 24(繁體中文) -->
                   </div>
                 </div>
                 <!-- 右邊產品價格區 -->
                 <div class="horizontal_Quantity_wrap">
-                  <!-- <span class="unit_price_text">單價：</span> -->
+                  <!-- <label class="unit_price_text">單價：</label> -->
                   <span class="horizontal_price_style">$</span>
                   <span class="horizontal_price_style price" sn="a" unit_price="100">100</span> <!-- unit_price為單價設定 -->
                   <span class="MICRO Original_price">$400</span>
@@ -332,13 +366,33 @@ $(document).on('ready', function() {
                     <img src="images/shopping.png" class="shopping_img">
                   </a>
                 </div>
+                <!-- 選擇數量 -->
+                <!-- <div class="horizontal_Quantity_wrap blank40 p-t-5">
+                  <label for="prod_qty" class="unit_price_text">數　量：</label>
+                  <select class="border_radius_5" name="prod_qty" sn="1" unit_price="860" deliver_id="1">
+                    <option>1</option>
+                    <option>20</option>
+                  </select>
+                </div> -->
+                <!-- 小計 -->
+                <!-- <div class="horizontal_Quantity_wrap blank40 p-t-5">
+                  <label class="unit_price_text">小計：</label>
+                  <span class="horizontal_price_style" id="fee_1">$ 860</span>
+                </div> -->
+                <!-- delete -->
+                <!-- <button type="button" class="prod_delete_button" sn="1" deliver_id="1">
+                  <img src="images/prod_delete.png">
+                </button> -->
               </div>
+              <!-- 預留留白 -->
+              <!-- <div class="Product_content_wrap"></div> -->
             </li>
             <div class="clear"></div>
             <hr>
           </ul>
-        </div><!--橫向商品列表 Wrap End-->
-        <div class="block_type_wrap"><!--雙品商品列表 Wrap Start-->
+        </article><!--橫向商品列表 Wrap End-->
+
+        <article class="block_type_wrap"><!--雙品商品列表 Wrap Start-->
           <!--大標-->
           <div class="inner_box Border">
             <div class="inner_box top_title basic_color">雙品商品列表</div><!-- 320x568顯示中文17位數 -->
@@ -356,18 +410,18 @@ $(document).on('ready', function() {
                 <!-- 產品內文區 -->
                 <div class="prod_title_wrap m-t-5 m-b-5">
                   <div class="blank20 inner_box overflow_h">
-                    <h4 class="line_h20">壹貳參肆伍陸柒捌玖拾</h4><!-- max word 10(繁體中文) -->
+                    <h4 class="line_h20">✦全台首創降溫護膚香水✦ </h4><!-- max word 10(繁體中文) -->
                   </div>
                   <div class="blank40">
-                    <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾</p><!-- max word 20(繁體中文) -->
+                    <p>3度C冰鎮舒緩青春露禮盒</p><!-- max word 20(繁體中文) -->
                   </div>
                 </div>
                 <!-- 產品價格區 -->
                 <div class="even_Quantity_wrap">
                   <!-- <span class="unit_price_text">單價：</span> -->
                   <span class="even_price_style">$</span>
-                  <span class="even_price_style price" sn="a" unit_price="200">200</span><!-- unit_price為單價設定 -->
-                  <span class="MICRO Original_price">$400</span>
+                  <span class="even_price_style price" sn="a" unit_price="200">1,680</span><!-- unit_price為單價設定 -->
+                  <span class="MICRO Original_price">$3,000</span>
                 </div>
                 <!-- 加入購物車連結 -->
                 <a href="#" class="ta-r">
@@ -470,8 +524,9 @@ $(document).on('ready', function() {
               <hr>
             </li>
           </ul>
-        </div><!--雙品商品列表 Wrap End-->
-        <div class="block_type_wrap"><!--單品商品列表 Wrap Start-->
+        </article><!--雙品商品列表 Wrap End-->
+
+        <article class="block_type_wrap"><!--單品商品列表 Wrap Start-->
           <!--大標-->
           <div class="inner_box Border">
             <div class="inner_box top_title basic_color">單品商品列表</div><!-- 320x568顯示中文17位數 -->
@@ -540,7 +595,8 @@ $(document).on('ready', function() {
               <hr>
             </li>
           </ul>
-        </div><!--單品商品列表 Wrap End-->
+        </article><!--單品商品列表 Wrap End-->
+
         <div class="clear"></div>
         <div class="copyright">
           <p>秒創超網訂購專線</p>

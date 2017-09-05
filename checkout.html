@@ -100,18 +100,27 @@
       <article class="content_left Border">
         <div class="hamburger_list_wrap Border">
           <ul id="hamburger_menu" class="Border">
-            <li class="basic_font_color Border">頭皮出油</li> <!-- max words 18(繁體中文) -->
-            <ul class="hamburger_show basic_color Border">
+            <li class="basic_font_color Border" ui_id="1">頭皮出油</li> <!-- max words 18(繁體中文) -->
+            <ul class="hamburger_show basic_color Border" id="ui_id_1">
               <li><a href="#">全套加強調理組</a></li><!-- max words 18(繁體中文) -->
               <li><a href="#">控油頭皮保養液</a></li>
               <li><a href="#">油脂調理洗髮精</a></li>
               <li><a href="#">油脂調理護髮素</a></li>
             </ul>
-            <li class="basic_font_color Border">頭皮屑癢</li> <!-- max words 18(繁體中文) -->
-            <ul class="hamburger_show basic_color Border">
+            <li class="basic_font_color Border" ui_id="2">頭皮屑癢</li> <!-- max words 18(繁體中文) -->
+            <ul class="hamburger_show basic_color Border" id="ui_id_2">
               <li><a href="#">全套加強調理組</a></li><!-- max words 18(繁體中文) -->
               <li><a href="#">止癢頭皮保養液</a></li>
               <li><a href="#">去屑止癢洗髮精</a></li>
+            </ul>
+            <li class="basic_font_color Border" ui_id="3">毛躁打結</li> <!-- max words 18(繁體中文) -->
+            <ul class="hamburger_show basic_color Border" id="ui_id_3">
+              <li><a href="#">★萬人見證★10秒瞬護霜</a></li><!-- max words 18(繁體中文) -->
+              <li><a href="#">免沖洗護髮</a></li>
+              <li><a href="#">染燙洗護組</a></li>
+              <li><a href="#">洗髮精</a></li>
+              <li><a href="#">護髮素</a></li>
+              <li><a href="#">護髮霜</a></li>
             </ul>
           </ul>
           <div class="copyright">
@@ -131,6 +140,8 @@
           <li class="step_wrap_style basic_font_color">訂購完成</li>
           <li class="clear"></li>
         </ul>
+        <!-- 提醒登入會員 -->
+        <div>提醒您，登入會員購買將享有紅利點數回饋！<button>登入</button></div>
         <!--商品資訊 Wrap Starticleart-->
         <article class="block_type_wrap inner_box95 border_radius_5 border_solid checkout_border_color mg-c m-t-10 m-b-10">
           <!--大標-->
@@ -139,7 +150,7 @@
           </div>
           <!-- 橫向商品列表 -->
           <ul class="row horizontal_product_wrap background_white Border">
-            <li class="col-xs-12 horizontal_product_content Border" id="p_1">
+            <li class="col-xs-12 horizontal_product_content Border">
               <!-- 左邊產品圖片區 -->
               <div class="horizontal_list_photo Border float-l">
                 <a href="#">
@@ -151,22 +162,36 @@
                 <!-- 右邊產品內文 -->
                 <div class="prod_title_wrap">
                   <div class="blank20 inner_box overflow_h">
-                    <h4 class="horizontal_product_name" id="n_1">★掰掰油頭清爽抗痘★</h4><!-- max word 12(繁體中文) -->
+                    <h4 class="horizontal_product_name">★掰掰油頭清爽抗痘★</h4><!-- max word 12(繁體中文) -->
                   </div>
                   <div class="horizontal_product_description">
-                    <p>油脂潔髮乳500ml*1+水芹精華120ml*1</p><!-- max word 14(繁體中文) -->
+                    <p>油脂潔髮乳500ml*1+水芹精華120ml*1</p><!-- max word 24(繁體中文) -->
                   </div>
                 </div>
                 <!-- 右邊產品價格區 -->
+                <!-- <div class="horizontal_Quantity_wrap">
+                  <label class="unit_price_text">單價：</label>
+                  <span class="horizontal_price_style">$</span>
+                  <span class="horizontal_price_style price" sn="a" unit_price="100">100</span> unit_price為單價設定
+                  <span class="MICRO Original_price">$400</span>
+                </div> -->
+                <!-- 加入購物車連結 -->
+                <!-- <div class="horizontal_shopping ta-r">
+                  <a href="#">
+                    <img src="images/shopping.png" class="shopping_img">
+                  </a>
+                </div> -->
+                <!-- 選擇數量 -->
                 <div class="horizontal_Quantity_wrap blank40 p-t-5">
-                  <label for="prod_qty" class="unit_price_text">數量：</label>
+                  <label for="prod_qty" class="unit_price_text">數　量：</label>
                   <select class="border_radius_5" name="prod_qty" sn="1" unit_price="860" deliver_id="1">
                     <option>1</option>
                     <option>20</option>
                   </select>
                 </div>
+                <!-- 小計 -->
                 <div class="horizontal_Quantity_wrap blank40 p-t-5">
-                  <label class="unit_price_text">小計：</label>
+                  <label class="unit_price_text">小　計：</label>
                   <span class="horizontal_price_style" id="fee_1">$ 860</span>
                 </div>
                 <!-- delete -->
@@ -174,6 +199,8 @@
                   <img src="images/prod_delete.png">
                 </button>
               </div>
+              <!-- 預留留白 -->
+              <!-- <div class="Product_content_wrap"></div> -->
             </li>
             <div class="clear"></div>
             <hr>

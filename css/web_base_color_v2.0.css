@@ -133,8 +133,9 @@ select:focus{
 .background_gray{background: #B3B3B3;}
 /*.Border_b{border-bottom: 1px solid #ddd;}*/
 .border_b_dashed{ border-color: #b3b3b3; }
-.font_color_Black{ color: black; font-weight: bold; }
-.font_color_White{ color: white; font-weight: bold; }
-.font_color_Red{ color: red; font-weight: bold; }
+.font_weight_bold{ font-weight: bold; }
+.font_color_Black{ color: #000; }
+.font_color_White{ color: #fff; }
+.font_color_Red{ color: red; }
 .font_color_Darkgray{ color: #666; }
-.font_color_Orange{ color: #F78C00; font-weight: bold; }
+.font_color_Orange{ color: #F78C00; }

@@ -49,19 +49,13 @@
 /*-----步驟圖-----*/
 .step_wrap_style{
 	font-size: 18px;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	line-height: 36px;
 	border-radius: 10px;
 	border: 2px solid;
 }
 .step_arrow{
 	border-style: solid;
-}
-/*-----delete-----*/
-.prod_delete_button{
-	border: 0;
-	background: 0;
-	outline: 0;
 }
 /*----頁面 input 設定-----*/
 .payment_method_wrap input + label,
@@ -94,7 +88,7 @@ select{
 .receive_wrap h4,
 .family_wrap h4,
 .invoice_wrap h4{
-	font-weight: bold;
+	/*font-weight: bold;*/
 	padding-bottom: 5px;
 }
 /*-----全家門市資訊-----*/

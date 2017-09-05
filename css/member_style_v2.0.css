@@ -26,7 +26,7 @@
 }
 .merber_form_wrap h4{
 	font-size: 16px;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	padding-bottom: 5px;
 }
 .account_wrap span{
@@ -120,7 +120,7 @@ select {
 }
 .password_form_wrap h4{
 	font-size: 16px;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	padding-bottom: 5px;
 }
 .password_form_wrap input{
@@ -177,7 +177,7 @@ select {
 }
 .merber_register_form_wrap h4{
 	font-size: 16px;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	padding-bottom: 5px;
 }
 .merber_register_form_wrap input{
