@@ -18,8 +18,8 @@
 <link rel="stylesheet" type="text/css" href="css/web_base_style_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/web_base_color_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/reset_and_fast.css"><!-- bootstrap清除+fast便利包 -->
-<script type="text/javascript" src="js/header.footer.min.js"></script>
-
+<script type="text/javascript" src="js/header.footer.min.js"></script> <!-- header_v1.js整合 -->
+<script type="text/javascript" src="js/main.min.js"></script> <!-- 紅利館用JS -->
 </head>
 <body>
   <section class="main_wrap Border">
@@ -128,8 +128,8 @@
       </article>
       <!-- main content -->
       <article class="content_right">
-        <!--商品頁面區-->
-        <div class="block_type_wrap"><!--橫向商品列表(for紅利館) Wrap Start-->
+        <!-- 商品頁面區 -->
+        <article class="block_type_wrap"><!--橫向商品列表(for紅利館) Wrap Start-->
           <!-- 搜尋大標 -->
           <div class="inner_box Border">
             <div class="inner_box blank40 background_gray font_color_White font_size_16 line_height_40 p-l-5">
@@ -149,35 +149,42 @@
                 <!-- 右邊產品內文 -->
                 <div class="prod_title_wrap">
                   <div class="blank20 inner_box overflow_h">
-                    <h4 class="horizontal_product_name">壹貳參肆伍陸柒捌玖拾壹貳</h4><!-- max word 12(繁體中文) -->
+                    <h4 class="horizontal_product_name">紅寶石能量瞬護隔離霜</h4><!-- max word 12(繁體中文) -->
                   </div>
                   <div class="horizontal_product_description">
-                    <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾壹貳參肆</p><!-- max word 14(繁體中文) -->
+                    <p>紅寶石隔離霜5ml</p><!-- max word 24(繁體中文) -->
                   </div>
                 </div>
                 <!-- 右邊產品價格區 -->
                 <div class="bonus_Quantity_wrap">
-                  <span class="unit_price_text">單價：</span>
-                  <span class="horizontal_price_style price" sn="a" unit_price="100">100</span> <!-- unit_price為單價設定 -->
+                  <label>售　價：$ 49</label>
+                  <br>
+                  <label class="unit_price_text">紅利點：</label>
+                  <span class="horizontal_price_style price" sn="0" unit_price="1">1</span> <!-- unit_price為單價設定 -->
                   <span class="horizontal_price_style">點</span>
-                  <br>                
-                  <span class="Subtotal_tetx">小計：</span>
-                  <span class="horizontal_price_style Subtotal_tetx points" id="point_a">100</span><!-- 單價計算顯示 id="point_要互相對應上層的sn -->
+                  <br>              
+                  <label class="Subtotal_tetx">小　計：</label>
+                  <span class="horizontal_price_style Subtotal_tetx points" id="point_0">1</span><!-- 單價計算顯示 id="point_要互相對應上層的sn -->
                   <span class="horizontal_price_style Subtotal_tetx">點</span>
-                  <!-- <span class="f_size16">數量</span> -->
                   <br>
                   <button type="button" name="cut_back" class="Quantity_wrap_button btn btn-default cut_back">-</button>
                   <input type="text" name="Quantity" value="1" readonly="readonly" class="Quantity_wrap_input Quantity" />
                   <button type="button" name="addition" class="Quantity_wrap_button btn btn-default addition">+</button>
-                  <p class="font_color_Red">★已達數量限制</p><!-- max word 12(繁體中文) -->
-                </div>
-                <!-- 右邊button區 -->
-                <div class="blank30 Border button_wrap">
-                  <button type="button" class="button_style btn btn-danger">立即兌換</button><!-- 直接前往兌換清單 -->
-                  <button type="button" class="button_style btn btn-danger">加入清單</button><!-- 將兌換商品加入購物車 -->
-                  <a href="#" class="button_style btn btn-danger">商城購買</a><!-- 前往商城購買 -->
+                  <p class="font_color_Red blank20" id="error_Quantity_0"></p><!-- max word 12(繁體中文) -->
+                  <!-- 右邊button區 -->
+                  <div class="blank30 Border button_wrap">
+                    <button type="button" class="button_style btn btn-danger">立即兌換</button><!-- 直接前往兌換清單 -->
+                    <button type="button" class="button_style btn btn-danger">加入清單</button><!-- 將兌換商品加入購物車 -->
+                    <a href="#" class="button_style btn btn-danger">官網購買</a><!-- 前往商城購買 -->
+                  </div>
+                  <!-- delete -->
+                  <!-- <button type="button" class="prod_delete_button" sn="1" deliver_id="1">
+                    <img src="images/prod_delete.png">
+                  </button> -->
                 </div>
               </div>
+              <!-- 預留留白 -->
+              <!-- <div class="Product_content_wrap float-l"></div> -->
             </li>
             <div class="clear"></div>
             <hr>
@@ -194,37 +201,45 @@
                     <h4 class="horizontal_product_name">壹貳參肆伍陸柒捌玖拾壹貳</h4><!-- max word 12(繁體中文) -->
                   </div>
                   <div class="horizontal_product_description">
-                    <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾壹貳參肆</p><!-- max word 14(繁體中文) -->
+                    <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾壹貳參肆</p><!-- max word 24(繁體中文) -->
                   </div>
                 </div>
                 <!-- 右邊產品價格區 -->
                 <div class="bonus_Quantity_wrap">
-                  <span class="unit_price_text">單價：</span>
-                  <span class="horizontal_price_style price" sn="a" unit_price="100">100</span> <!-- unit_price為單價設定 -->
+                  <label>售　價：</label>
+                  <span>$888</span>
+                  <br>
+                  <label class="unit_price_text">紅利點：</label>
+                  <span class="horizontal_price_style price" sn="1" unit_price="100">100</span> <!-- unit_price為單價設定 -->
                   <span class="horizontal_price_style">點</span>
-                  <br>                
-                  <span class="Subtotal_tetx">小計：</span>
-                  <span class="horizontal_price_style Subtotal_tetx points" id="point_a">100</span><!-- 單價計算顯示 id="point_要互相對應上層的sn -->
+                  <br>            
+                  <label class="Subtotal_tetx">小　計：</label>
+                  <span class="horizontal_price_style Subtotal_tetx points" id="point_1">100</span><!-- 單價計算顯示 id="point_要互相對應上層的sn -->
                   <span class="horizontal_price_style Subtotal_tetx">點</span>
-                  <!-- <span class="f_size16">數量</span> -->
                   <br>
                   <button type="button" name="cut_back" class="Quantity_wrap_button btn btn-default cut_back">-</button>
                   <input type="text" name="Quantity" value="1" readonly="readonly" class="Quantity_wrap_input Quantity" />
                   <button type="button" name="addition" class="Quantity_wrap_button btn btn-default addition">+</button>
-                  <p class="font_color_Red">★已達數量限制</p><!-- max word 12(繁體中文) -->
-                </div>
-                <!-- 右邊button區 -->
-                <div class="blank30 Border button_wrap">
-                  <button type="button" class="button_style btn btn-danger">立即兌換</button><!-- 直接前往兌換清單 -->
-                  <button type="button" class="button_style btn btn-danger">加入清單</button><!-- 將兌換商品加入購物車 -->
-                  <a href="#" class="button_style btn btn-danger">商城購買</a><!-- 前往商城購買 -->
+                  <p class="font_color_Red blank20" id="error_Quantity_1"></p><!-- max word 12(繁體中文) -->
+                  <!-- 右邊button區 -->
+                  <div class="blank30 Border button_wrap">
+                    <button type="button" class="button_style btn btn-danger">立即兌換</button><!-- 直接前往兌換清單 -->
+                    <button type="button" class="button_style btn btn-danger">加入清單</button><!-- 將兌換商品加入購物車 -->
+                    <a href="#" class="button_style btn btn-danger">官網購買</a><!-- 前往商城購買 -->
+                  </div>
+                  <!-- delete -->
+                  <!-- <button type="button" class="prod_delete_button" sn="1" deliver_id="1">
+                    <img src="images/prod_delete.png">
+                  </button> -->
                 </div>
               </div>
+              <!-- 預留留白 -->
+              <!-- <div class="Product_content_wrap float-l"></div> -->
             </li>
             <div class="clear"></div>
             <hr>
           </ul>
-        </div><!--橫向商品列表(for紅利館) Wrap End-->
+        </article><!--橫向商品列表(for紅利館) Wrap End-->
         <div class="copyright">
           <p>秒創超網訂購專線</p>
           <p>(02)8228-0580</p>

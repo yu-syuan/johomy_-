@@ -595,6 +595,12 @@ hr{	margin: 0; }
 	background-position: center 4px;
 	background-size: 28px 28px;
 }
+.search a{
+	background-image: url(../images/search.png);
+	background-repeat: no-repeat;
+	background-position: center 2px;
+	background-size: 28px 28px;
+}
 /*-----會員專區 member header-----*/
 .member_header_wrap{
 	width:100%;
