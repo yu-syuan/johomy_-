@@ -1,0 +1,3 @@
+$(function(){
+  fbq('track', 'ViewContent');
+});
