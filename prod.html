@@ -235,7 +235,7 @@
                       </div>
                     </div>
                     <!-- 產品價格區 -->
-                    <div class="even_Quantity_wrap">line_height_20
+                    <div class="even_Quantity_wrap">
 
                       <!-- <span class="unit_price_text">單價：</span> -->
                       <span class="even_price_style">$</span>
@@ -270,7 +270,7 @@
                     <div class="even_Quantity_wrap">
                       <!-- <span class="unit_price_text">單價：</span> -->
                       <span class="even_price_style">$</span>
-                      <span class="even_price_style price" sn="b" unit_price="200">200</span><!-- unit_price為單價設定 -->
+                      <span class="even_price_style price">200</span>
                       <span class="MICRO Original_price">$400</span>
                     </div>
                     <!-- 加入購物車連結 -->
@@ -301,7 +301,7 @@
                     <div class="even_Quantity_wrap">
                       <!-- <span class="unit_price_text">單價：</span> -->
                       <span class="even_price_style">$</span>
-                      <span class="even_price_style price" sn="c" unit_price="200">200</span><!-- unit_price為單價設定 -->
+                      <span class="even_price_style price">200</span>
                       <span class="MICRO Original_price">$400</span>
                     </div>
                     <!-- 加入購物車連結 -->
@@ -332,7 +332,7 @@
                     <div class="even_Quantity_wrap">
                       <!-- <span class="unit_price_text">單價：</span> -->
                       <span class="even_price_style">$</span>
-                      <span class="even_price_style price" sn="d" unit_price="200">200</span><!-- unit_price為單價設定 -->
+                      <span class="even_price_style price">200</span>
                       <span class="MICRO Original_price">$400</span>
                     </div>
                     <!-- 加入購物車連結 -->
@@ -347,26 +347,26 @@
             <!-- 店家查詢 -->
             <article id="table_3" class="background_white p-t-10 p-b-10 p-l-5 p-r-5">
               <div class="Border ta-c">
-                <select class="google_map_select">
+                <select class="google_map_select" id="state_change">
                   <option>--請選擇縣市--</option>
                   <option>基隆市</option>
                   <option>台北市</option>
                   <option>新北市</option>
                 </select>
-                <select class="google_map_select">
+                <select class="google_map_select" id="city_change">
                   <option>--請選擇區域--</option>
                   <option>100-中正區</option>
                   <option>103-大同區</option>
                   <option>104-中山區</option>
                 </select>
-                <select class="google_map_select">
+                <select class="google_map_select" id="store_change">
                   <option>--請選擇店家--</option>
                   <option>店家名稱(店家地址)</option>
                   <option>店家名稱(店家地址)</option>
                   <option>店家名稱(店家地址)</option>
                 </select>
                 <!-- google map -->
-                <div class="google_map_wrap"></div>
+                <div class="google_map_wrap" id="map"></div>
               </div>
             </article>
           </section>

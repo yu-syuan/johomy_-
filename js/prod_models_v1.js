@@ -1,5 +1,5 @@
 $(function(){
-  fbq('track','ViewContent',{content_type: 'product',content_ids: [prod_id]});
+  // fbq('track','ViewContent',{content_type: 'product',content_ids: [prod_id]});
   $("#add_cart").click(function(){
     var cart_obj = {
                     "prod_id" : $("#prod_id").val(),
@@ -32,7 +32,7 @@ $(function(){
   });
 });
 function addToCart(cart_obj,checkout){
-  fbq('track','AddToCart',{content_type: 'product',content_ids: [prod_id]});
+  // fbq('track','AddToCart',{content_type: 'product',content_ids: [prod_id]});
   $.ajax({
       cache: false,
       method : "POST",

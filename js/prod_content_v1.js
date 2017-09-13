@@ -1,11 +1,12 @@
+google_map = 0;
 $(function(){
-  fbq('track','ViewContent',{content_ids:[prod_id],content_type:'product',value: default_price,currency: 'TWD'});
-  $(".prod_bn").slick({
-    dots: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false
-  });
+  // fbq('track','ViewContent',{content_ids:[prod_id],content_type:'product',value: default_price,currency: 'TWD'});
+  // $(".prod_bn").slick({
+  //   dots: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   arrows: false
+  // });
   $("#tabs_content").tabs({
     activate: function( event, ui ) {
       currentTabIndex = ui.newTab.index().toString();
