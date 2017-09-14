@@ -182,19 +182,19 @@
             <li class="m-t-10 m-b-10">
               <h4>生日 (年/月/日)</h4>
               <select name="year" id="year">
-                <option>年</option>
-                <option>1950</option>
-                <option>2017</option>
+                <option value="0">年</option>
+                <option value="1950">1950</option>
+                <option value="2017">2017</option>
               </select>
               <select name="month" id="month">
-                <option>月</option>
-                <option>01</option>
-                <option>12</option>
+                <option value="0">月</option>
+                <option value="1">01</option>
+                <option value="12">12</option>
               </select>
               <select name="day" id="day">
-                <option>日</option>
-                <option>01</option>
-                <option>31</option>
+                <option value="0">日</option>
+                <option value="1">01</option>
+                <option value="31">31</option>
               </select>
               <p class="font_color_Red" name="birthday_error" id="birthday_error"></p>
             </li>
@@ -206,16 +206,16 @@
             <li class="address_wrap m-t-10 m-b-10">
               <h4>地址</h4>
               <select name="state_id" id="state_id">
-                <option>--請選擇縣市--</option>
-                <option>基隆市</option>
-                <option>台北市</option>
-                <option>新北市</option>
+                <option value="0">--請選擇縣市--</option>
+                <option value="1">基隆市</option>
+                <option value="2">台北市</option>
+                <option value="3">新北市</option>
               </select>
               <select name="city_id" id="city_id">
-                <option>--請選擇區域--</option>
-                <option>100-中正區</option>
-                <option>103-大同區</option>
-                <option>104-中山區</option>
+                <option value="0">--請選擇區域--</option>
+                <option value="8">100-中正區</option>
+                <option value="9">103-大同區</option>
+                <option value="10">104-中山區</option>
               </select>
               <input type="text" name="address" id="address">
               <p class="font_color_Red" name="address_error" id="address_error"></p>

@@ -1,3 +1,4 @@
+gender = 2;
 $(function(){
   $.ajaxSetup({ cache: true });
   $.getScript('//connect.facebook.net/en_US/sdk.js', function(){

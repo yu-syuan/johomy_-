@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>NEWART- 查詢訂單</title>
+<title>NEWART-紅利兌換說明</title>
 <link rel="stylesheet" type="text/css" href="css/eric_meyer_reset.min.css" />
 <link rel="stylesheet" type="text/css" href="css/Normalize_v1.0.min.css" />
 <!-- <link rel="stylesheet" type="text/css" href="css/jquery_ui.css" /> -->
@@ -22,10 +22,9 @@
 <link rel="stylesheet" type="text/css" href="css/member_style_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/member_color_v2.0.css" />
 <script type="text/javascript" src="js/header_v1.js"></script>
-<script type="text/javascript" src="js/order_search_v1.js"></script>
 
 </head>
-<body class="background_white">
+<body>
   <section class="main_wrap Border">
     <!-- gotop icon 共用 -->
     <div class="gotop_icon Border">
@@ -67,8 +66,8 @@
           <div class="clear"></div>
         </div>
       </div>
-      <!-- 會員專區 member header -->
-      <div class="member_header_wrap"><!-- 與紅利館做切換 -->
+      <!-- 會員專區 member header (與紅利館做切換) -->
+      <div class="member_header_wrap">
         <div class="inner_box95 mg-c">
           <div class="float-l">
             <span class="member_icon">
@@ -80,8 +79,8 @@
           <p class="clear"></p>
         </div>
       </div>
-      <!-- 紅利館 bonus header -->
-      <!-- <div class="bonus_header_wrap bonus_header_color">與會員專區做切換
+      <!-- 紅利館 bonus header (與會員專區做切換) -->
+      <!-- <div class="bonus_header_wrap bonus_header_color">
         <div class="dividend_wrap">
           <span><img src="images/shipment.png" class="dividend_img"></span>
           <div class="dividend">
@@ -132,23 +131,20 @@
       </article>
       <!-- main content -->
       <article class="content_right">
-        <!-- 訂單查詢 -->
-        <form method="post" id="code_form" class="authentication_Code_wrap">
-          <h4 class="font_color_Black font_size_16 blank30 line_height_30">訂單查詢</h4>
-          <h4 class="m-t-10 m-b-10 line_height_20">
-            您可於完成購物後，系統所發送的簡訊取得訂單查詢編號，如未取得查詢編號請聯絡我們，將有專人為您服務。
-          </h4>
-          <div id="sms_code">
-            <input type="text" name="sms_code" id="tracking_code" placeholder="請輸入訂單查詢編號">
-            <input type="hidden" name="csrf_newart">
-            <p class="font_color_Red" name="tracking_error" id="tracking_error"></p>
+        <!--大標-->
+        <div class="inner_box blank40 member_top_wrap background_gray ta-c Border">
+          <div class="arrow_left_wrap">
+            <a href="#">
+              <img src="images/arrow_left_white.png" class="arrow_left_photo">
+            </a>
           </div>
-          <div>
-            <div class="account_button btn btn-info" id="goSearchOrder">
-              <a href="#">查詢</a>
-            </div>
-          </div>
-        </form>
+          <span class="font_color_White font_size_16 line_height_40">紅利兌換說明</span>
+        </div>
+        <!-- 紅利兌換說明 -->
+        <div>
+          <img src="images/bonus_v2_01.jpg">
+          <a href="#"><img src="images/bonus_v2_02.jpg"></a>
+        </div>
         <div class="copyright">
           <p>秒創超網訂購專線</p>
           <p>(02)8228-0580</p>
