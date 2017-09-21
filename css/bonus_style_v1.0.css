@@ -1,26 +1,16 @@
 @charset "UTF-8";
 
 /*----------兌換頁 (bonus_exchange.html)----------*/
-
-.prod_delete_button{
+.btn{
+	padding: 0;
+}
+.btn-danger{
 	border: 0;
-	background: 0;
-	outline: 0;
 }
-/*-----兌換紅利計算-----*/
-.bonus_calculation_wrap li{
-	font-size: 16px;
-}
-/*-----付款方式-----*/
-.payment_method_wrap h4,label{
-	font-size: 16px;
-}
-
-/*----------兌換確認頁及感謝頁 (bonus_thx.html)----------*/
-
+/*-----步驟圖-----*/
 .step_wrap_style{
 	font-size: 18px;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	line-height: 36px;
 	border-radius: 10px;
 	border: 2px solid;
@@ -28,7 +18,52 @@
 .step_arrow{
 	border-style: solid;
 }
+/*----頁面 input 設定-----*/
+.payment_method_wrap input + label,
+.buyer_wrap input,
+.receive_wrap input,
+.family_wrap input,
+.invoice_wrap input,
+select option,
+select{
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+	transition: 0.35s ease-in-out;
+	-webkit-transition: 0.35s ease-in-out;
+	-moz-transition: 0.35s ease-in-out;
+	-o-transition: 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+.calculation_wrap li,
+.payment_method_wrap li,
+.buyer_wrap li,
+.receive_wrap li,
+.family_wrap li,
+.invoice_wrap li{
+	font-size: 16px;
+}
+.buyer_wrap h4,
+.receive_wrap h4,
+.family_wrap h4,
+.invoice_wrap h4{
+	/*font-weight: bold;*/
+	padding-bottom: 5px;
+}
+/*-----全家門市資訊-----*/
+.family_button{
+	border: 0;
+}
+.family_button a{
+	font-size: 16px;
+	line-height: 40px;
+}
 
+/*----------兌換確認頁及感謝頁 (bonus_thx.html)----------*/
+
+/*-----訂單狀態-----*/
 .order_status_style{
 	border-radius: 50%; /* Opera 10.50 and later (CSS3 standard) */
 	-moz-border-radius: 50%; /* Firefox */
@@ -38,4 +73,8 @@
 .order_status_style span{
 	line-height: 50px;
 	font-weight: bold;
+}
+
+.bonus_thx_button_wrap button{
+	padding: 10px;
 }

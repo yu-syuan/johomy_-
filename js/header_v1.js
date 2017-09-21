@@ -81,6 +81,7 @@ $(function(){
     $(".search_wrap").hide();
     $(".tab_contents article").hide();
     $($(this).attr("href")).show();
+    $('html,body').animate({scrollTop:$($(this).attr("href")).offset().top},800);
     $(".controls a").removeClass("active");
     $(this).addClass("active");
     return false;

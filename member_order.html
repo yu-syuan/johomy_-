@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>NEWART- 訂單紀錄</title>
+<title>NEWART-訂單紀錄</title>
 <link rel="stylesheet" type="text/css" href="css/eric_meyer_reset.min.css" />
 <link rel="stylesheet" type="text/css" href="css/Normalize_v1.0.min.css" />
 <!-- <link rel="stylesheet" type="text/css" href="css/jquery_ui.css" /> -->
@@ -18,13 +18,10 @@
 <link rel="stylesheet" type="text/css" href="css/web_base_style_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/web_base_color_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/reset_and_fast.css"><!-- bootstrap清除+fast便利包 -->
-<link rel="stylesheet" type="text/css" href="css/member_struct_v2.0.css" />
-<link rel="stylesheet" type="text/css" href="css/member_style_v2.0.css" />
-<link rel="stylesheet" type="text/css" href="css/member_color_v2.0.css" />
 <script type="text/javascript" src="js/header_v1.js"></script>
 
 </head>
-<body class="background_white">
+<body>
   <section class="main_wrap Border">
     <!-- gotop icon 共用 -->
     <div class="gotop_icon Border">
@@ -66,17 +63,17 @@
           <div class="clear"></div>
         </div>
       </div>
-      <!-- 會員專區 member header -->
-      <!-- <div class="member_header_wrap">與紅利館做切換
+      <!-- 會員專區 member header (與紅利館做切換)-->
+      <!-- <div class="member_header_wrap">
         <div class="inner_box95 mg-c">
           <div class="float-l">
-            <span class="member_icon">
+            <div class="member_icon float-l m-t-10">
               <img src="images/menu_icon_member.png"/>
-            </span>
-            <span>0912345678</span>
+            </div>
+            <div class="float-l">0912345678</div>
           </div>
           <span class="logout_btn float-r"><a href="#">登出</a></span>
-          <p class="clear"></p>
+          <div class="clear"></div>
         </div>
       </div> -->
       <!-- 紅利館 bonus header -->
@@ -95,7 +92,7 @@
     <div class="blank60"></div><!-- 官網header用 -->
     <!-- <div class="blank50"></div>會員專區與紅利館共用 -->
 
-    <section class="content_wrap">
+    <section class="content_wrap background_white">
       <!-- hamburger content -->
       <article class="content_left Border">
         <div class="hamburger_list_wrap Border">
@@ -132,13 +129,15 @@
       <!-- main content -->
       <article class="content_right">
         <!--大標-->
-        <div class="inner_box blank40 member_top_wrap background_gray ta-c Border">
-          <div class="arrow_left_wrap">
-            <a href="#">
-              <img src="images/arrow_left_white.png" class="arrow_left_photo">
-            </a>
-          </div>
-          <span class="font_color_White font_size_16 line_height_40">訂單紀錄</span>
+        <div class="inner_box Border">
+          <div class="member_header_wrap p-l-5">
+            <div class="arrow_left_wrap m-t-5">
+              <a href="#">
+                <img src="images/arrow_left_white.png" class="arrow_left_photo">
+              </a>
+            </div>
+            <span>訂單紀錄</span>
+          </div><!-- max words 15(繁體中文) -->
         </div>
         <div class="block_type_wrap"><!--橫向商品列表 Wrap Start-->
           <!-- 尚無訂單資料 -->
@@ -173,7 +172,7 @@
                 </li>
                 <!-- 訂單狀態 -->
                 <li class="order_status_wrap">
-                  <div class="order_status_style">
+                  <div class="order_status_style ta-c">
                     <span class="basic_font_color">已付款</span><!-- 訂單狀態分為未付款/已付款/已完成/已取消 -->
                   </div>
                   <li class="clear"></li>
@@ -201,7 +200,7 @@
                 </li>
                 <!-- 訂單狀態 -->
                 <li class="order_status_wrap">
-                  <div class="order_status_style">
+                  <div class="order_status_style ta-c">
                     <span class="basic_font_color">已完成</span><!-- 訂單狀態分為未付款/已付款/已完成/已取消 max words 3(繁體中文)-->
                   </div>
                   <li class="clear"></li>
@@ -210,9 +209,11 @@
             </li>
           </ul>
         </div><!--橫向商品列表 Wrap End-->
+      </article>
+      <article>
         <div class="copyright">
-          <p>秒創超網訂購專線</p>
-          <p>(02)8228-0580</p>
+        <p>秒創超網訂購專線</p>
+        <p>(02)8228-0580</p>
         </div>
       </article>
     </section>

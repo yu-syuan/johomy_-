@@ -483,3 +483,38 @@ a, button, .btn:focus, .btn:active{
 	}
 }
 /*Type style End*/
+
+/*-----快速共用(style)-----*/
+.border_radius_5{ 
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */ 
+}
+.border_radius_tlr_5{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.border_solid{ border: 1px solid; }
+.border_b_dashed{ border-bottom: 1px dashed; }
+.font_size_14{ font-size: 14px; }
+.font_size_16{ font-size: 16px; }
+.font_size_18{ font-size: 18px; }
+.font_size_20{ font-size: 20px; }
+.line_height_20{ line-height: 20px; }
+.line_height_30{ line-height: 30px; }
+.line_height_40{ line-height: 40px; }
+.line_height_50{ line-height: 50px; }
+
+/*-----快速共用(color)-----*/
+.background_white{background: white;}
+.background_gray{background: #B3B3B3;}
+.background_Orange{background: #F78C00;}
+.border_b_dashed{ border-color: #b3b3b3; }
+.border_gray{ border-color: #ddd; }
+.border_Orange{ border-color: #F78C00; }
+.font_weight_bold{ font-weight: bold; }
+.font_color_Black{ color: #000; }
+.font_color_White{ color: #fff; }
+.font_color_Red{ color: red; }
+.font_color_Darkgray{ color: #666; }
+.font_color_Orange{ color: #F78C00; }

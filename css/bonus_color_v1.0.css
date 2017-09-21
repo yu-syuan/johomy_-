@@ -2,9 +2,7 @@
 
 /*----------兌換頁 (bonus_exchange.html)----------*/
 
-
-/*----------兌換確認頁及感謝頁 (bonus_thx.html)----------*/
-
+/*-----步驟圖-----*/
 .step_wrap_style{
 	border-color: #f09290;
 }
@@ -12,6 +10,50 @@
 	border-color: transparent transparent transparent #f09290; 
 }
 
+.checkout_color{
+	background: #999;
+}
+.checkout_border_color{
+	border-color: #999;
+}
+/*----頁面 input 設定-----*/
+.payment_method_wrap input + label,
+.buyer_wrap input,
+.receive_wrap input,
+.family_wrap input,
+.invoice_wrap input,
+select option,
+select{
+	background-color: #f9f9f9;
+	border-color: #b3b3b3;
+	color: #666;
+}
+input:focus {
+	border-color: #f09290;
+	box-shadow: 0 0 5px #f09290;
+}
+select:focus{
+	border-color: #f09290;
+	box-shadow: 0 0 5px #f09290;
+}
+.payment_method_wrap input:checked + label,
+input:checked{
+	background-color: #f09290;
+	border-color: #fff;
+	box-shadow: 0 0 5px #f09290;
+	color: #fff;
+}
+/*-----全家門市資訊-----*/
+.family_button{
+	background: #449d44;
+}
+.family_button a{
+	color: #fff;
+}
+
+/*----------兌換確認頁及感謝頁 (bonus_thx.html)----------*/
+
+/*-----訂單狀態-----*/
 .order_status_style{
 	border-color: #f09290;
 }

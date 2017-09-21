@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>NEWART-兌換清單</title>
+<title>NEWART-兌換頁</title>
 <link rel="stylesheet" type="text/css" href="css/eric_meyer_reset.min.css" />
 <link rel="stylesheet" type="text/css" href="css/Normalize_v1.0.min.css" />
 <!-- <link rel="stylesheet" type="text/css" href="css/jquery_ui.css" /> -->
@@ -22,6 +22,7 @@
 <link rel="stylesheet" type="text/css" href="css/bonus_style_v1.0.css" />
 <link rel="stylesheet" type="text/css" href="css/bonus_color_v1.0.css" />
 <script type="text/javascript" src="js/header_v1.js"></script>
+<script type="text/javascript" src="js/main.min.js"></script> <!-- 紅利館用JS -->
 
 </head>
 <body class="background_white">
@@ -66,21 +67,21 @@
           <div class="clear"></div>
         </div>
       </div>
-      <!-- 會員專區 member header -->
-      <!-- <div class="member_header_wrap">與紅利館做切換
+      <!-- 會員專區 member header (與紅利館做切換)-->
+      <!-- <div class="member_header_wrap">
         <div class="inner_box95 mg-c">
           <div class="float-l">
-            <span class="member_icon">
+            <div class="member_icon float-l m-t-10">
               <img src="images/menu_icon_member.png"/>
-            </span>
-            <span>0912345678</span>
+            </div>
+            <div class="float-l">0912345678</div>
           </div>
           <span class="logout_btn float-r"><a href="#">登出</a></span>
-          <p class="clear"></p>
+          <div class="clear"></div>
         </div>
       </div> -->
-      <!-- 紅利館 bonus header -->
-      <div class="bonus_header_wrap bonus_header_color"><!-- 與會員專區做切換 -->
+      <!-- 紅利館 bonus header(與會員專區做切換) -->
+      <div class="bonus_header_wrap bonus_header_color">
         <div class="dividend_wrap">
           <span><img src="images/shipment.png" class="dividend_img"></span>
           <div class="dividend">
@@ -137,243 +138,350 @@
           <li class="step_arrow"></li>
           <li class="step_wrap_style bonus_basic_font_color">資訊確認</li>
           <li class="step_arrow"></li>
-          <li class="step_wrap_style bonus_basic_font_color">兌換完成</li>
+          <li class="step_wrap_style bonus_basic_font_color">訂購完成</li>
           <li class="clear"></li>
         </ul>
-        <!--兌換商品資訊 Wrap Starticleart-->
-        <article class="block_type_wrap inner_box95 border_radius_5 border_solid bonus_basic_border_color mg-c m-t-10 m-b-10">
+        <!-- 提醒登入會員 -->
+        <article class="block_type_wrap inner_box95 border_radius_5 border_solid checkout_border_color mg-c m-t-10 m-b-10">
           <!--大標-->
           <div class="inner_box Border">
-            <div class="inner_box top_title bonus_basic_color">紅利兌換資訊</div><!-- 320x568顯示中文17位數 -->
+            <div class="inner_box top_title checkout_color">提醒登入會員</div><!-- 320x568顯示中文17位數 -->
+          </div>
+          <ul class="p-t-10 p-b-10 p-l-5 p-r-5">
+            <li>提醒您，登入會員訂購完成，將享有紅利點數回饋！</li>
+            <li><img src="images/xboard_1_9.jpg"></li>
+          </ul>
+        </article>
+        <!--商品資訊 Wrap Starticleart-->
+        <article class="block_type_wrap inner_box95 border_radius_5 border_solid checkout_border_color mg-c m-t-10 m-b-10">
+          <!--大標-->
+          <div class="inner_box Border">
+            <div class="inner_box top_title checkout_color">商品資訊</div><!-- 320x568顯示中文17位數 -->
           </div>
           <!-- 橫向商品列表(for紅利館) -->
           <ul class="row horizontal_product_wrap background_white Border">
             <li class="col-xs-12 horizontal_product_content Border">
-              <!-- 左邊產品圖片區 -->
+              <!-- 左邊商品圖片區 -->
               <div class="horizontal_list_photo Border float-l">
                 <img src="images/prod3.jpg" class="product_photo_img220">
               </div>
-              <!-- 右邊產品資訊區 -->
+              <!-- 右邊商品資訊區 -->
               <div class="Product_content_wrap">
-                <!-- 右邊產品內文 -->
+                <!-- 右邊商品內文 -->
                 <div class="prod_title_wrap">
+                  <!-- 商品名稱(max word 12(繁體中文)) -->
                   <div class="blank20 inner_box overflow_h">
-                    <h4 class="horizontal_product_name">壹貳參肆伍陸柒捌玖拾壹貳</h4><!-- max word 12(繁體中文) -->
+                    <h4 class="horizontal_product_name">紅寶石能量瞬護隔離霜</h4>
                   </div>
+                  <!-- 商品規格(簡易 max word 24(繁體中文)) -->
                   <div class="horizontal_product_description">
-                    <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾壹貳參肆</p><!-- max word 14(繁體中文) -->
+                    <p>紅寶石隔離霜5ml</p>
                   </div>
                 </div>
-                <!-- 右邊產品價格區 -->
+                <!-- 右邊商品價格區 -->
                 <div class="bonus_Quantity_wrap blank110">
-                  <span class="unit_price_text">單價：</span>
-                  <span class="horizontal_price_style price" sn="a" unit_price="100">100</span> <!-- unit_price為單價設定 -->
+                  <!-- <label>售　價：$ 49</label>
+                  <br> -->
+                  <label class="unit_price_text">紅利點：</label>
+                  <span class="horizontal_price_style price" sn="0" unit_price="1">1</span> <!-- unit_price為單價設定 -->
                   <span class="horizontal_price_style">點</span>
-                  <br>                
-                  <span class="Subtotal_tetx">小計：</span>
-                  <span class="horizontal_price_style Subtotal_tetx points" id="point_a">100</span><!-- 單價計算顯示 id="point_要互相對應上層的sn -->
+                  <br> 
+                  <label class="Subtotal_tetx">小　計：</label>
+                  <span class="horizontal_price_style Subtotal_tetx points" id="point_0">1</span><!-- 單價計算顯示 id="point_要互相對應上層的sn -->
                   <span class="horizontal_price_style Subtotal_tetx">點</span>
-                  <!-- <span class="f_size16">數量</span> -->
                   <br>
                   <button type="button" name="cut_back" class="Quantity_wrap_button btn btn-default cut_back">-</button>
                   <input type="text" name="Quantity" value="1" readonly="readonly" class="Quantity_wrap_input Quantity" />
                   <button type="button" name="addition" class="Quantity_wrap_button btn btn-default addition">+</button>
-                  <p class="font_color_Red">★已達數量限制</p><!-- max word 12(繁體中文) -->
+                  <p class="font_color_Red blank20" id="error_Quantity_0"></p><!-- max word 12(繁體中文) -->
+                  <!-- 右邊button區 -->
+                  <!-- <div class="blank30 Border button_wrap">
+                    <button type="button" class="button_style btn btn-danger">立即兌換</button>直接前往兌換清單
+                    <button type="button" class="button_style btn btn-danger">加入清單</button>將兌換商品加入購物車
+                    <a href="#" class="button_style btn btn-danger">官網購買</a>前往商城購買
+                  </div> -->
+                  <!-- delete -->
+                  <button type="button" class="prod_delete_button" sn="1" deliver_id="1">
+                    <img src="images/prod_delete.png">
+                  </button>
                 </div>
-                <!-- delete -->
-                <button type="button" class="prod_delete_button">
-                  <img src="images/prod_delete.png">
-                </button>
               </div>
+              <!-- 預留留白 -->
+              <!-- <div class="Product_content_wrap float-l"></div> -->
             </li>
             <div class="clear"></div>
             <hr>
             <li class="col-xs-12 horizontal_product_content Border">
-              <!-- 左邊產品圖片區 -->
+              <!-- 左邊商品圖片區 -->
               <div class="horizontal_list_photo Border float-l">
                 <img src="images/prod3.jpg" class="product_photo_img220">
               </div>
-              <!-- 右邊產品資訊區 -->
+              <!-- 右邊商品資訊區 -->
               <div class="Product_content_wrap">
-                <!-- 右邊產品內文區 -->
+                <!-- 右邊商品內文區 -->
                 <div class="prod_title_wrap">
+                  <!-- 商品名稱(max word 12(繁體中文)) -->
                   <div class="blank20 inner_box overflow_h">
-                    <h4 class="horizontal_product_name">壹貳參肆伍陸柒捌玖拾壹貳</h4><!-- max word 12(繁體中文) -->
+                    <h4 class="horizontal_product_name">壹貳參肆伍陸柒捌玖拾壹貳</h4>
                   </div>
+                  <!-- 商品規格(簡易 max word 24(繁體中文)) -->
                   <div class="horizontal_product_description">
-                    <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾壹貳參肆</p><!-- max word 14(繁體中文) -->
+                    <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾壹貳參肆</p>
                   </div>
                 </div>
-                <!-- 右邊產品價格區 -->
+                <!-- 右邊商品價格區 -->
                 <div class="bonus_Quantity_wrap blank110">
-                  <span class="unit_price_text">單價：</span>
-                  <span class="horizontal_price_style price" sn="b" unit_price="100">100</span> <!-- unit_price為單價設定 -->
+                  <!-- <label>售　價：</label>
+                  <span>$888</span>
+                  <br> -->
+                  <label class="unit_price_text">紅利點：</label>
+                  <span class="horizontal_price_style price" sn="1" unit_price="100">100</span> <!-- unit_price為單價設定 -->
                   <span class="horizontal_price_style">點</span>
-                  <br>                
-                  <span class="Subtotal_tetx">小計：</span>
-                  <span class="horizontal_price_style Subtotal_tetx points" id="point_b">100</span><!-- 單價計算顯示 id="point_要互相對應上層的sn -->
+                  <br>            
+                  <label class="Subtotal_tetx">小　計：</label>
+                  <span class="horizontal_price_style Subtotal_tetx points" id="point_1">100</span><!-- 單價計算顯示 id="point_要互相對應上層的sn -->
                   <span class="horizontal_price_style Subtotal_tetx">點</span>
-                  <!-- <span class="f_size16">數量</span> -->
                   <br>
                   <button type="button" name="cut_back" class="Quantity_wrap_button btn btn-default cut_back">-</button>
                   <input type="text" name="Quantity" value="1" readonly="readonly" class="Quantity_wrap_input Quantity" />
                   <button type="button" name="addition" class="Quantity_wrap_button btn btn-default addition">+</button>
-                  <p class="font_color_Red">★已達數量限制</p><!-- max word 12(繁體中文) -->
+                  <p class="font_color_Red blank20" id="error_Quantity_1"></p><!-- max word 12(繁體中文) -->
+                  <!-- 右邊button區 -->
+                  <!-- <div class="blank30 Border button_wrap">
+                    <button type="button" class="button_style btn btn-danger">立即兌換</button>直接前往兌換清單
+                    <button type="button" class="button_style btn btn-danger">加入清單</button>將兌換商品加入購物車
+                    <a href="#" class="button_style btn btn-danger">官網購買</a>前往商城購買
+                  </div> -->
+                  <!-- delete -->
+                  <button type="button" class="prod_delete_button" sn="1" deliver_id="1">
+                    <img src="images/prod_delete.png">
+                  </button>
                 </div>
-                <!-- delete -->
-                <button type="button" class="prod_delete_button">
-                  <img src="images/prod_delete.png">
-                </button>
               </div>
+              <!-- 預留留白 -->
+              <!-- <div class="Product_content_wrap float-l"></div> -->
             </li>
             <div class="clear"></div>
             <hr>
           </ul>
-          <!-- 兌換紅利計算 -->
-          <ul class="bonus_calculation_wrap">
+          
+          <!-- 消費計算 -->
+          <ul class="calculation_wrap">
             <li>
               <h1 class="float-l">目前紅利點數</h1>
               <div class="ta-r">
-                <span>8,888</span>
+                <span id="prod_totals">8,888</span>
                 <span>點</span>
               </div>
+              <h1 class="clear"></h1>
             </li>
             <li>
               <h1 class="float-l">兌換總計點數</h1>
               <div class="ta-r">
-                <span>8,888</span>
+                <span id="prod_totals">8,888</span>
                 <span>點</span>
               </div>
+              <h1 class="clear"></h1>
             </li>
             <li>
               <h1 class="float-l">運費</h1>
               <div class="ta-r">
-                <span>$</span>
-                <span>80</span>
+                <span id="shipping_fees">$ 80</span>
               </div>
+              <h1 class="clear"></h1>
             </li>
             <hr>
             <li>
               <div class="float-l">
                 <span>共</span>
-                <span>0</span>
+                <span id="prod_cnt">1</span>
                 <span>件</span>
               </div>
-              <p class="font_color_Red ta-r" name="" id="">紅利點數不足</p>
+              <div class="clear"></div>
             </li>
             <li>
               <h1 class="float-l">剩餘點數</h1>
               <div class="ta-r">
-                <span class="horizontal_price_style">8,888</span>
-                <span class="horizontal_price_style">點</span>
+                <span class="horizontal_price_style" id="totals">$ 8,888</span>
               </div>
             </li>
           </ul>
         </article>
         <!-- 付款方式 -->
-        <article class="block_type_wrap inner_box95 border_radius_5 border_solid bonus_basic_border_color mg-c m-t-10 m-b-10">
-          <!--大標-->
-          <div class="inner_box Border">
-            <div class="inner_box top_title bonus_basic_color">付費方式</div><!-- 320x568顯示中文17位數 -->
-          </div>
-          <div class="payment_method_wrap">
-            <h4>未具3D驗證功能之信用卡，可能導致刷卡失敗，建議使用其它信用卡或採用其它付款方式。</h4>
-            <input type="radio" name="" value="1" id="">
-            <label for="">ATM</label>
-            <br>
-            <input type="radio" name="" value="2" id="">
-            <label for="">信用卡</label>
-            <p class="font_color_Red" name="">123</p>
-          </div>
-        </article>
-        <article class="block_type_wrap inner_box95 border_radius_5 border_solid bonus_basic_border_color mg-c m-t-10 m-b-10">
-          <!--大標-->
-          <div class="inner_box Border">
-            <div class="inner_box top_title bonus_basic_color">收件人資訊</div><!-- 320x568顯示中文17位數 -->
-          </div>
-          <ul>
-            <li class="p-t-10 p-b-10 p-l-5 p-r-5">
-              <input type="checkbox" name="" value="1" id="" class="float-l">
-              <label>同會員資料</label>
-              <p class="font_color_Red" name="">123</p>
-            </li>
-            <li class="p-t-10 p-b-10 p-l-5 p-r-5">
-              <h4>收件人姓名</h4>
-              <input type="text" name="" id="" placeholder="請輸入收件人姓名">
-              <p class="font_color_Red" name="" id="">123</p>
-            </li>
-            <li class="p-t-10 p-b-10 p-l-5 p-r-5">
-              <h4>收件人手機</h4>
-              <input type="text" name="" id="" placeholder="請輸入收件人手機">
-              <p class="font_color_Red" name="" id="">123</p>
-            </li>
-            <li class="p-t-10 p-b-10 p-l-5 p-r-5">
-              <h4>收件地址</h4>
-              <select>
-                <option>--請選擇縣市--</option>
-                <option>基隆市</option>
-                <option>台北市</option>
-                <option>新北市</option>
-              </select>
-              <select>
-                <option>--請選擇區域--</option>
-                <option>100-中正區</option>
-                <option>103-大同區</option>
-                <option>104-中山區</option>
-              </select>
-              <input type="text" name="" id="">
-              <p class="font_color_Red" name="" id="">123</p>
-            </li>
-            <li class="p-t-10 p-b-10 p-l-5 p-r-5">
-              <h4>備註</h4>
-              <input type="text" name="" id="">
-              <p class="font_color_Red" name="" id="">123</p>
-            </li>
-            <li class="p-t-10 p-b-10 p-l-5 p-r-5">
-              <input type="checkbox" name="" value="1" id="" class="float-l">
-              <label>索取三聯式發票</label>
-              <p class="font_color_Red" name="">123</p>
-            </li>
-            <li class="p-t-10 p-b-10 p-l-5 p-r-5">
-              <h4>公司抬頭</h4>
-              <input type="text" name="" id="" placeholder="請輸入公司抬頭">
-              <p class="font_color_Red" name="" id="">123</p>
-            </li>
-            <li class="p-t-10 p-b-10 p-l-5 p-r-5">
-              <h4>統一號碼</h4>
-              <input type="text" name="" id="" placeholder="請輸入統一號碼">
-              <p class="font_color_Red" name="" id="">123</p>
-            </li>
-            <li class="p-t-10 p-b-10 p-l-5 p-r-5">
-              <h4>收件人姓名</h4>
-              <input type="text" name="" id="" placeholder="請輸入收件人姓名">
-              <p class="font_color_Red" name="" id="">123</p>
-            </li>
-            <li class="p-t-10 p-b-10 p-l-5 p-r-5">
-              <h4>發票寄送地址</h4>
-              <select>
-                <option>--請選擇縣市--</option>
-                <option>基隆市</option>
-                <option>台北市</option>
-                <option>新北市</option>
-              </select>
-              <select>
-                <option>--請選擇區域--</option>
-                <option>100-中正區</option>
-                <option>103-大同區</option>
-                <option>104-中山區</option>
-              </select>
-              <input type="text" name="" id="">
-              <p class="font_color_Red" name="" id="">123</p>
-            </li>
-          </ul>
-        </article>
-        <div class="ta-c">
-          <button type="button" style="width: 95%; height: 40px; border-radius: 5px;">下一步</button>
+        <form id="checkout_order_form" method="post" action="">
+          <article class="block_type_wrap inner_box95 border_radius_5 border_solid checkout_border_color mg-c m-t-10 m-b-10">
+            <!--大標-->
+            <div class="inner_box Border">
+              <div class="inner_box top_title checkout_color">付費方式</div><!-- 320x568顯示中文17位數 -->
+            </div>
+            <ul class="payment_method_wrap">
+              <li>
+                <h4>未具3D驗證功能之信用卡，可能導致刷卡失敗，建議使用其它信用卡或採用其它付款方式。</h4>
+              </li>
+              <li>
+                <input type="radio" name="payment" value="2" id="payment_2">
+                <label class="ta-c" for="payment_2">ATM</label>
+              </li>
+              <li>
+                <input type="radio" name="payment" value="1" id="payment_1">
+                <label class="ta-c" for="payment_1">信用卡</label>
+              </li>
+              <!-- <li>
+                <input type="radio" name="payment" value="3" id="payment_3">
+                <label class="ta-c" for="payment_3">全家超商取貨付款</label>
+              </li> -->
+              <li class="blank20">
+                <p class="font_color_Red" name="payment_error"></p>
+              </li>
+            </ul>
+          </article>
+          <!-- <article class="block_type_wrap inner_box95 border_radius_5 border_solid checkout_border_color mg-c m-t-10 m-b-10">
+            大標(320x568顯示中文17位數)
+            <div class="inner_box Border">
+              <div class="inner_box top_title checkout_color">訂購人資訊</div>
+            </div>
+            <ul class="buyer_wrap">
+              <li class="p-t-20 p-l-5 p-r-5">
+                <h4>訂購人姓名</h4>
+                <input type="text" name="buyer_name" id="buyer_name">
+                <p class="font_color_Red blank20" name="error_buyer_name" id="error_buyer_name"></p>
+              </li>
+              <li class="p-t-10 p-l-5 p-r-5">
+                <h4>訂購人手機</h4>
+                <input type="text" name="buyer_phone" id="buyer_phone">
+                <p class="font_color_Red blank20" name="error_buyer_phone" id="error_buyer_phone"></p>
+              </li>
+              <li class="p-t-10 p-b-10 p-l-5 p-r-5">
+                <h4>電子信箱</h4>
+                <input type="text" name="buyer_email" id="buyer_email" placeholder="填寫正確，優惠訊息不漏接^_^">
+                <p class="font_color_Red blank20" name="error_buyer_email" id="error_buyer_email"></p>
+              </li>
+            </ul>
+          </article> -->
+          <article class="block_type_wrap inner_box95 border_radius_5 border_solid checkout_border_color mg-c m-t-10 m-b-10">
+            <!--大標-->
+            <div class="inner_box Border">
+              <div class="inner_box top_title checkout_color">收件人資訊</div><!-- 320x568顯示中文17位數 -->
+            </div>
+            <ul class="receive_wrap">
+              <li class="p-t-10 p-l-5 p-r-5 checkbox_input_wrap">
+                <input type="checkbox" name="the_same" value="1" id="the_same" class="float-l">
+                <label class="font_size_16 p-t-5 p-l-5" for="the_same">同訂購人資訊</label>
+                <div class="clear"></div>
+                <p class="font_color_Red blank20" name="error_the_same"></p>
+              </li>
+              <li class="p-t-10 p-l-5 p-r-5">
+                <h4>收件人姓名</h4>
+                <input type="text" name="receive_name" id="receive_name">
+                <p class="font_color_Red blank20" name="error_receive_name" id="error_receive_name"></p>
+              </li>
+              <li class="p-t-10 p-l-5 p-r-5">
+                <h4>收件人手機</h4>
+                <input type="text" name="receive_phone" id="receive_phone">
+                <p class="font_color_Red blank20" name="error_receive_phone" id="error_receive_phone"></p>
+              </li>
+              <li class="p-t-10 p-l-5 p-r-5">
+                <h4>收件地址</h4>
+                <select name="state_id2" id="state_id2">
+                  <option>--請選擇縣市--</option>
+                  <option>基隆市</option>
+                  <option>台北市</option>
+                  <option>新北市</option>
+                </select>
+                <select name="city_id2" id="city_id2">
+                  <option>--請選擇區域--</option>
+                  <option>100-中正區</option>
+                  <option>103-大同區</option>
+                  <option>104-中山區</option>
+                </select>
+                <input type="text" name="invoice_address" id="invoice_address">
+                <p class="font_color_Red blank20" name="error_invoice_address" id="error_invoice_address"></p>
+              </li>
+              <li class="p-t-10 p-b-10 p-l-5 p-r-5">
+                <h4>備註</h4>
+                <input type="text" name="order_memo" id="order_memo">
+                <p class="font_color_Red blank20" name="error_order_memo" id="error_order_memo"></p>
+              </li>
+              <input type="hidden" name="deliver_method_id" id="deliver_method_id" value="5">
+              <input type="hidden" name="checkout_model" id="checkout_model" value="3">
+            </ul>
+            <hr>
+            <!-- 全家門市資訊 -->
+            <!-- <ul class="family_wrap">
+              <li class="p-t-20 p-b-10 p-l-5 p-r-5">
+                <div class="family_button inner_box blank40 border_radius_5 ta-c btn btn-success">
+                  <img src="images/family_logo.jpg" class="float-l">
+                  <a href="#" id="selectfamilyMap">選擇全家門市</a>
+                </div>
+                <div class="m-t-10 m-l-10" id="store_map_info">
+                  <span>全家門市：</span>
+                  <span>全家門市名稱</span>
+                  <br>
+                  <span>門市地址：</span>
+                  <span>全家門市地址</span>
+                </div>
+              </li>
+              <li class="p-t-10 p-b-10 p-l-5 p-r-5">
+                <h4>備註</h4>
+                <input type="text" name="order_memo" id="order_memo">
+                <p class="font_color_Red blank20" name="error_order_memo" id="error_order_memo"></p>
+              </li>
+              <input type="hidden" name="info_711" id="info_711">
+            </ul>
+            <hr> -->
+            <ul class="invoice_wrap">
+              <li class="p-t-10 p-l-5 p-r-5 checkbox_input_wrap">
+                <input type="checkbox" name="invoice_need" value="1" id="get_einvoice" class="float-l">
+                <label class="font_size_16 p-t-5 p-l-5" for="get_einvoice">索取三聯式發票</label>
+                <div class="clear"></div>
+                <p class="font_color_Red blank20" name="error_invoice_need"></p>
+              </li>
+              <li class="p-t-10 p-l-5 p-r-5">
+                <h4>公司抬頭</h4>
+                <input type="text" name="company_title" id="company_title">
+                <p class="font_color_Red blank20" name="error_company_title" id="error_company_title"></p>
+              </li>
+              <li class="p-t-10 p-l-5 p-r-5">
+                <h4>統一號碼</h4>
+                <input type="text" name="company_no" id="company_no">
+                <p class="font_color_Red blank20" name="error_company_no" id="error_company_no"></p>
+              </li>
+              <li class="p-t-10 p-l-5 p-r-5">
+                <h4>收件人姓名</h4>
+                <input type="text" name="company_receive_name" id="company_receive_name">
+                <p class="font_color_Red blank20" name="error_company_receive_name" id="error_company_receive_name"></p>
+              </li>
+              <li class="p-t-10 p-b-10 p-l-5 p-r-5">
+                <h4>發票寄送地址</h4>
+                <select name="state_id2" id="state_id2">
+                  <option>--請選擇縣市--</option>
+                  <option>基隆市</option>
+                  <option>台北市</option>
+                  <option>新北市</option>
+                </select>
+                <select name="city_id2" id="city_id2">
+                  <option>--請選擇區域--</option>
+                  <option>100-中正區</option>
+                  <option>103-大同區</option>
+                  <option>104-中山區</option>
+                </select>
+                <input type="text" name="invoice_address" id="invoice_address">
+                <p class="font_color_Red blank20" name="error_invoice_address" id="error_invoice_address"></p>
+              </li>
+            </ul>
+            <input type="hidden" name="csrf_newart">
+          </article>
+        </form>
+        <div class="next_step_button_wrap ta-c">
+          <a href="#" class="inner_box95 blank40 border_radius_5 font_color_White font_size_16 bonus_basic_color line_height_40 btn btn-danger">
+            下一步
+          </a>
         </div>
+      </article>
+      <article>
         <div class="copyright">
-          <p>秒創超網訂購專線</p>
-          <p>(02)8228-0580</p>
+        <p>秒創超網訂購專線</p>
+        <p>(02)8228-0580</p>
         </div>
       </article>
     </section>

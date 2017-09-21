@@ -18,9 +18,6 @@
 <link rel="stylesheet" type="text/css" href="css/web_base_style_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/web_base_color_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/reset_and_fast.css"><!-- bootstrap清除+fast便利包 -->
-<link rel="stylesheet" type="text/css" href="css/prod_struct_v1.0.css" />
-<link rel="stylesheet" type="text/css" href="css/prod_style_v1.0.css" />
-<link rel="stylesheet" type="text/css" href="css/prod_color_v1.0.css" />
 <script type="text/javascript" src="js/header_v1.js"></script>
 <script type="text/javascript" src="js/prod_content_v1.js"></script>
 
@@ -38,7 +35,7 @@
       <!-- hamburger icon -->
       <div class="hamburger_icon Border">
         <span class="icon_bar"></span>
-        <span class="icon_bar"></span>       
+        <span class="icon_bar"></span>
         <span class="icon_bar"></span>
       </div>
       <!-- header 網站名稱 -->
@@ -67,17 +64,17 @@
           <div class="clear"></div>
         </div>
       </div>
-      <!-- 會員專區 member header -->
-      <div class="member_header_wrap"><!-- 與紅利館做切換 -->
+      <!-- 會員專區 member header (與紅利館做切換)-->
+      <div class="member_header_wrap">
         <div class="inner_box95 mg-c">
           <div class="float-l">
-            <span class="member_icon">
+            <div class="member_icon float-l m-t-10">
               <img src="images/menu_icon_member.png"/>
-            </span>
-            <span>0912345678</span>
+            </div>
+            <div class="float-l">0912345678</div>
           </div>
           <span class="logout_btn float-r"><a href="#">登出</a></span>
-          <p class="clear"></p>
+          <div class="clear"></div>
         </div>
       </div>
       <!-- 紅利館 bonus header -->
@@ -128,7 +125,7 @@
             <p>秒創超網訂購專線</p>
             <p>(02)8228-0580</p>
           </div>
-        </menuitem>
+        </div>
       </article>
       <!-- main content -->
       <article class="content_right">
@@ -141,15 +138,15 @@
             <!-- 商品介紹區 -->
             <dl class="inner_box m-t-10 m-b-15 p-l-5 p-r-5">
               <!-- 商品價格區 -->
-              <div class="p-b-10">
+              <dt class="p-b-10">
                 <span class="odd_price_style font_size_18">$</span>
                 <span class="odd_price_style font_size_18 m-r-5 price" sn="a" unit_price="1680">1,680</span><!-- max words 5位數 -->
                 <span class="Small Original_price m-r-5">$3,000</span> <!-- max words 5位數 -->
-              </div>
-              <!-- 商品名稱(max word 19(繁體中文)) -->
-              <dt class="inner_box blank20 overflow_h m-b-10">
-                <h4 class="line_height_20 font_size_16 font_color_Black">全台首創降溫護膚香水✈買就抽 沖繩來回機票✈</h4>
               </dt>
+              <!-- 商品名稱(max word 19(繁體中文)) -->
+              <dd class="inner_box m-b-10">
+                <h4 class="blank20 overflow_h line_height_20 font_size_16 font_color_Black">全台首創降溫護膚香水✈買就抽 沖繩來回機票✈</h4>
+              </dd>
               <!-- 商品規格(簡易 max word 44(繁體中文)) -->
               <dd class="blank40 overflow_h font_size_16 line_height_20">
                 3度C冰鎮舒緩青春露禮盒_6支裝
@@ -160,28 +157,23 @@
           <!-- 商品規格(詳細) -->
           <div class="product_introduction_wrap Border">
             <dl class="background_white p-t-20 p-b-20 p-l-5 p-r-5">
-              <h2 class="font_color_Black font_size_16 m-b-10">商品規格</h2>
-              <span>
-                <dd class="m-l-10 m-r-10">3度C冰鎮青春露禮盒(小蒼蘭)</dd>
-              </span>
+              <dt class="font_color_Black font_size_16 m-b-10">商品規格</dt>
+              <dd class="m-l-10 m-r-10">3度C冰鎮青春露禮盒(小蒼蘭)</dd>
             </dl>
           </div>
           <hr>
           <!-- 運送方式 -->
           <div class="product_introduction_wrap Border">
             <dl class="background_white p-t-20 p-b-20 p-l-5 p-r-5">
-              <h2 class="font_color_Black font_size_16 m-b-10">運送方式</h2>
-              <span>
-                <dd class="m-l-10 m-r-10">宅配 / 全家超商取貨</dd>
-                <!-- <dd class="m-l-10 m-r-10">全家超商取貨</dd> -->
-              </span>
+              <dt class="font_color_Black font_size_16 m-b-10">運送方式</dt>
+              <dd class="m-l-10 m-r-10">宅配 / 全家超商取貨</dd>
             </dl>
           </div>
           <hr>
           <!-- 商品特色說明 -->
           <div class="product_introduction_wrap Border">
             <dl class="product_introduction_photo_wrap background_white p-t-20 p-b-20 p-l-5 p-r-5">
-              <h2 class="font_color_Black font_size_16 m-b-10">商品特色說明</h2>
+              <dt class="font_color_Black font_size_16 m-b-10">商品特色說明</dt>
               <dd class="m-l-10 m-r-10">商品特色說明內文放置處</dd>
             </dl>
           </div>
@@ -198,21 +190,7 @@
           <section class="tab_contents">
             <!-- 商品介紹內容 -->
             <article id="table_1" class="max_width_600 mg-c background_white p-t-10 p-b-10 p-l-5 p-r-5 ta-c">
-              <!-- 商品介紹影片 -->
-              <div class="embed-container">
-                <iframe src="https://www.youtube.com/embed/h0CyPGfdiAc" frameborder="1"></iframe>
-              </div>
-              <!-- 商品介紹圖片 -->
-              <div class="product_introduction_wrap Border">
-                <img src="images/intro1.jpg" class="activity_img">
-                <img src="images/intro2.jpg" class="activity_img">
-                <img src="images/intro3.jpg" class="activity_img">
-                <img src="images/intro4.jpg" class="activity_img">
-              </div>
-              <!-- 商品介紹文字 -->
-              <div class="m-t-10 m-b-10">
-                商品介紹文字內容放置處
-              </div>
+              商品介紹內容
             </article>
             <!-- 熱賣商品內容 -->
             <article id="table_2">
@@ -230,105 +208,6 @@
                       <!-- 商品名稱(max word 10(繁體中文)) -->
                       <div class="blank20 inner_box overflow_h">
                         <h4 class="">壹貳參肆伍陸柒捌玖拾</h4>
-                      </div>
-                      <!-- 商品規格(簡易 max word 20(繁體中文)) -->
-                      <div class="blank40">
-                        <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾</p>
-                      </div>
-                    </div>
-                    <!-- 商品價格區 -->
-                    <div class="even_Quantity_wrap">
-                      <!-- <span class="unit_price_text">單價：</span> -->
-                      <span class="even_price_style">$</span>
-                      <span class="even_price_style price">200</span>
-                      <span class="MICRO Original_price">$400</span>
-                    </div>
-                    <!-- 加入購物車連結 -->
-                    <a href="#" class="ta-r">
-                      <img src="images/shopping.png" class="shopping_img">
-                    </a>
-                  </div>
-                  <hr>
-                </li>
-                <li class="col-xs-6 col-sm-3 even_product_content_wrap Border">
-                  <div class="even_product_content Border">
-                    <!-- 商品圖片區 -->
-                    <div class="Border even_photo_wrap">
-                      <a href="#">
-                        <img src="images/prod3.jpg" class="product_photo_img220">
-                      </a>
-                    </div>
-                    <!-- 商品內文區 -->
-                    <div class="prod_title_wrap m-t-5 m-b-5">
-                      <!-- 商品名稱(max word 10(繁體中文)) -->
-                      <div class="blank20 inner_box overflow_h">
-                        <h4 class="line_height_20">壹貳參肆伍陸柒捌玖拾</h4>
-                      </div>
-                      <!-- 商品規格(簡易 max word 20(繁體中文)) -->
-                      <div class="blank40">
-                        <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾</p>
-                      </div>
-                    </div>
-                    <!-- 商品價格區 -->
-                    <div class="even_Quantity_wrap">
-                      <!-- <span class="unit_price_text">單價：</span> -->
-                      <span class="even_price_style">$</span>
-                      <span class="even_price_style price">200</span>
-                      <span class="MICRO Original_price">$400</span>
-                    </div>
-                    <!-- 加入購物車連結 -->
-                    <a href="#" class="ta-r">
-                      <img src="images/shopping.png" class="shopping_img">
-                    </a>
-                  </div>
-                  <hr>
-                </li>
-                <li class="col-xs-6 col-sm-3 even_product_content_wrap Border">
-                  <div class="even_product_content Border">
-                    <!-- 商品圖片區 -->
-                    <div class="Border even_photo_wrap">
-                      <a href="#">
-                        <img src="images/prod3.jpg" class="product_photo_img220">
-                      </a>
-                    </div>
-                    <!-- 商品內文區 -->
-                    <div class="prod_title_wrap m-t-5 m-b-5">
-                      <!-- 商品名稱(max word 10(繁體中文)) -->
-                      <div class="blank20 inner_box overflow_h">
-                        <h4 class="line_height_20">壹貳參肆伍陸柒捌玖拾</h4>
-                      </div>
-                      <!-- 商品規格(簡易 max word 20(繁體中文)) -->
-                      <div class="blank40">
-                        <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾</p>
-                      </div>
-                    </div>
-                    <!-- 商品價格區 -->
-                    <div class="even_Quantity_wrap">
-                      <!-- <span class="unit_price_text">單價：</span> -->
-                      <span class="even_price_style">$</span>
-                      <span class="even_price_style price">200</span>
-                      <span class="MICRO Original_price">$400</span>
-                    </div>
-                    <!-- 加入購物車連結 -->
-                    <a href="#" class="ta-r">
-                      <img src="images/shopping.png" class="shopping_img">
-                    </a>
-                  </div>
-                  <hr>
-                </li>
-                <li class="col-xs-6 col-sm-3 even_product_content_wrap Border">
-                  <div class="even_product_content Border">
-                    <!-- 商品圖片區 -->
-                    <div class="Border even_photo_wrap">
-                      <a href="#">
-                        <img src="images/prod3.jpg" class="product_photo_img220">
-                      </a>
-                    </div>
-                    <!-- 商品內文區 -->
-                    <div class="prod_title_wrap m-t-5 m-b-5">
-                      <!-- 商品名稱(max word 10(繁體中文)) -->
-                      <div class="blank20 inner_box overflow_h">
-                        <h4 class="line_height_20">壹貳參肆伍陸柒捌玖拾</h4>
                       </div>
                       <!-- 商品規格(簡易 max word 20(繁體中文)) -->
                       <div class="blank40">
@@ -378,7 +257,8 @@
             </article>
           </section>
         </div>
-        <div class="clear"></div>
+      </article>
+      <article>
         <div class="copyright">
           <p>秒創超網訂購專線</p>
           <p>(02)8228-0580</p>

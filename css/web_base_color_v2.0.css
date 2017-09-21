@@ -1,9 +1,7 @@
-/*-------------------Web_base_color 整理--------------------*/
-
 @charset "utf-8";
 
 body{
-	background:#E6E6E6;
+	/*background:#E6E6E6;*/
 }
 
 /*-----官網整體色系-----*/
@@ -12,6 +10,7 @@ hr{
 }
 .basic_color{
 	background: #9bd5e0;
+	box-shadow: inset 1px 3px 10px rgba(255,255,255,.5);
 }
 .basic_font_color{
 	color: #9bd5e0;
@@ -21,14 +20,7 @@ hr{
 }
 .active{
 	background-color: #9bd5e0;
-}
-input:focus {
-	border-color: #9bd5e0;
-	box-shadow: 0 0 5px #9bd5e0;
-}
-select:focus{
-	border-color: #9bd5e0;
-	box-shadow: 0 0 5px #9bd5e0;
+	box-shadow: inset 1px 3px 10px rgba(255,255,255,.5);
 }
 /*-----大標設定-----*/
 .top_title{
@@ -53,6 +45,7 @@ select:focus{
 .search_btn {
 	background:#666;
 	color:#fff;
+	box-shadow: inset 1px 2px 10px rgba(255,255,255,.2);
 }
 /*-----hamburger content-----*/
 .hamburger_list_wrap > ul > li {
@@ -82,13 +75,82 @@ select:focus{
 }
 .logout_btn{
 	background:#333;
+	box-shadow: inset 1px 5px 10px rgba(255,255,255,.2);
 }
 .logout_btn a{
 	color:#fff;
 }
+/*---會員專區 member function (for member.html)---*/
+.member_button{
+	border-color: #b3b3b3;
+	background: #fff;
+	box-shadow: inset 1px -5px 10px rgba(0,0,0,.1);
+}
+.member_button a{
+	color: #666;
+}
+.bonus_font_Red a{
+	color: red;
+}
+/*member頁籤*/
+.member_controls li{
+	box-shadow: 1px 1px 10px #999;
+}
+/*---會員基本資料 (for member_profile.html)---*/
+/*member form*/
+.account_button{
+	background: #9bd5e0;
+	box-shadow: inset 1px 3px 10px rgba(255,255,255,.5);
+}
+.account_button a{
+	color: #fff;
+}
+.edm_enabled_wrap label{
+	color: #666;
+}
+/*member button*/
+.FB_button{
+	background: #3b5998;
+	box-shadow: inset 2px 5px 10px rgba(255,255,255,.3);
+}
+.FB_button a{
+	color: #fff;
+}
+.confirm_button{
+	background: #9bd5e0;
+	box-shadow: inset 1px 3px 10px rgba(255,255,255,.5);
+}
+.confirm_button a{
+	color: #fff;
+}
+/*---會員修改密碼 (for member_pwd.html)---*/
+.new_password_wrap dd{
+	color: #666;
+}
+/*---會員訂單紀錄 (for member_order.html)---*/
+/*尚無訂單資料*/
+.no_order_wrap p{
+	color: #2caa72;
+}
+/*訂單資料*/
+.order_content_wrap{
+	border-color: #b3b3b3;
+}
+.order_top_wrap{
+	border-color: #ddd;
+}
+/*訂單狀態*/
+.order_status_style{
+	border-color: #9bd5e0;
+}
+/*---會員註冊 (for member_register.html)---*/
+.accept_wrap label{
+	color: #666;
+}
 /*-----紅利館 整體色系-----*/
 .bonus_basic_color{
 	background: #f09290;
+	box-shadow: inset 1px 5px 10px rgba(255,255,255,.2);
 }
 .bonus_basic_font_color{
 	color: #f09290;
@@ -116,6 +178,7 @@ select:focus{
 .button_style{
 	background: #f09290;
 	color: #fff;
+	box-shadow: inset 1px 5px 10px rgba(255,255,255,.3);
 }
 /*-----雙品商品列表-----*/
 .even_price_style{
@@ -128,14 +191,69 @@ select:focus{
 .odd_price_style{
 	color: #f78c00;
 }
-/*-----快速共用-----*/
-.background_white{background: white;}
-.background_gray{background: #B3B3B3;}
-/*.Border_b{border-bottom: 1px solid #ddd;}*/
-.border_b_dashed{ border-color: #b3b3b3; }
-.font_weight_bold{ font-weight: bold; }
-.font_color_Black{ color: #000; }
-.font_color_White{ color: #fff; }
-.font_color_Red{ color: red; }
-.font_color_Darkgray{ color: #666; }
-.font_color_Orange{ color: #F78C00; }
+
+/*---商品介紹頁面(for prod.html)---*/
+/*商品介紹頁*/
+.product_introduction_wrap{
+	background-color: #fff;
+}
+/*商品頁籤*/
+.controls li{
+	background-color: #b3b3b3;
+	border-color: #ddd;
+}
+.controls li a{
+	color: #fff;
+}
+/*google_map*/
+.google_map_wrap{
+	border-color: #ddd;
+}
+/*商品介紹頁 footer*/
+.Border_r{
+	border-color: #b3b3b3;
+}
+.menu_icon_buy a{
+	color: #fff;
+}
+
+/*---加入購物車頁面(for shopping_cart.html)---*/
+.shopping_button_wrap a{
+	color: #fff;
+}
+
+/*---頁面 input 設定---*/
+.payment_method_wrap input + label,
+.buyer_wrap input,
+.receive_wrap input,
+.family_wrap input,
+.invoice_wrap input,
+.name_wrap input,
+.gender_wrap input + label,
+.email_wrap input,
+.address_wrap input,
+.authentication_Code_wrap input,
+.password_form_wrap input,
+.merber_register_form_wrap input,
+select option,
+select{
+	background-color: #f9f9f9;
+	border-color: #b3b3b3;
+	color: #666;
+}
+input:focus {
+	border-color: #9bd5e0;
+	box-shadow: 0 0 5px #9bd5e0;
+}
+select:focus{
+	border-color: #9bd5e0;
+	box-shadow: 0 0 5px #9bd5e0;
+}
+.gender_wrap input:checked + label,
+.payment_method_wrap input:checked + label,
+input:checked{
+	background-color: #9bd5e0;
+	border-color: #fff;
+	box-shadow: 0 0 5px #9bd5e0;
+	color: #fff;
+}

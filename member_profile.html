@@ -18,14 +18,11 @@
 <link rel="stylesheet" type="text/css" href="css/web_base_style_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/web_base_color_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/reset_and_fast.css"><!-- bootstrap清除+fast便利包 -->
-<link rel="stylesheet" type="text/css" href="css/member_struct_v2.0.css" />
-<link rel="stylesheet" type="text/css" href="css/member_style_v2.0.css" />
-<link rel="stylesheet" type="text/css" href="css/member_color_v2.0.css" />
 <script type="text/javascript" src="js/header_v1.js"></script>
 <script type="text/javascript" src="js/member_profile_v1.0.js"></script>
 
 </head>
-<body class="background_white">
+<body>
   <section class="main_wrap Border">
     <!-- gotop icon 共用 -->
     <div class="gotop_icon Border">
@@ -67,17 +64,17 @@
           <div class="clear"></div>
         </div>
       </div>
-      <!-- 會員專區 member header -->
-      <!-- <div class="member_header_wrap">與紅利館做切換
+      <!-- 會員專區 member header (與紅利館做切換)-->
+      <!-- <div class="member_header_wrap">
         <div class="inner_box95 mg-c">
           <div class="float-l">
-            <span class="member_icon">
+            <div class="member_icon float-l m-t-10">
               <img src="images/menu_icon_member.png"/>
-            </span>
-            <span>0912345678</span>
+            </div>
+            <div class="float-l">0912345678</div>
           </div>
           <span class="logout_btn float-r"><a href="#">登出</a></span>
-          <p class="clear"></p>
+          <div class="clear"></div>
         </div>
       </div> -->
       <!-- 紅利館 bonus header -->
@@ -96,7 +93,7 @@
     <div class="blank60"></div><!-- 官網header用 -->
     <!-- <div class="blank50"></div>會員專區與紅利館共用 -->
 
-    <section class="content_wrap">
+    <section class="content_wrap background_white">
       <!-- hamburger content -->
       <article class="content_left Border">
         <div class="hamburger_list_wrap Border">
@@ -135,7 +132,7 @@
         <!--大標-->
         <div class="inner_box Border">
           <div class="member_header_wrap p-l-5">
-            <div class="arrow_left_wrap">
+            <div class="arrow_left_wrap m-t-5">
               <a href="#">
                 <img src="images/arrow_left_white.png" class="arrow_left_photo">
               </a>
@@ -146,12 +143,12 @@
 
         <form class="merber_form_wrap" method="post" id="member_profile">
           <!-- 任務紅利通知 max words 34(繁體中文) -->
-          <div class="m-b-10 overflow_h">
+          <div class="m-b-20 overflow_h">
             <div class="blank40 m-b-10 position_r float-l">
-              <img src="images/gift.png" class="gift_img gift_img_jump_position">
+              <img src="images/gift.png" class="gift_img gift_img_jump_position p-r-5">
             </div>
-            <div class="font_color_Red m-t-10 p-l-30">
-              填寫完會員資料即可領取紅利點喔！
+            <div class="font_color_Red m-t-10 p-l-30 font_size_16">
+              完成手機驗證並填寫會員資料，即可領取紅利點數三點喔！
             </div>
           </div>
           <!-- 會員基本資料 -->
@@ -168,7 +165,7 @@
             <li class="name_wrap m-t-10 m-b-10">
               <h4>姓名</h4>
               <input type="text" name="name" id="name">
-              <p class="font_color_Red" name="name_error" id="name_error"></p>
+              <p class="font_color_Red blank20" name="name_error" id="name_error"></p>
             </li>
             <li class="gender_wrap m-t-10 m-b-10">
               <h4>性別</h4>
@@ -177,7 +174,7 @@
               <input type="radio" name="gender" value="2" id="gender2">
               <label for="gender2">女</label>
               <div class="clear"></div>
-              <p class="font_color_Red" name="gender_error"></p>
+              <p class="font_color_Red blank20" name="gender_error"></p>
             </li>
             <li class="m-t-10 m-b-10">
               <h4>生日 (年/月/日)</h4>
@@ -196,12 +193,12 @@
                 <option value="1">01</option>
                 <option value="31">31</option>
               </select>
-              <p class="font_color_Red" name="birthday_error" id="birthday_error"></p>
+              <p class="font_color_Red blank20" name="birthday_error" id="birthday_error"></p>
             </li>
             <li class="email_wrap m-t-10 m-b-10">
               <h4>電子信箱</h4>
               <input type="text" name="email" id="email">
-              <p class="font_color_Red" name="email_error" id="email_error"></p>
+              <p class="font_color_Red blank20" name="email_error" id="email_error"></p>
             </li>
             <li class="address_wrap m-t-10 m-b-10">
               <h4>地址</h4>
@@ -218,13 +215,13 @@
                 <option value="10">104-中山區</option>
               </select>
               <input type="text" name="address" id="address">
-              <p class="font_color_Red" name="address_error" id="address_error"></p>
+              <p class="font_color_Red blank20" name="address_error" id="address_error"></p>
             </li>
             <li class="edm_enabled_wrap m-t-10 m-b-20">
               <input type="checkbox" name="edm_enabled" value="1" id="edm_enabled" class="float-l">
               <label>我要收到活動情報</label><br>
               <div class="clear"></div>
-              <p class="font_color_Red" name="edm_enabled_error"></p>
+              <p class="font_color_Red blank20" name="edm_enabled_error"></p>
             </li>
             <li>
               <div class="FB_button mg-c m-b-10 btn btn-primary">
@@ -244,9 +241,11 @@
             </li>
           </ul>
         </form>
+      </article>
+      <article>
         <div class="copyright">
-          <p>秒創超網訂購專線</p>
-          <p>(02)8228-0580</p>
+        <p>秒創超網訂購專線</p>
+        <p>(02)8228-0580</p>
         </div>
       </article>
     </section>

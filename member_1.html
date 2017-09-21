@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>NEWART- 查詢訂單</title>
+<title>NEWART-會員專區</title>
 <link rel="stylesheet" type="text/css" href="css/eric_meyer_reset.min.css" />
 <link rel="stylesheet" type="text/css" href="css/Normalize_v1.0.min.css" />
 <!-- <link rel="stylesheet" type="text/css" href="css/jquery_ui.css" /> -->
@@ -18,14 +18,11 @@
 <link rel="stylesheet" type="text/css" href="css/web_base_style_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/web_base_color_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/reset_and_fast.css"><!-- bootstrap清除+fast便利包 -->
-<link rel="stylesheet" type="text/css" href="css/member_struct_v2.0.css" />
-<link rel="stylesheet" type="text/css" href="css/member_style_v2.0.css" />
-<link rel="stylesheet" type="text/css" href="css/member_color_v2.0.css" />
 <script type="text/javascript" src="js/header_v1.js"></script>
-<script type="text/javascript" src="js/order_search_v1.js"></script>
+<script type="text/javascript" src="js/member_menu_v1.0.js"></script>
 
 </head>
-<body class="background_white">
+<body>
   <section class="main_wrap Border">
     <!-- gotop icon 共用 -->
     <div class="gotop_icon Border">
@@ -96,7 +93,7 @@
     <div class="blank60"></div><!-- 官網header用 -->
     <div class="blank50"></div><!-- 會員專區與紅利館共用 -->
 
-    <section class="content_wrap">
+    <section class="content_wrap background_white">
       <!-- hamburger content -->
       <article class="content_left Border">
         <div class="hamburger_list_wrap Border">
@@ -132,31 +129,106 @@
       </article>
       <!-- main content -->
       <article class="content_right">
-        <!-- 訂單查詢 -->
-        <form method="post" id="code_form" class="authentication_Code_wrap">
-          <h4 class="font_color_Black font_size_16 blank30 line_height_30">
-            <img src="images/order.png" class="member_information_img m-b-5 m-r-5 float-l">
-            訂單查詢
-          </h4>
-          <h4 class="m-t-10 m-b-10 line_height_20">
-            您可於完成購物後，系統所發送的簡訊取得訂單查詢編號，如未取得查詢編號請聯絡我們，將有專人為您服務。
-          </h4>
-          <div id="sms_code">
-            <input type="text" name="sms_code" id="tracking_code" placeholder="請輸入訂單查詢編號">
-            <input type="hidden" name="csrf_newart">
-            <p class="font_color_Red" name="tracking_error" id="tracking_error"></p>
-          </div>
-          <div>
-            <div class="account_button btn btn-info" id="goSearchOrder">
-              <a href="#">查詢</a>
+        <!-- 會員專區 member function new -->
+        <div class="member_information_wrap">
+          <!-- 公告區 max words 45(繁體中文) -->
+          <article class="blank70 m-b-10 overflow_h">
+            <div class="blank60 float-l">
+              <img src="images/announcement.png" class="gift_img">
             </div>
-          </div>
-        </form>
+            <div class="font_color_Orange p-t-5 font_size_16">
+              即日起註冊成為NEWART會員，並至【會員基本資料】完成手機號碼驗證，即可獲得紅利點數3點喔！
+            </div>
+          </article>
+          <li class="account_wrap m-b-10">
+            <h4>帳號</h4>
+            <div class="inner_box blank30 overflow_h">
+              <span >0912345678</span><!-- max words 22(數字) -->
+            </div>
+            <div class="account_button m-b-30 btn btn-info">
+              <a href="#" id="sms_send">前往手機認證</a>
+            </div>
+          </li>
+          <!-- 會員設定 -->
+          <article class="Membership_settings_wrap m-b-30">
+            <div>
+              <img src="images/member.png" class="member_information_img m-b-5 m-r-5 float-l">
+              <h4 class="font_color_Black font_size_16 blank30 line_height_30">會員設定</h4>
+            </div>
+            <ul>
+              <li class="member_button btn btn-default">
+                <a href="#">會員基本資料</a>
+              </li><!-- max words 18(繁體中文) -->
+              <!-- <li class="member_button btn btn-default"><a href="#">常用收件人</a></li>
+              <li class="member_button btn btn-default"><a href="#">常用統一編號</a></li> -->
+              <li class="member_button btn btn-default">
+                <a href="#">修改密碼</a>
+              </li>
+              <li class="member_button btn btn-default">
+                <a href="#">會員隱私權 / 權益說明</a>
+              </li>
+            </ul>
+          </article>
+          <!-- 訂單資訊 -->
+          <article class="Order_information_wrap m-b-30">
+            <div>
+              <img src="images/order.png" class="member_information_img m-b-5 m-r-5 float-l">
+              <h4 class="font_color_Black font_size_16 blank30 line_height_30">訂單資訊</h4>
+            </div>
+            <ul>
+              <li class="member_button btn btn-default">
+                <a href="#">訂單紀錄</a>
+              </li>
+              <li class="member_button btn btn-default">
+                <a href="#">退貨紀錄</a>
+              </li>
+            </ul>
+          </article>
+          <!-- 活動列表 -->
+          <article class="Order_information_wrap m-b-30">
+            <div>
+              <img src="images/star.png" class="member_information_img m-b-5 m-r-5 float-l">
+              <h4 class="font_color_Black font_size_16 blank30 line_height_30">最新活動</h4>
+            </div>
+            <ul>
+              <li class="member_button btn btn-default">
+                <a href="#">會員專屬活動</a>
+              </li>
+              <li class="member_button btn btn-default">
+                <a href="#">限時折扣活動</a>
+              </li>
+            </ul>
+          </article>
+          <!-- 紅利館 -->
+          <article class="Bonus_hall_wrap p-b-30">
+            <div>
+              <img src="images/bonus.png" class="member_information_img m-b-5 m-r-5 float-l">
+              <h4 class="font_color_Black font_size_16 blank30 line_height_30">紅利館</h4>
+            </div>
+            <ul>
+              <li class="member_button btn btn-default bonus_font_Red">
+                <a href="#">
+                  <img src="images/NEW.png" class="gift_img gift_img_jump_padding">
+                  紅利兌換館
+                </a>
+              </li>
+              <li class="member_button btn btn-default">
+                <a href="#">紅利明細</a>
+              </li>
+              <li class="member_button btn btn-default">
+                <a href="#">兌換紀錄</a>
+              </li>
+              <li class="member_button btn btn-default">
+                <a href="#">紅利兌換 / 使用說明</a>
+              </li>
+            </ul>
+          </article>
+        </div>
       </article>
       <article>
         <div class="copyright">
-        <p>秒創超網訂購專線</p>
-        <p>(02)8228-0580</p>
+          <p>秒創超網訂購專線</p>
+          <p>(02)8228-0580</p>
         </div>
       </article>
     </section>

@@ -18,14 +18,11 @@
 <link rel="stylesheet" type="text/css" href="css/web_base_style_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/web_base_color_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/reset_and_fast.css"><!-- bootstrap清除+fast便利包 -->
-<link rel="stylesheet" type="text/css" href="css/member_struct_v2.0.css" />
-<link rel="stylesheet" type="text/css" href="css/member_style_v2.0.css" />
-<link rel="stylesheet" type="text/css" href="css/member_color_v2.0.css" />
 <script type="text/javascript" src="js/header_v1.js"></script>
 <script type="text/javascript" src="js/member_pwd_v1.0.js"></script>
 
 </head>
-<body class="background_white">
+<body>
   <section class="main_wrap Border">
     <!-- gotop icon 共用 -->
     <div class="gotop_icon Border">
@@ -67,17 +64,17 @@
           <div class="clear"></div>
         </div>
       </div>
-      <!-- 會員專區 member header -->
-      <!-- <div class="member_header_wrap">與紅利館做切換
+      <!-- 會員專區 member header (與紅利館做切換)-->
+      <!-- <div class="member_header_wrap">
         <div class="inner_box95 mg-c">
           <div class="float-l">
-            <span class="member_icon">
+            <div class="member_icon float-l m-t-10">
               <img src="images/menu_icon_member.png"/>
-            </span>
-            <span>0912345678</span>
+            </div>
+            <div class="float-l">0912345678</div>
           </div>
           <span class="logout_btn float-r"><a href="#">登出</a></span>
-          <p class="clear"></p>
+          <div class="clear"></div>
         </div>
       </div> -->
       <!-- 紅利館 bonus header -->
@@ -96,7 +93,7 @@
     <div class="blank60"></div><!-- 官網header用 -->
     <!-- <div class="blank50"></div>會員專區與紅利館共用 -->
 
-    <section class="content_wrap">
+    <section class="content_wrap background_white">
       <!-- hamburger content -->
       <article class="content_left Border">
         <div class="hamburger_list_wrap Border">
@@ -135,12 +132,12 @@
         <!--大標-->
         <div class="inner_box Border">
           <div class="member_header_wrap p-l-5">
-            <div class="arrow_left_wrap">
+            <div class="arrow_left_wrap m-t-5">
               <a href="#">
                 <img src="images/arrow_left_white.png" class="arrow_left_photo">
               </a>
             </div>
-            <span>會員基本資料</span>
+            <span>修改密碼</span>
           </div><!-- max words 15(繁體中文) -->
         </div>
         <form class="password_form_wrap" id="pwd_form">
@@ -148,12 +145,12 @@
             <li class="old_password_wrap m-t-10 m-b-10">
               <h4>舊密碼</h4>
               <input type="password" name="opassword" id="opwd" placeholder="請輸入舊密碼">
-              <p class="font_color_Red" name="opwd_error" id="opwd_error"></p>
+              <p class="font_color_Red blank20" name="opwd_error" id="opwd_error"></p>
             </li>
             <li class="new_password_wrap">
               <h4>新密碼</h4>
               <input type="password" name="password" id="pwd" placeholder="請輸入新密碼">
-              <p class="font_color_Red" name="pwd_error" id="pwd_error"></p>
+              <p class="font_color_Red blank20" name="pwd_error" id="pwd_error"></p>
               <dd>1. 密碼必須為六位數</dd>
               <dd>2. 英文字與數字混合</dd>
               <dd class="p-b-30">3. 英文需區分大小寫</dd>
@@ -162,7 +159,7 @@
               <h4>確認新密碼</h4>
               <input type="hidden" name="csrf_newart" value="">
               <input type="password" name="cpassword" id="cpwd" placeholder="確認新密碼">
-              <p class="font_color_Red" name="cpwd_error" id="cpwd_error"></p>
+              <p class="font_color_Red blank20" name="cpwd_error" id="cpwd_error"></p>
             </li>
             <li>
               <input type="hidden" name="csrf_newart" value="">
@@ -174,9 +171,11 @@
             </li>
           </ul>
         </form>
+      </article>
+      <article>
         <div class="copyright">
-          <p>秒創超網訂購專線</p>
-          <p>(02)8228-0580</p>
+        <p>秒創超網訂購專線</p>
+        <p>(02)8228-0580</p>
         </div>
       </article>
     </section>

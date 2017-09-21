@@ -1,145 +1,3 @@
-/*@charset "utf-8";*/
-/*body {font-family:Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif; background:#E6E6E6;}*/
-/*a {color:#000;}*/
-/*.icon_bar {background:#fff;}*/
-/*.header_logo {
-	color:#fff;
-	font-size:22px;
-	font-weight:bold;
-	line-height:60px;
-}*/ /*20170715修改height:50px;*/
-/*.search_icon p {font-size:8px; color:#fff;}*/
-/*.top_home_icon p {font-size:8px; color:#fff;}*/
-/*.search_bar {border:1px solid #666; background:#fff;}*/
-/*.search_bar input {background:#fff; font-size:16px; border:0;}*/
-/*.search_btn {font-size:15px; background:#666; color:#fff;}*/
-/*.hot_search {font-size:14px; color:#fff;}*/
-/*.hot_search a {color:#fff;}*/
-/*.hot_title {font-size:14px;}*/
-/*.hamburger_list_wrap {background:#f4f4f4;}*/
-/*.hamburger_login_bar {background:#51ab55;}*/
-/*.hamburger_login_bar li a {color: #fff; font-size: 16px;}*/
-/*.hamburger_type_item h3 {
-	border-bottom:1px solid #B3B3B3;
-	line-height:55px;
-	font-size:20px;
-	background:#f4f4f4;
-}
-.hamburger_type_item p a {
-	border-bottom:0.5px solid #ccc;
-	color:#fff;
-	font-size:17px;
-}*/
-/*.ui-widget-content {border:none;}*/
-/*.copyright {color:#666; font-size:12px; line-height:16px;}*/
-/*.breadcrumb {background:#f4f4f4;}*/
-/*.breadcrumb h1 {font-size:15px; color:#333; line-height:20px; padding:5px;}*/
-
-/* 下bar */
-/*.footer_menu_bar_wrap {background:#B3B2B2; border-top:1px solid #ccc;}*/
-/*.menu_icon h6 {font-size:12px; color:#fff;}*/
-
-/*.unactive{background-color:#C8C8C8;}*/
-/*.keep {}*/
-/*.keep p {font-size:14px; color:#666; text-align:center; line-height:18px;}*/
-
-/*商品內頁下bar*/
-/*.menu_icon15 h6 {font-size:12px; color:#fff;}
-.menu_icon3 a {color: #fff;}
-.menu_icon3 h5 {font-size: 20px; letter-spacing:1px;}*/
-
-/*購買框*/
-/*.buy_dialog_wrap {background: #E6E6E6;}
-.buy_dialog_top {background:#f4f4f4;}
-.buy_dialog_top h2 {font-size:18px;color:#B3B3B3;}
-.buy_dialog_title h4 {font-size:16px; line-height:20px;}
-.buy_dialog_price h5 {font-size:14px; line-height: 18px;}
-.buy_dialog_price h2 {
-	font-size:22px;	
-	line-height: 22px;
-	font-weight:bold;
-}
-label {font-size:16px;}
-.prod_choose {font-size: 14px;}
-.continue_buy_btn a{font-size:16px;	background:#fff; border:1px solid;}
-.go_buy_btn a{font-size:16px;}
-.go_buy_btn_font_color {color:#fff;}
-.shopping_top_title {background:#f4f4f4;}
-.shopping_top_title h1 {font-size:18px; font-weight:bold;}*/
-
-/*手風琴邊框*/
-/*.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {border:none;}
-.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {border-bottom-right-radius:0;}
-.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {border-bottom-left-radius:0;}
-.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {border-top-right-radius:0;}
-.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {border-top-left-radius:0;}
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active,ui-button:active, .ui-button.ui-state-active:hover {border:none;}
-*/
-/* 整體色系 */
-/*.basic_color {background:#97CED8;}*/
-/*.basic_font_color {color:#c30d23; border:#c30d23;}*/
-/*.active{background-color:#97CED8;}*/
-/*.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active,ui-button:active, .ui-button.ui-state-active:hover {	
-	background:#c30d23;
-}*/ /*商品內頁 prod_content.html手風琴背景色*/
-
-/*.price_color {color:#c30d23;}*/
-
-
-/*20170425新增*/
-/*.sold_color {color:#C00;}
-.prod_original_price {font-size:10px; color:#666;}*/
-
-/*20170428 修改購買對話框*/
-/*.buy_dialog_top {color:#fff;}*/
-
-/*20170619 新增會員系統*/
-/*.float_R {float:right;}
-.btn_box a {font-size:16px; color:#fff;}
-.sbtn_box a {font-size:15px; color:#fff;}
-.gray_btn  {background:#333;}
-.fb_btn_bg {background:url(../images/fb_btn.png) no-repeat center top;}
-.member_title {background:#666; color:#fff; font-size:18px;}
-.mark_color {color:#f00;}
-.item_wrap {background:#f4f4f4; font-size:16px;}
-.underline {border-bottom:1px solid #666;}*/
-
-/*20170721紅利館*/
-/*20170727 紅利館共用style*/
-/*.row{background: #fff;}
-.BG_white{background: white;}
-.BG_gray{background: #878787;}
-.Border_b{border-bottom: 1px solid #898989;}*/
-/*.Border{ border: 1px solid #ccc; }*/
-/*.f_colorBlack{color: black; font-weight: bold;}
-.f_colorWhit{color: white; font-weight: bold;}
-.remind_color{color: red; font-weight: bold;}
-.f_size16{ font-size: 16px; }
-.line_h20{ line-height: 20px; }
-.line_h30{ line-height: 30px; }*/
-
-/*紅利館Top title設定*/
-/*.Overall_color{ background: #EB6448; }*/
-/*.Top_title_bg{ background: #EE8072; }
-.top_title{	color: #fff; font-size: 16px; line-height: 40px; font-weight: bold; }
-.top_title_logo a { color: #fff; }
-.top_title_logo a:hover{ color: #fff; }
-.top_title_logo{
-	font-size: 18px;
-	font-weight:bold;
-	line-height:50px;
-}*/
-
-/*目前持有紅利設定*/
-/*.dividend_wrap span{
-	color: #fff;
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 50px;
-}*/
-
-/*-------------------Web_base_style 整理--------------------*/
-
 @charset "utf-8";
 /* CSS Document */
 body {
@@ -206,6 +64,149 @@ body {
 	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
 	-moz-border-radius: 5px; /* Firefox */
 	-webkit-border-radius: 5px; /* Safari, Chrome */
+}
+/*-----會員專區 member function (for member.html)-----*/
+.member_button{
+	text-align: center;
+	font-size: 16px;
+	line-height: 40px;
+	border: 1px solid;
+	border-radius: 5px; /* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+}
+.btn{
+	padding: 0;
+}
+.btn-info{
+	border: 0;
+}
+/*member頁籤*/
+.member_controls li{
+	border-radius: 10px 30px 0 0;
+}
+/*-----會員基本資料 (for member_profile.html)-----*/
+/*-----member form-----*/
+.merber_form_wrap{
+	padding: 20px;
+}
+.merber_form_wrap h4{
+	font-size: 16px;
+	/*font-weight: bold;*/
+	padding-bottom: 5px;
+}
+.account_wrap span{
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+.account_button{
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+}
+.account_button a{
+	font-size: 16px;
+	line-height: 40px;
+}
+.gender_wrap input + label{
+	padding: 10px;
+	border: 1px solid;
+	transition: 0.35s ease-in-out;
+	-webkit-transition: 0.35s ease-in-out;
+	-moz-transition: 0.35s ease-in-out;
+	-o-transition: 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+.gender_wrap input + label:first-of-type {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.gender_wrap input + label:last-of-type {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.edm_enabled_wrap label{
+	font-size: 16px;
+}
+/*-----member button-----*/
+.FB_button{
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+}
+.FB_button a{
+	font-size: 16px;
+	line-height: 40px;
+}
+.confirm_button{
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+}
+.confirm_button a{
+	font-size: 16px;
+	line-height: 40px;
+}
+/*-----會員手機認證 (for sms_send.html)-----*/
+.authentication_Code_wrap{
+	padding: 20px;
+}
+/*-----會員修改密碼 (for member_pwd.html)-----*/
+.password_form_wrap{
+	padding: 20px;
+}
+.password_form_wrap h4{
+	font-size: 16px;
+	/*font-weight: bold;*/
+	padding-bottom: 5px;
+}
+.new_password_wrap dd{
+	font-size: 14px;
+	padding-left: 10px;
+}
+/*-----會員訂單紀錄 (for member_order.html)-----*/
+/*-----尚無訂單資料-----*/
+.no_order_wrap p{
+	font-size: 20px;
+	font-weight: bold;
+}
+/*-----訂單資料-----*/
+.order_content_wrap{
+	border: 1px solid;
+	border-radius: 5px; /* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+	padding: 15px 10px;
+}
+.order_top_wrap{
+	border-bottom: 1px dashed;
+}
+/*-----訂單狀態-----*/
+.order_status_style{
+	border-radius: 50%; /* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 50%; /* Firefox */
+	-webkit-border-radius: 50%; /* Safari, Chrome */
+	border:2px solid; 
+}
+.order_status_style span{
+	line-height: 50px;
+	font-weight: bold;
+}
+/*-----會員註冊 (for member_register.html)-----*/
+.merber_register_form_wrap{
+	padding: 20px;
+}
+.merber_register_form_wrap h4{
+	font-size: 16px;
+	/*font-weight: bold;*/
+	padding-bottom: 5px;
+}
+.accept_wrap input{
+	padding: 0;
+}
+.accept_wrap label{
+	font-size: 16px;
 }
 /*-----紅利館 bonus header-----*/
 .dividend_wrap span{
@@ -279,6 +280,51 @@ body {
 	font-size: 18px;
     font-weight: bold;
 }
+
+/*---商品介紹頁面(for prod.html)---*/
+.btn{
+	padding: 0;
+}
+.btn-info{
+	border: 0;
+}
+/*商品頁籤*/
+.controls_tabl{
+	padding: 0;
+}
+.controls li{
+	border: 1px solid;
+}
+.controls li a{
+	line-height: 40px;
+	text-align: center;
+	outline: none;
+}
+/*google_map*/
+.google_map_select{
+	border-radius: 5px;
+}
+.google_map_wrap{
+	border: 1px solid;
+}
+/*商品介紹頁 footer*/
+.Border_r{
+	border-right: 1px solid;
+}
+.menu_icon_buy{
+	font-size: 20px;
+	line-height: 50px;
+}
+
+/*---加入購物車頁面(for shopping_cart.html)---*/
+
+.shopping_button_left{
+	border-radius: 5px;
+}
+.shopping_button_right{
+	border-radius: 5px;
+}
+
 /*-----任務紅利通知-----*/
 .gift_img{
 	padding-bottom: 5px;
@@ -291,23 +337,44 @@ body {
 	50%{ padding-bottom: 5px; }
 	100%{ padding-bottom: 10px; }
 }
-/*-----快速共用-----*/
-.border_radius_5{ 
+
+/*---頁面 input 設定---*/
+.payment_method_wrap input + label,
+.buyer_wrap input,
+.receive_wrap input,
+.family_wrap input,
+.invoice_wrap input,
+.name_wrap input,
+.email_wrap input,
+.address_wrap input,
+.password_form_wrap input,
+.merber_register_form_wrap input,
+.authentication_Code_wrap input,
+select option,
+select{
+	padding: 10px;
+	border: 1px solid;
 	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
 	-moz-border-radius: 5px; /* Firefox */
-	-webkit-border-radius: 5px; /* Safari, Chrome */ 
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+	transition: 0.35s ease-in-out;
+	-webkit-transition: 0.35s ease-in-out;
+	-moz-transition: 0.35s ease-in-out;
+	-o-transition: 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
 }
-.border_radius_tlr_5{
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+.calculation_wrap li,
+.payment_method_wrap li,
+.buyer_wrap li,
+.receive_wrap li,
+.family_wrap li,
+.invoice_wrap li{
+	font-size: 16px;
 }
-.border_solid{ border: 1px solid; }
-.border_b_dashed{ border-bottom: 1px dashed; }
-.font_size_14{ font-size: 14px; }
-.font_size_16{ font-size: 16px; }
-.font_size_18{ font-size: 18px; }
-.font_size_20{ font-size: 20px; }
-.line_height_20{ line-height: 20px; }
-.line_height_30{ line-height: 30px; }
-.line_height_40{ line-height: 40px; }
-.line_height_50{ line-height: 50px; }
+.buyer_wrap h4,
+.receive_wrap h4,
+.family_wrap h4,
+.invoice_wrap h4{
+	/*font-weight: bold;*/
+	padding-bottom: 5px;
+}
