@@ -4,6 +4,7 @@ body {
 	font-family:"蘋果儷中黑", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
 	word-break: normal;
 	text-align:justify;
+	font-size: 16px;
 }
 
 /*-----header 網站名稱-----*/
@@ -58,6 +59,11 @@ body {
 	font-weight: bold;
 	line-height:50px;
 }
+.member_title_wrap{
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 40px;
+}
 .logout_btn{
 	font-size:14px;
 	line-height:36px;
@@ -81,9 +87,13 @@ body {
 .btn-info{
 	border: 0;
 }
+.square_button a{
+	display: inline-block;
+	font-size: 16px;
+}
 /*member頁籤*/
 .member_controls li{
-	border-radius: 10px 30px 0 0;
+	border-radius: 10px 10px 0 0;
 }
 /*-----會員基本資料 (for member_profile.html)-----*/
 /*-----member form-----*/
@@ -150,7 +160,7 @@ body {
 }
 /*-----會員手機認證 (for sms_send.html)-----*/
 .authentication_Code_wrap{
-	padding: 20px;
+	padding: 10px;
 }
 /*-----會員修改密碼 (for member_pwd.html)-----*/
 .password_form_wrap{
@@ -282,18 +292,12 @@ body {
 }
 
 /*---商品介紹頁面(for prod.html)---*/
-.btn{
-	padding: 0;
-}
-.btn-info{
-	border: 0;
-}
 /*商品頁籤*/
 .controls_tabl{
 	padding: 0;
 }
 .controls li{
-	border: 1px solid;
+	border: 1.5px solid;
 }
 .controls li a{
 	line-height: 40px;
@@ -311,7 +315,7 @@ body {
 .Border_r{
 	border-right: 1px solid;
 }
-.menu_icon_buy{
+.menu_icon_buy a{
 	font-size: 20px;
 	line-height: 50px;
 }
@@ -322,7 +326,44 @@ body {
 	border-radius: 5px;
 }
 .shopping_button_right{
+	font-size: 18px;
 	border-radius: 5px;
+}
+
+/*---footer 關於我們 (for brand.html,shipping.html,return.html,contact.html)---*/
+/*-----品牌介紹(brand.html)-----*/
+.brand_introduction_wrap p{
+	text-indent:2em;
+}
+/*-----運送方式(shipping.html)-----*/
+.transport_wrap ol{
+	margin-left: 20px;
+}
+.transport_wrap ol li{
+	list-style-type: decimal;
+	font-size: 16px;
+	padding: 10px 0;
+}
+.transport_wrap ol li ol li{
+	list-style-type: disc;
+	font-size: 16px;
+	padding: 5px 0;
+}
+/*-----退貨說明(return.html)-----*/
+.Anti-cheat_wrap ul{
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 5px;
+}
+.Anti-cheat_NO{
+	font-size: 18px;
+	border-radius: 50%;
+	padding-top: 3px;
+}
+/*-----聯絡我們(contact.html)-----*/
+.customer_service_content{
+	border: 1px solid #666;
+	padding: 10px;
 }
 
 /*-----任務紅利通知-----*/

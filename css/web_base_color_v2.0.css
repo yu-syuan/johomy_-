@@ -9,27 +9,42 @@ hr{
 	border-color: #ddd;
 }
 .basic_color{
-	background: #9bd5e0;
-	box-shadow: inset 1px 3px 10px rgba(255,255,255,.5);
+	background: #fff;
+	color: #000;
 }
+/*20171002修改 原background:#9bd5e0; 新增color: #000;*/
+.basic_title_color{
+	background: #000;
+	color: #fff;
+}
+/*20171002新增 background: #000; color: #fff;*/
 .basic_font_color{
-	color: #9bd5e0;
+	color: #666;
 }
+/*20171003修改 原color:#9bd5e0;*/
 .basic_border_color{
 	border-color: #9bd5e0;
 }
 .active{
-	background-color: #9bd5e0;
-	box-shadow: inset 1px 3px 10px rgba(255,255,255,.5);
+	background-color: #f78c00;
 }
-/*-----大標設定-----*/
-.top_title{
+/*20171003修改 原background:#9bd5e0;*/
+.basic_button_color_one{
+	background-color: #f78c00;
+	color: #fff;
+}
+.basic_button_color_two{
+	background-color: #000;
 	color: #fff;
 }
 /*-----hamburger icon-----*/
-.icon_bar{
-	background: #fff; 
+.header_wrap{
+	box-shadow: 0px 0px 8px rgba(0,0,0,.5)
 }
+.icon_bar{
+	background: #000;
+}
+/*20171002修改 原background:#fff;*/
 /*-----header 網站名稱-----*/
 .header_logo{
 	color: #fff;
@@ -45,7 +60,6 @@ hr{
 .search_btn {
 	background:#666;
 	color:#fff;
-	box-shadow: inset 1px 2px 10px rgba(255,255,255,.2);
 }
 /*-----hamburger content-----*/
 .hamburger_list_wrap > ul > li {
@@ -56,26 +70,34 @@ hr{
 	border-color: #ddd;
 }
 #hamburger_menu .hamburger_show a {
-	color: #fff;
+	color: #666;
 }
+/*20171003修改 原color:#fff;*/
 .copyright {
 	color: #666;
 }
 /*-----footer_menu_wrap-----*/
 .footer_menu_wrap{
-	background-color: #B3B3B3;
+	background: #fff;
+	box-shadow: 0px 0px 8px rgba(0,0,0,.5)
 }
+/*20171003修改 background:#B3B3B3; 增加box-shadow: 0px 0px 8px rgba(0,0,0,.5)*/
 .menu_icon a{
-	color: #fff;
+	color: #000;
 }
+/*20171002修改 color:#fff;*/
 /*-----會員專區 member header-----*/
 .member_header_wrap{
-	background:#666;
-	color:#fff;
+	background:#ddd;
+	color:#000;
 }
+.member_title_wrap{
+	background: #b3b3b3;
+	color: #fff;
+}
+/*20171002修改 background:#666; color:#fff;*/
 .logout_btn{
 	background:#333;
-	box-shadow: inset 1px 5px 10px rgba(255,255,255,.2);
 }
 .logout_btn a{
 	color:#fff;
@@ -84,7 +106,6 @@ hr{
 .member_button{
 	border-color: #b3b3b3;
 	background: #fff;
-	box-shadow: inset 1px -5px 10px rgba(0,0,0,.1);
 }
 .member_button a{
 	color: #666;
@@ -92,16 +113,15 @@ hr{
 .bonus_font_Red a{
 	color: red;
 }
+.square_button a{
+	color: #fff;
+}
 /*member頁籤*/
 .member_controls li{
 	box-shadow: 1px 1px 10px #999;
 }
 /*---會員基本資料 (for member_profile.html)---*/
 /*member form*/
-.account_button{
-	background: #9bd5e0;
-	box-shadow: inset 1px 3px 10px rgba(255,255,255,.5);
-}
 .account_button a{
 	color: #fff;
 }
@@ -111,14 +131,9 @@ hr{
 /*member button*/
 .FB_button{
 	background: #3b5998;
-	box-shadow: inset 2px 5px 10px rgba(255,255,255,.3);
 }
 .FB_button a{
 	color: #fff;
-}
-.confirm_button{
-	background: #9bd5e0;
-	box-shadow: inset 1px 3px 10px rgba(255,255,255,.5);
 }
 .confirm_button a{
 	color: #fff;
@@ -141,7 +156,7 @@ hr{
 }
 /*訂單狀態*/
 .order_status_style{
-	border-color: #9bd5e0;
+	border-color: #f78c00;
 }
 /*---會員註冊 (for member_register.html)---*/
 .accept_wrap label{
@@ -150,7 +165,7 @@ hr{
 /*-----紅利館 整體色系-----*/
 .bonus_basic_color{
 	background: #f09290;
-	box-shadow: inset 1px 5px 10px rgba(255,255,255,.2);
+	color: #fff;
 }
 .bonus_basic_font_color{
 	color: #f09290;
@@ -178,7 +193,6 @@ hr{
 .button_style{
 	background: #f09290;
 	color: #fff;
-	box-shadow: inset 1px 5px 10px rgba(255,255,255,.3);
 }
 /*-----雙品商品列表-----*/
 .even_price_style{
@@ -200,7 +214,7 @@ hr{
 /*商品頁籤*/
 .controls li{
 	background-color: #b3b3b3;
-	border-color: #ddd;
+	border-color: #fff;
 }
 .controls li a{
 	color: #fff;
@@ -218,8 +232,33 @@ hr{
 }
 
 /*---加入購物車頁面(for shopping_cart.html)---*/
-.shopping_button_wrap a{
+.shopping_button_left a{
+	color: #f78c00;
+}
+.shopping_button_right a{
 	color: #fff;
+}
+
+/*---footer 關於我們 (for brand.html,shipping.html,return.html,contact.html)---*/
+/*品牌介紹(brand.html)*/
+.brand_introduction_wrap li{
+	color: #666;
+}
+/*運送方式(shipping.html)*/
+.transport_wrap li{
+	color: #666;
+}
+/*退貨說明(return.html)*/
+.Anti-cheat_wrap ul{
+	border-color: #F78C00;
+}
+.Anti-cheat_NO{
+	background: #F78C00;
+	color: #fff;
+}
+/*聯絡我們(contact.html)*/
+.customer_service_content{
+	border-color: #666;
 }
 
 /*---頁面 input 設定---*/
@@ -242,18 +281,18 @@ select{
 	color: #666;
 }
 input:focus {
-	border-color: #9bd5e0;
-	box-shadow: 0 0 5px #9bd5e0;
+	border-color: #f78c00;
+	box-shadow: 0 0 5px #f78c00;
 }
 select:focus{
-	border-color: #9bd5e0;
-	box-shadow: 0 0 5px #9bd5e0;
+	border-color: #f78c00;
+	box-shadow: 0 0 5px #f78c00;
 }
 .gender_wrap input:checked + label,
 .payment_method_wrap input:checked + label,
 input:checked{
-	background-color: #9bd5e0;
+	background-color: #f78c00;
 	border-color: #fff;
-	box-shadow: 0 0 5px #9bd5e0;
+	box-shadow: 0 0 5px #f78c00;
 	color: #fff;
 }

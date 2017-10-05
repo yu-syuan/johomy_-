@@ -48,7 +48,9 @@ $(function(){
       return true;
     }
   });
-  $(".member a").addClass("active");
+  $(".member div").addClass("active");
+  $(".member img").attr("src","images/menu_icon_member_1.png");
+  $(".member a").css("color","white");
 });
 function isNumberEnglishFormat(str){
   Rule = /^[a-zA-Z0-9]+$/;

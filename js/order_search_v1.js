@@ -12,5 +12,7 @@ $(function(){
   $("#go_pay").click(function(){
     $("#pay_again").submit();
   });
-  $(".order a").addClass("active");
+  $(".order div").addClass("active");
+  $(".order img").attr("src","images/menu_icon_order_1.png");
+  $(".order a").css("color","white");
 });

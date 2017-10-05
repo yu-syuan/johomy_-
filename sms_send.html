@@ -38,11 +38,17 @@
         <span class="icon_bar"></span>       
         <span class="icon_bar"></span>
       </div>
-      <!-- header 網站名稱 -->
-      <div class="header_mid">
+      <!-- header 網站名稱(文字)max words 8 (繁體中文) 12(英文) -->
+      <!-- <div class="header_mid">
         <a href="#">
           <h1 class="header_logo">NEWART</h1>
-        </a><!-- max words 8 (繁體中文) 12(英文) -->
+        </a>
+      </div> -->
+      <!-- header 網站名稱(圖片) -->
+      <div class="header_mid">
+        <a href="#">
+          <img src="images/NEWART_header.png" class="header_logo_img">
+        </a>
       </div>
       <!-- 首頁 icon -->
       <div class="home_icon Border">
@@ -60,25 +66,25 @@
       <div class="search_wrap basic_color Border">
         <div class="search_bar">
           <input type="text" placeholder="請輸入關鍵字" id="search_value" />
-          <button type="button" class="search_btn">搜尋</button>
+          <button type="button" class="search_btn box_shadow_white">搜尋</button>
           <div class="clear"></div>
         </div>
       </div>
       <!-- 會員專區 member header (與紅利館做切換)-->
-      <!-- <div class="member_header_wrap">
+      <div class="member_header_wrap">
         <div class="inner_box95 mg-c">
           <div class="float-l">
             <div class="member_icon float-l m-t-10">
-              <img src="images/menu_icon_member.png"/>
+              <img src="images/menu_icon_member_0.png"/>
             </div>
             <div class="float-l">0912345678</div>
           </div>
-          <span class="logout_btn float-r"><a href="#">登出</a></span>
+          <span class="logout_btn float-r box_shadow_white"><a href="#">登出</a></span>
           <div class="clear"></div>
         </div>
-      </div> -->
-      <!-- 紅利館 bonus header -->
-      <!-- <div class="bonus_header_wrap bonus_header_color">與會員專區做切換
+      </div>
+      <!-- 紅利館 bonus header (與會員專區做切換) -->
+      <!-- <div class="bonus_header_wrap bonus_header_color">
         <div class="dividend_wrap">
           <span><img src="images/shipment.png" class="dividend_img"></span>
           <div class="dividend">
@@ -91,7 +97,7 @@
     </header>
 
     <div class="blank60"></div><!-- 官網header用 -->
-    <!-- <div class="blank50"></div>會員專區與紅利館共用 -->
+    <div class="blank50"></div><!-- 會員專區與紅利館共用 -->
 
     <section class="content_wrap">
       <!-- hamburger content -->
@@ -121,23 +127,23 @@
               <li><a href="#">護髮霜</a></li>
             </ul>
           </ul>
-          <div class="copyright">
-            <p>秒創超網訂購專線</p>
-            <p>(02)8228-0580</p>
-          </div>
         </div>
       </article>
       <!-- main content -->
       <article class="content_right">
-        <!--大標-->
         <div class="inner_box Border">
-          <div class="member_header_wrap p-l-5">
-            <span>手機認證</span>
+          <div class="member_title_wrap p-l-5">
+            <div class="arrow_left_wrap m-t-5">
+              <a href="#">
+                <img src="images/arrow_left_white.png" class="arrow_left_photo">
+              </a>
+            </div>
+            <span>手機驗證</span>
           </div><!-- max words 15(繁體中文) -->
         </div>
         <!-- 發送認證碼 -->
         <form class="authentication_Code_wrap">
-          <div class="account_button btn btn-info">
+          <div class="account_button btn box_shadow_white basic_button_color_one">
             <a href="#" id="send_sms">發送認證碼</a>
           </div>
           <p class="font_color_Red" name="send_error" id="send_error"></p>
@@ -151,27 +157,63 @@
           </div>
           <div>
             <input type="hidden" name="csrf_newart" value="">
-            <div class="account_button btn btn-info">
+            <div class="account_button btn box_shadow_white basic_button_color_one">
               <a href="#" id="send_sms">認證</a>
             </div>
           </div>
         </form>
-      </article>
-      <article>
-        <div class="copyright">
-        <p>秒創超網訂購專線</p>
-        <p>(02)8228-0580</p>
-        </div>
+        <article>
+          <div class="copyright">
+            <p>秒創超網訂購專線</p>
+            <p>(02)8228-0580</p>
+          </div>
+        </article>
       </article>
     </section>
 
-    <footer class="footer_menu_wrap Border">
+    <!-- footer無切換圖片 -->
+    <!-- <footer class="footer_menu_wrap Border">
       <ul>
         <li class="menu_icon member"><a href="#">會員專區</a></li>
         <li class="menu_icon order"><a href="#">訂單查詢</a></li>
         <li class="menu_icon buy"><a href="#">結帳</a></li>
         <li class="menu_icon fbmsg"><a href="#">線上客服</a></li>
         <li class="menu_icon contact"><a href="#">關於我們</a></li>
+      </ul>
+    </footer> -->
+    <!-- footer切換圖片 -->
+    <footer class="footer_menu_wrap Border">
+      <ul>
+        <li class="menu_icon member">
+          <div class="ta-c">
+            <img src="images/menu_icon_member_0.png" file_name="menu_icon_member_" class="ori_img">
+            <a href="#">會員專區</a>
+          </div>
+        </li>
+        <li class="menu_icon order">
+          <div class="ta-c">
+            <img src="images/menu_icon_order_0.png" file_name="menu_icon_order_" class="ori_img">
+            <a href="#">訂單查詢</a>
+          </div>
+        </li>
+        <li class="menu_icon buy">
+          <div class="ta-c">
+            <img src="images/menu_icon_buy_0.png" file_name="menu_icon_buy_" class="ori_img">
+            <a href="#">結帳</a>
+          </div>
+        </li>
+        <li class="menu_icon fbmsg">
+          <div class="ta-c">
+            <img src="images/menu_icon_fbmsg_0.png" file_name="menu_icon_fbmsg_" class="ori_img">
+            <a href="#">線上客服</a>
+          </div>
+        </li>
+        <li class="menu_icon contact">
+          <div class="ta-c">
+            <img src="images/menu_icon_contact_0.png" file_name="menu_icon_contact_" class="ori_img">
+            <a href="#">關於我們</a>
+          </div>
+        </li>
       </ul>
     </footer>
   </section>

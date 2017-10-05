@@ -31,7 +31,9 @@ $(function(){
       }
     }, {scope: 'public_profile,email'});
   });
-  $(".member a").addClass("active");
+  $(".member div").addClass("active");
+  $(".member img").attr("src","images/menu_icon_member_1.png");
+  $(".member a").css("color","white");
 });
 function isMobileFormat(str){
   mobileRule = /^09\d{8}$/;

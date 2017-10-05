@@ -504,6 +504,7 @@ a, button, .btn:focus, .btn:active{
 .line_height_30{ line-height: 30px; }
 .line_height_40{ line-height: 40px; }
 .line_height_50{ line-height: 50px; }
+.line_height_80{ line-height: 80px; }
 
 /*-----快速共用(color)-----*/
 .background_white{background: white;}
@@ -518,3 +519,5 @@ a, button, .btn:focus, .btn:active{
 .font_color_Red{ color: red; }
 .font_color_Darkgray{ color: #666; }
 .font_color_Orange{ color: #F78C00; }
+.box_shadow_white{ box-shadow: inset 1px 3px 10px rgba(255,255,255,.5); }
+.box_shadow_black{ box-shadow: inset 1px -5px 10px rgba(0,0,0,.1); }

@@ -38,11 +38,17 @@
         <span class="icon_bar"></span>       
         <span class="icon_bar"></span>
       </div>
-      <!-- header 網站名稱 -->
-      <div class="header_mid">
+      <!-- header 網站名稱(文字)max words 8 (繁體中文) 12(英文) -->
+      <!-- <div class="header_mid">
         <a href="#">
           <h1 class="header_logo">NEWART</h1>
-        </a><!-- max words 8 (繁體中文) 12(英文) -->
+        </a>
+      </div> -->
+      <!-- header 網站名稱(圖片) -->
+      <div class="header_mid">
+        <a href="#">
+          <img src="images/NEWART_header.png" class="header_logo_img">
+        </a>
       </div>
       <!-- 首頁 icon -->
       <div class="home_icon Border">
@@ -60,7 +66,7 @@
       <div class="search_wrap basic_color Border">
         <div class="search_bar">
           <input type="text" placeholder="請輸入關鍵字" id="search_value" />
-          <button type="button" class="search_btn">搜尋</button>
+          <button type="button" class="search_btn box_shadow_white">搜尋</button>
           <div class="clear"></div>
         </div>
       </div>
@@ -69,16 +75,16 @@
         <div class="inner_box95 mg-c">
           <div class="float-l">
             <div class="member_icon float-l m-t-10">
-              <img src="images/menu_icon_member.png"/>
+              <img src="images/menu_icon_member_0.png"/>
             </div>
             <div class="float-l">0912345678</div>
           </div>
-          <span class="logout_btn float-r"><a href="#">登出</a></span>
+          <span class="logout_btn float-r box_shadow_white"><a href="#">登出</a></span>
           <div class="clear"></div>
         </div>
       </div>
-      <!-- 紅利館 bonus header -->
-      <!-- <div class="bonus_header_wrap bonus_header_color">與會員專區做切換
+      <!-- 紅利館 bonus header (與會員專區做切換) -->
+      <!-- <div class="bonus_header_wrap bonus_header_color">
         <div class="dividend_wrap">
           <span><img src="images/shipment.png" class="dividend_img"></span>
           <div class="dividend">
@@ -93,7 +99,7 @@
     <div class="blank60"></div><!-- 官網header用 -->
     <div class="blank50"></div><!-- 會員專區與紅利館共用 -->
 
-    <section class="content_wrap background_white">
+    <section class="content_wrap">
       <!-- hamburger content -->
       <article class="content_left Border">
         <div class="hamburger_list_wrap Border">
@@ -121,10 +127,6 @@
               <li><a href="#">護髮霜</a></li>
             </ul>
           </ul>
-          <div class="copyright">
-            <p>秒創超網訂購專線</p>
-            <p>(02)8228-0580</p>
-          </div>
         </div>
       </article>
       <!-- main content -->
@@ -145,48 +147,51 @@
           </article>
           <!-- 任務連結鈕 -->
           <article class="m-b-20">
-            <ul>
-              <li class="confirm_button mg-c m-b-10 btn btn-info">
-                <a href="#">完成驗證領取紅利點</a>
+            <ul style="text-align: center;">
+              <li class="square_button m-b-10 btn basic_button_color_one box_shadow_white" style="width: 49%; height: 80px; line-height: 80px;">
+                <a href="#" style="color: #fff; font-size: 16px;">FB會員註冊</a>
               </li>
-              <li class="confirm_button mg-c m-b-10 btn btn-info">
-                <a href="#">完成驗證領取紅利點</a>
+              <li class="square_button m-b-10 btn basic_button_color_one box_shadow_white" style="width: 49%; height: 80px; line-height: 80px;">
+                <a href="#" style="color: #fff; font-size: 16px;">完成驗證領取紅利點</a>
               </li>
-              <li class="confirm_button mg-c m-b-10 btn btn-info">
-                <a href="#">完成驗證領取紅利點</a>
+              <li class="square_button m-b-10 btn basic_button_color_one box_shadow_white" style="width: 49%; height: 80px; line-height: 80px;">
+                <a href="#" style="color: #fff; font-size: 16px;">完成驗證領取紅利點</a>
               </li>
-              <li class="confirm_button mg-c m-b-10 btn btn-info">
-                <a href="#">完成驗證領取紅利點</a>
+              <!-- <li class="confirm_button mg-c m-b-10 btn btn-info box_shadow_white">
+                <a href="#">預留</a>
               </li>
+              <li class="confirm_button mg-c m-b-10 btn btn-info box_shadow_white">
+                <a href="#">預留</a>
+              </li> -->
             </ul>
           </article>
           <!-- 頁籤/內容區塊-->
           <article class="inner_box" id="tabs_content">
             <ul class="row controls member_controls">
-              <li class="col-xs-3 controls_tabl table_1">
+              <li class="col-xs-3 controls_tabl table_1 font_size_16">
                 <a href="#table_1">會員設定</a>
               </li><!-- max words 4(繁體中文) -->
-              <li class="col-xs-3 controls_tabl table_2">
-                <a href="#table_2">訂單資訊</a>
+              <li class="col-xs-3 controls_tabl table_2 font_size_16">
+                <a href="#table_2">紅利館</a>
               </li>
-              <li class="col-xs-3 controls_tabl table_3"">
-                <a href="#table_3">最新活動</a>
+              <li class="col-xs-3 controls_tabl table_3 font_size_16">
+                <a href="#table_3">訂單資訊</a>
               </li>
-              <li class="col-xs-3 controls_tabl table_4">
-                <a href="#table_4">紅利館</a>
+              <li class="col-xs-3 controls_tabl table_4 font_size_16">
+                <a href="#table_4">最新活動</a>
               </li>
-              <li class="col-xs-3 controls_tabl table_5">
+              <li class="col-xs-3 controls_tabl table_5 font_size_16">
                 <a href="#table_5">最新公告</a>
               </li>
-              <!-- <li class="col-xs-3 controls_tabl table_6">
+              <li class="col-xs-3 controls_tabl table_6 font_size_16">
                 <a href="#table_6">預留</a>
               </li>
-              <li class="col-xs-3 controls_tabl table_7">
+              <li class="col-xs-3 controls_tabl table_7 font_size_16">
                 <a href="#table_7">預留</a>
               </li>
-              <li class="col-xs-3 controls_tabl table_8">
+              <li class="col-xs-3 controls_tabl table_8 font_size_16">
                 <a href="#table_8">預留</a>
-              </li> -->
+              </li>
             </ul>
             <!-- 頁籤內容區塊 -->
             <section class="tab_contents">
@@ -197,68 +202,68 @@
                     <img src="images/member.png" class="member_information_img m-b-5 m-r-5 float-l">
                     <h4 class="font_color_Black font_size_16 blank30 line_height_30">會員設定</h4>
                   </li> -->
-                  <li class="member_button btn btn-default">
+                  <li class="member_button btn btn-default box_shadow_black">
                     <a href="#">會員基本資料</a>
                   </li><!-- max words 18(繁體中文) -->
-                  <li class="member_button btn btn-default">
+                  <li class="member_button btn btn-default box_shadow_black">
                     <a href="#">修改密碼</a>
                   </li>
-                  <li class="member_button btn btn-default">
+                  <li class="member_button btn btn-default box_shadow_black">
                     <a href="#">會員隱私權 / 權益說明</a>
                   </li>
                 </ul>
               </article>
-              <!-- 訂單資訊 -->
-              <article id="table_2" class="Order_information_wrap">
-                <ul>
-                  <!-- <li>
-                    <img src="images/order.png" class="member_information_img m-b-5 m-r-5 float-l">
-                    <h4 class="font_color_Black font_size_16 blank30 line_height_30">訂單資訊</h4>
-                  </li> -->
-                  <li class="member_button btn btn-default">
-                    <a href="#">訂單紀錄</a>
-                  </li>
-                  <li class="member_button btn btn-default">
-                    <a href="#">退貨紀錄</a>
-                  </li>
-                </ul>
-              </article>
-              <!-- 活動列表 -->
-              <article id="table_3" class="Order_information_wrap">
-                <ul>
-                  <!-- <li>
-                    <img src="images/star.png" class="member_information_img m-b-5 m-r-5 float-l">
-                    <h4 class="font_color_Black font_size_16 blank30 line_height_30">最新活動</h4>
-                  </li> -->
-                  <li class="member_button btn btn-default">
-                    <a href="#">會員專屬活動</a>
-                  </li>
-                  <li class="member_button btn btn-default">
-                    <a href="#">限時折扣活動</a>
-                  </li>
-                </ul>
-              </article>
               <!-- 紅利館 -->
-              <article id="table_4">
+              <article id="table_2">
                 <ul>
                   <!-- <li>
                     <img src="images/bonus.png" class="member_information_img m-b-5 m-r-5 float-l">
                     <h4 class="font_color_Black font_size_16 blank30 line_height_30">紅利館</h4>
                   </li> -->
-                  <li class="member_button btn btn-default bonus_font_Red">
+                  <li class="member_button btn btn-default bonus_font_Red box_shadow_black">
                     <a href="#">
                       <img src="images/NEW.png" class="gift_img gift_img_jump_padding">
                       紅利兌換館
                     </a>
                   </li>
-                  <li class="member_button btn btn-default">
+                  <li class="member_button btn btn-default box_shadow_black">
                     <a href="#">紅利明細</a>
                   </li>
-                  <li class="member_button btn btn-default">
+                  <li class="member_button btn btn-default box_shadow_black">
                     <a href="#">兌換紀錄</a>
                   </li>
-                  <li class="member_button btn btn-default">
+                  <li class="member_button btn btn-default box_shadow_black">
                     <a href="#">紅利兌換 / 使用說明</a>
+                  </li>
+                </ul>
+              </article>
+              <!-- 訂單資訊 -->
+              <article id="table_3" class="Order_information_wrap">
+                <ul>
+                  <!-- <li>
+                    <img src="images/order.png" class="member_information_img m-b-5 m-r-5 float-l">
+                    <h4 class="font_color_Black font_size_16 blank30 line_height_30">訂單資訊</h4>
+                  </li> -->
+                  <li class="member_button btn btn-default box_shadow_black">
+                    <a href="#">訂單紀錄</a>
+                  </li>
+                  <li class="member_button btn btn-default box_shadow_black">
+                    <a href="#">退貨紀錄</a>
+                  </li>
+                </ul>
+              </article>
+              <!-- 活動列表 -->
+              <article id="table_4" class="Order_information_wrap">
+                <ul>
+                  <!-- <li>
+                    <img src="images/star.png" class="member_information_img m-b-5 m-r-5 float-l">
+                    <h4 class="font_color_Black font_size_16 blank30 line_height_30">最新活動</h4>
+                  </li> -->
+                  <li class="member_button btn btn-default box_shadow_black">
+                    <a href="#">會員專屬活動</a>
+                  </li>
+                  <li class="member_button btn btn-default box_shadow_black">
+                    <a href="#">限時折扣活動</a>
                   </li>
                 </ul>
               </article>
@@ -318,13 +323,49 @@
       </article>
     </section>
 
-    <footer class="footer_menu_wrap Border">
+    <!-- footer無切換圖片 -->
+    <!-- <footer class="footer_menu_wrap Border">
       <ul>
         <li class="menu_icon member"><a href="#">會員專區</a></li>
         <li class="menu_icon order"><a href="#">訂單查詢</a></li>
         <li class="menu_icon buy"><a href="#">結帳</a></li>
         <li class="menu_icon fbmsg"><a href="#">線上客服</a></li>
         <li class="menu_icon contact"><a href="#">關於我們</a></li>
+      </ul>
+    </footer> -->
+    <!-- footer切換圖片 -->
+    <footer class="footer_menu_wrap Border">
+      <ul>
+        <li class="menu_icon member">
+          <div class="ta-c">
+            <img src="images/menu_icon_member_0.png" file_name="menu_icon_member_" class="ori_img">
+            <a href="#">會員專區</a>
+          </div>
+        </li>
+        <li class="menu_icon order">
+          <div class="ta-c">
+            <img src="images/menu_icon_order_0.png" file_name="menu_icon_order_" class="ori_img">
+            <a href="#">訂單查詢</a>
+          </div>
+        </li>
+        <li class="menu_icon buy">
+          <div class="ta-c">
+            <img src="images/menu_icon_buy_0.png" file_name="menu_icon_buy_" class="ori_img">
+            <a href="#">結帳</a>
+          </div>
+        </li>
+        <li class="menu_icon fbmsg">
+          <div class="ta-c">
+            <img src="images/menu_icon_fbmsg_0.png" file_name="menu_icon_fbmsg_" class="ori_img">
+            <a href="#">線上客服</a>
+          </div>
+        </li>
+        <li class="menu_icon contact">
+          <div class="ta-c">
+            <img src="images/menu_icon_contact_0.png" file_name="menu_icon_contact_" class="ori_img">
+            <a href="#">關於我們</a>
+          </div>
+        </li>
       </ul>
     </footer>
   </section>

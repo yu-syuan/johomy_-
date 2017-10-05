@@ -81,7 +81,9 @@ $(function(){
   if (parseInt(edm_enabled) > 0){
     $("#edm_enabled").prop("checked",true);
   }
-  $(".member a").addClass("active");
+  $(".member div").addClass("active");
+  $(".member img").attr("src","images/menu_icon_member_1.png");
+  $(".member a").css("color","white");
 });
 function getAddressList(id,dom_obj,select_id){
   dom_obj.html("");

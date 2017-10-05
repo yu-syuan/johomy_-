@@ -9,7 +9,9 @@ $(function(){
   $("#member_sms").click(function(){
     $("#sms_form").submit();
   });
-  $(".member a").addClass("active");
+  $(".member div").addClass("active");
+  $(".member img").attr("src","images/menu_icon_member_1.png");
+  $(".member a").css("color","white");
 });
 function checkSendSMS(ac_obj){
   $.ajax({

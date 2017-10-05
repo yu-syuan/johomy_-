@@ -18,9 +18,6 @@
 <link rel="stylesheet" type="text/css" href="css/web_base_style_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/web_base_color_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/reset_and_fast.css"><!-- bootstrap清除+fast便利包 -->
-<link rel="stylesheet" type="text/css" href="css/member_struct_v2.0.css" />
-<link rel="stylesheet" type="text/css" href="css/member_style_v2.0.css" />
-<link rel="stylesheet" type="text/css" href="css/member_color_v2.0.css" />
 <script type="text/javascript" src="js/header_v1.js"></script>
 <script type="text/javascript" src="js/order_search_v1.js"></script>
 
@@ -41,11 +38,17 @@
         <span class="icon_bar"></span>       
         <span class="icon_bar"></span>
       </div>
-      <!-- header 網站名稱 -->
-      <div class="header_mid">
+      <!-- header 網站名稱(文字)max words 8 (繁體中文) 12(英文) -->
+      <!-- <div class="header_mid">
         <a href="#">
           <h1 class="header_logo">NEWART</h1>
-        </a><!-- max words 8 (繁體中文) 12(英文) -->
+        </a>
+      </div> -->
+      <!-- header 網站名稱(圖片) -->
+      <div class="header_mid">
+        <a href="#">
+          <img src="images/NEWART_header.png" class="header_logo_img">
+        </a>
       </div>
       <!-- 首頁 icon -->
       <div class="home_icon Border">
@@ -63,7 +66,7 @@
       <div class="search_wrap basic_color Border">
         <div class="search_bar">
           <input type="text" placeholder="請輸入關鍵字" id="search_value" />
-          <button type="button" class="search_btn">搜尋</button>
+          <button type="button" class="search_btn box_shadow_white">搜尋</button>
           <div class="clear"></div>
         </div>
       </div>
@@ -72,16 +75,16 @@
         <div class="inner_box95 mg-c">
           <div class="float-l">
             <div class="member_icon float-l m-t-10">
-              <img src="images/menu_icon_member.png"/>
+              <img src="images/menu_icon_member_0.png"/>
             </div>
             <div class="float-l">0912345678</div>
           </div>
-          <span class="logout_btn float-r"><a href="#">登出</a></span>
+          <span class="logout_btn float-r box_shadow_white"><a href="#">登出</a></span>
           <div class="clear"></div>
         </div>
       </div>
-      <!-- 紅利館 bonus header -->
-      <!-- <div class="bonus_header_wrap bonus_header_color">與會員專區做切換
+      <!-- 紅利館 bonus header (與會員專區做切換) -->
+      <!-- <div class="bonus_header_wrap bonus_header_color">
         <div class="dividend_wrap">
           <span><img src="images/shipment.png" class="dividend_img"></span>
           <div class="dividend">
@@ -124,30 +127,33 @@
               <li><a href="#">護髮霜</a></li>
             </ul>
           </ul>
-          <div class="copyright">
-            <p>秒創超網訂購專線</p>
-            <p>(02)8228-0580</p>
-          </div>
         </div>
       </article>
       <!-- main content -->
       <article class="content_right">
+        <!--大標-->
+        <div class="inner_box Border">
+          <div class="member_title_wrap p-l-5">
+            <div class="arrow_left_wrap m-t-5">
+              <a href="#">
+                <img src="images/arrow_left_white.png" class="arrow_left_photo">
+              </a>
+            </div>
+            <span>訂單查詢</span>
+          </div><!-- max words 15(繁體中文) -->
+        </div>
         <!-- 訂單查詢 -->
         <form method="post" id="code_form" class="authentication_Code_wrap">
-          <h4 class="font_color_Black font_size_16 blank30 line_height_30">
-            <img src="images/order.png" class="member_information_img m-b-5 m-r-5 float-l">
-            訂單查詢
-          </h4>
           <h4 class="m-t-10 m-b-10 line_height_20">
             您可於完成購物後，系統所發送的簡訊取得訂單查詢編號，如未取得查詢編號請聯絡我們，將有專人為您服務。
           </h4>
           <div id="sms_code">
             <input type="text" name="sms_code" id="tracking_code" placeholder="請輸入訂單查詢編號">
             <input type="hidden" name="csrf_newart">
-            <p class="font_color_Red" name="tracking_error" id="tracking_error"></p>
+            <p class="font_color_Red blank20" name="tracking_error" id="tracking_error"></p>
           </div>
           <div>
-            <div class="account_button btn btn-info" id="goSearchOrder">
+            <div class="account_button btn box_shadow_white basic_button_color_one" id="goSearchOrder">
               <a href="#">查詢</a>
             </div>
           </div>
@@ -161,13 +167,49 @@
       </article>
     </section>
 
-    <footer class="footer_menu_wrap Border">
+    <!-- footer無切換圖片 -->
+    <!-- <footer class="footer_menu_wrap Border">
       <ul>
         <li class="menu_icon member"><a href="#">會員專區</a></li>
         <li class="menu_icon order"><a href="#">訂單查詢</a></li>
         <li class="menu_icon buy"><a href="#">結帳</a></li>
         <li class="menu_icon fbmsg"><a href="#">線上客服</a></li>
         <li class="menu_icon contact"><a href="#">關於我們</a></li>
+      </ul>
+    </footer> -->
+    <!-- footer切換圖片 -->
+    <footer class="footer_menu_wrap Border">
+      <ul>
+        <li class="menu_icon member">
+          <div class="ta-c">
+            <img src="images/menu_icon_member_0.png" file_name="menu_icon_member_" class="ori_img">
+            <a href="#">會員專區</a>
+          </div>
+        </li>
+        <li class="menu_icon order">
+          <div class="ta-c">
+            <img src="images/menu_icon_order_0.png" file_name="menu_icon_order_" class="ori_img">
+            <a href="#">訂單查詢</a>
+          </div>
+        </li>
+        <li class="menu_icon buy">
+          <div class="ta-c">
+            <img src="images/menu_icon_buy_0.png" file_name="menu_icon_buy_" class="ori_img">
+            <a href="#">結帳</a>
+          </div>
+        </li>
+        <li class="menu_icon fbmsg">
+          <div class="ta-c">
+            <img src="images/menu_icon_fbmsg_0.png" file_name="menu_icon_fbmsg_" class="ori_img">
+            <a href="#">線上客服</a>
+          </div>
+        </li>
+        <li class="menu_icon contact">
+          <div class="ta-c">
+            <img src="images/menu_icon_contact_0.png" file_name="menu_icon_contact_" class="ori_img">
+            <a href="#">關於我們</a>
+          </div>
+        </li>
       </ul>
     </footer>
   </section>

@@ -18,9 +18,9 @@
 <link rel="stylesheet" type="text/css" href="css/web_base_style_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/web_base_color_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/reset_and_fast.css"><!-- bootstrap清除+fast便利包 -->
-<link rel="stylesheet" type="text/css" href="css/member_struct_v2.0.css" />
+<!-- <link rel="stylesheet" type="text/css" href="css/member_struct_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/member_style_v2.0.css" />
-<link rel="stylesheet" type="text/css" href="css/member_color_v2.0.css" />
+<link rel="stylesheet" type="text/css" href="css/member_color_v2.0.css" /> -->
 <script type="text/javascript" src="js/header_v1.js"></script>
 <script type="text/javascript" src="js/member_login_v1.0.js"></script>
 
@@ -41,11 +41,17 @@
         <span class="icon_bar"></span>       
         <span class="icon_bar"></span>
       </div>
-      <!-- header 網站名稱 -->
-      <div class="header_mid">
+      <!-- header 網站名稱(文字)max words 8 (繁體中文) 12(英文) -->
+      <!-- <div class="header_mid">
         <a href="#">
           <h1 class="header_logo">NEWART</h1>
-        </a><!-- max words 8 (繁體中文) 12(英文) -->
+        </a>
+      </div> -->
+      <!-- header 網站名稱(圖片) -->
+      <div class="header_mid">
+        <a href="#">
+          <img src="images/NEWART_header.png" class="header_logo_img">
+        </a>
       </div>
       <!-- 首頁 icon -->
       <div class="home_icon Border">
@@ -63,7 +69,7 @@
       <div class="search_wrap basic_color Border">
         <div class="search_bar">
           <input type="text" placeholder="請輸入關鍵字" id="search_value" />
-          <button type="button" class="search_btn">搜尋</button>
+          <button type="button" class="search_btn box_shadow_white">搜尋</button>
           <div class="clear"></div>
         </div>
       </div>
@@ -72,16 +78,16 @@
         <div class="inner_box95 mg-c">
           <div class="float-l">
             <div class="member_icon float-l m-t-10">
-              <img src="images/menu_icon_member.png"/>
+              <img src="images/menu_icon_member_0.png"/>
             </div>
             <div class="float-l">0912345678</div>
           </div>
-          <span class="logout_btn float-r"><a href="#">登出</a></span>
+          <span class="logout_btn float-r box_shadow_white"><a href="#">登出</a></span>
           <div class="clear"></div>
         </div>
       </div> -->
-      <!-- 紅利館 bonus header -->
-      <!-- <div class="bonus_header_wrap bonus_header_color">與會員專區做切換
+      <!-- 紅利館 bonus header (與會員專區做切換) -->
+      <!-- <div class="bonus_header_wrap bonus_header_color">
         <div class="dividend_wrap">
           <span><img src="images/shipment.png" class="dividend_img"></span>
           <div class="dividend">
@@ -94,9 +100,9 @@
     </header>
 
     <div class="blank60"></div><!-- 官網header用 -->
-    <!-- <div class="blank50"></div>會員專區與紅利館共用 -->
+    <!-- <div class="blank50"></div> --><!-- 會員專區與紅利館共用 -->
 
-    <section class="content_wrap background_white">
+    <section class="content_wrap">
       <!-- hamburger content -->
       <article class="content_left Border">
         <div class="hamburger_list_wrap Border">
@@ -124,18 +130,26 @@
               <li><a href="#">護髮霜</a></li>
             </ul>
           </ul>
-          <div class="copyright">
-            <p>秒創超網訂購專線</p>
-            <p>(02)8228-0580</p>
-          </div>
         </div>
       </article>
       <!-- main content -->
       <article class="content_right">
+        <!-- 公告區 max words 60(繁體中文) -->
+        <!-- <article class="announcement_wrap m-b-20 m-t-10 m-r-20 m-l-20">
+          <ul>
+            <li>
+              <img src="images/announcement.png" class="member_information_img m-b-5 float-l">
+              <h4 class="font_color_Orange font_size_16 blank30 line_height_30">系統公告</h4>
+            </li>
+            <li class="announcement_content font_color_Orange font_size_16 border_radius_5 border_solid border_Orange p-t-5 p-b-5 p-l-5 p-r-5">
+              即日起註冊成為NEWART會員，並至【會員基本資料】完成手機號碼驗證，即可獲得紅利點數3點喔！
+            </li>
+          </ul>
+        </article> -->
         <form class="password_form_wrap" method="post" id="member_login_form">
           <ul>
             <li>
-              <img src="images/member.png" class="member_information_img m-b-5 m-r-5 float-l">
+              <img src="images/menu_icon_member_0.png" class="member_information_img m-b-5 m-r-5 float-l">
               <h4 class="line_height_30">會員登入</h4>
               <input type="text" name="account" id="account" placeholder="帳號：手機號碼">
               <p class="font_color_Red blank20" name="account_error" id="account_error"></p>
@@ -145,26 +159,41 @@
               <input type="hidden" name="csrf_newart" value="">
               <p class="font_color_Red blank20" name="pwd_error"></p>
             </li>
+            <li class="remember_account_wrap">
+              <input type="checkbox" name="remember_account" value="1" id="remember_account" class="float-l">
+              <label>記住我的帳號</label>
+              <div class="float-r m-t-5"><a href="#">忘記密碼</a></div>
+              <div class="clear"></div>
+              <!-- <p class="font_color_Red blank20" name="remember_account"></p> -->
+            </li>
             <li>
-              <div class="confirm_button mg-c m-t-10 m-b-10 btn btn-info" id="member_login">
+              <div class="confirm_button mg-c m-t-10 m-b-10 btn box_shadow_white basic_button_color_two" id="member_login">
                 <a href="#">
                   登入
                 </a>
               </div>
             </li>
             <li>
-              <div class="FB_button mg-c m-b-10 btn btn-primary fb_btn_bg">
+              <div class="ta-c">
+                <hr class="inner_box40 m-t-10 float-l">
+                <span>或</span>
+                <hr class="inner_box40 m-t-10 float-r">
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li>
+              <input type="hidden" name="csrf_newart" value="">
+              <div class="member_button mg-c m-t-10 m-b-10 btn btn-default box_shadow_black" id="save_profile">
                 <a href="#">
-                  <img src="images/FB_img.png">
-                  FB快速登入
+                  會員快速註冊
                 </a>
               </div>
             </li>
             <li>
-              <input type="hidden" name="csrf_newart" value="">
-              <div class="member_button mg-c m-b-10 btn btn-default" id="save_profile">
+              <div class="FB_button mg-c m-b-10 btn btn-primary fb_btn_bg box_shadow_white">
                 <a href="#">
-                  立即註冊
+                  <img src="images/FB_img.png">
+                  以Facebook帳號登入
                 </a>
               </div>
             </li>
@@ -183,13 +212,49 @@
       </article>
     </section>
 
-    <footer class="footer_menu_wrap Border">
+    <!-- footer無切換圖片 -->
+    <!-- <footer class="footer_menu_wrap Border">
       <ul>
         <li class="menu_icon member"><a href="#">會員專區</a></li>
         <li class="menu_icon order"><a href="#">訂單查詢</a></li>
         <li class="menu_icon buy"><a href="#">結帳</a></li>
         <li class="menu_icon fbmsg"><a href="#">線上客服</a></li>
         <li class="menu_icon contact"><a href="#">關於我們</a></li>
+      </ul>
+    </footer> -->
+    <!-- footer切換圖片 -->
+    <footer class="footer_menu_wrap Border">
+      <ul>
+        <li class="menu_icon member">
+          <div class="ta-c">
+            <img src="images/menu_icon_member_0.png" file_name="menu_icon_member_" class="ori_img">
+            <a href="#">會員專區</a>
+          </div>
+        </li>
+        <li class="menu_icon order">
+          <div class="ta-c">
+            <img src="images/menu_icon_order_0.png" file_name="menu_icon_order_" class="ori_img">
+            <a href="#">訂單查詢</a>
+          </div>
+        </li>
+        <li class="menu_icon buy">
+          <div class="ta-c">
+            <img src="images/menu_icon_buy_0.png" file_name="menu_icon_buy_" class="ori_img">
+            <a href="#">結帳</a>
+          </div>
+        </li>
+        <li class="menu_icon fbmsg">
+          <div class="ta-c">
+            <img src="images/menu_icon_fbmsg_0.png" file_name="menu_icon_fbmsg_" class="ori_img">
+            <a href="#">線上客服</a>
+          </div>
+        </li>
+        <li class="menu_icon contact">
+          <div class="ta-c">
+            <img src="images/menu_icon_contact_0.png" file_name="menu_icon_contact_" class="ori_img">
+            <a href="#">關於我們</a>
+          </div>
+        </li>
       </ul>
     </footer>
   </section>

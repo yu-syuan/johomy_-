@@ -38,11 +38,26 @@ $(function() {
     $("html,body").animate({scrollTop:0},400);
     return false;  
   });
-  // footer menu_icon點擊換色
+    // footer menu_icon點擊換色 20170930連結a改div 20171002增加圖片切換功能
+  $(".menu_icon_buy a").removeClass("active");
+  $(".menu_icon_buy a").addClass("active");
   $(".menu_icon").click(function(){
-    $(".menu_icon a").removeClass("active");
+    // reset
+    $(".menu_icon div").removeClass("active");
     $(".menu_icon_buy a").removeClass("active");
-    $(this).children(".menu_icon a").addClass("active");
+    $(".ori_img").each(function(){ 
+      var file = $(this).attr("file_name");
+      $(this).attr("src",'images/'+file+"0.png");
+      $(this).next("a").css("color","Black");
+    });
+    //active
+    $(this).children(".menu_icon div").addClass("active");
+    $(this).children(".menu_icon_buy a").addClass("active");
+    $(".menu_icon_buy a").css("color","Black");
+    $(".menu_icon_buy a").css("color","Black");
+    var file_name = $("img",this).attr("file_name");
+    $("img",this).attr("src","images/"+file_name+"1.png");
+    $("div a",this).css("color","white");
   });
   // 關鍵字搜尋的搜尋按鈕功能
   $(".search_btn").click(function(){
@@ -85,13 +100,5 @@ $(function(){
     $(".controls a").removeClass("active");
     $(this).addClass("active");
     return false;
-  });
-  //20170818商品介紹頁footer用
-  $(".menu_icon_buy a").removeClass("active");
-  $(".menu_icon_buy a").addClass("active");
-  $(".menu_icon_buy").click(function(){
-    $(".menu_icon a").removeClass("active");
-    $(".menu_icon_buy a").removeClass("active");
-    $(this).children(".menu_icon_buy a").addClass("active");
   });
 });
