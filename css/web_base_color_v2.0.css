@@ -14,7 +14,7 @@ hr{
 }
 /*20171002修改 原background:#9bd5e0; 新增color: #000;*/
 .basic_title_color{
-	background: #000;
+	background: #333;
 	color: #fff;
 }
 /*20171002新增 background: #000; color: #fff;*/
@@ -23,8 +23,9 @@ hr{
 }
 /*20171003修改 原color:#9bd5e0;*/
 .basic_border_color{
-	border-color: #9bd5e0;
+	border-color: #f78c00;
 }
+/*20171006修改 原color:#9bd5e0;*/
 .active{
 	background-color: #f78c00;
 }
@@ -34,7 +35,11 @@ hr{
 	color: #fff;
 }
 .basic_button_color_two{
-	background-color: #000;
+	background-color: #333;
+	color: #fff;
+}
+.basic_button_color_three{
+	background-color: #b3b3b3;
 	color: #fff;
 }
 /*-----hamburger icon-----*/
@@ -211,6 +216,12 @@ hr{
 .product_introduction_wrap{
 	background-color: #fff;
 }
+.line_button{
+	background: #5bac34;
+}
+.line_button a{
+	color: #fff;
+}
 /*商品頁籤*/
 .controls li{
 	background-color: #b3b3b3;
@@ -261,6 +272,11 @@ hr{
 	border-color: #666;
 }
 
+/*---購買資訊頁面(for checkout.html)---*/
+.the_next_step a{
+	color: #fff;
+}
+
 /*---頁面 input 設定---*/
 .payment_method_wrap input + label,
 .buyer_wrap input,
@@ -294,5 +310,21 @@ input:checked{
 	background-color: #f78c00;
 	border-color: #fff;
 	box-shadow: 0 0 5px #f78c00;
+	color: #fff;
+}
+
+/*---購買資訊頁面(for checkout.html)---*/
+/*步驟圖*/
+.step_arrow_one{
+	border-color: transparent transparent transparent #f78c00; 
+}
+.step_arrow_two{
+	border-color: transparent transparent transparent #b3b3b3; 
+}
+/*全家門市資訊*/
+.family_button{
+	background: #449d44;
+}
+.family_button a{
 	color: #fff;
 }

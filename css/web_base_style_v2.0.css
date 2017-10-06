@@ -319,6 +319,15 @@ body {
 	font-size: 20px;
 	line-height: 50px;
 }
+.line_button{
+	border-radius: 5px;/* Opera 10.50 and later (CSS3 standard) */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+}
+.line_button a{
+	font-size: 16px;
+	line-height: 40px;
+}
 
 /*---加入購物車頁面(for shopping_cart.html)---*/
 
@@ -364,6 +373,31 @@ body {
 .customer_service_content{
 	border: 1px solid #666;
 	padding: 10px;
+}
+
+/*---購買資訊頁面(for checkout.html)---*/
+/*步驟圖*/
+.step_wrap_style{
+	font-size: 18px;
+	/*font-weight: bold;*/
+	line-height: 36px;
+	border-radius: 10px;
+	border: 2px solid;
+}
+.step_arrow{
+	border-style: solid;
+}
+/*全家門市資訊*/
+.family_button{
+	border: 0;
+}
+.family_button a{
+	font-size: 16px;
+	line-height: 40px;
+}
+.the_next_step a{
+	font-size: 16px;
+	line-height: 40px;
 }
 
 /*-----任務紅利通知-----*/
