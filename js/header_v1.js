@@ -38,7 +38,22 @@ $(function() {
     $("html,body").animate({scrollTop:0},400);
     return false;  
   });
-    // footer menu_icon點擊換色 20170930連結a改div 20171002增加圖片切換功能
+  // 關鍵字搜尋的搜尋按鈕功能
+  $(".search_btn").click(function(){
+    var search = $.trim($("#search_value").val());
+    if (search != ""){
+      top.location.href = "/search/"+search;
+    } else {
+      alert("請輸入關鍵字！");
+    }
+  });
+  // 20170905 hamburger_menu 製作
+  $("#hamburger_menu li").click(function(){
+    var ui_id = $(this).attr("ui_id");
+    $("#hamburger_menu .hamburger_show").slideUp();
+    $("#ui_id_"+ui_id).stop().slideToggle(300);
+  });
+  // footer menu_icon點擊換色 20171002增加圖片切換功能
   $(".menu_icon_buy a").removeClass("active");
   $(".menu_icon_buy a").addClass("active");
   $(".menu_icon").click(function(){
@@ -58,21 +73,6 @@ $(function() {
     var file_name = $("img",this).attr("file_name");
     $("img",this).attr("src","images/"+file_name+"1.png");
     $("div a",this).css("color","white");
-  });
-  // 關鍵字搜尋的搜尋按鈕功能
-  $(".search_btn").click(function(){
-    var search = $.trim($("#search_value").val());
-    if (search != ""){
-      top.location.href = "/search/"+search;
-    } else {
-      alert("請輸入關鍵字！");
-    }
-  });
-  // 20170905 hamburger_menu 製作
-  $("#hamburger_menu li").click(function(){
-    var ui_id = $(this).attr("ui_id");
-    $("#hamburger_menu .hamburger_show").slideUp();
-    $("#ui_id_"+ui_id).stop().slideToggle(300);
   });
 });
 

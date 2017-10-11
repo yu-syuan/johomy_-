@@ -12,7 +12,8 @@ $(function(){
   $("#go_pay").click(function(){
     $("#pay_again").submit();
   });
-  // 20171005更新
+  $(".order a").addClass("active");
+  // 20171005 Footer架構變動 因此變更顯示方式
   $(".order div").addClass("active");
   $(".order img").attr("src","images/menu_icon_order_1.png");
   $(".order a").css("color","white");
