@@ -12,6 +12,7 @@ $(function(){
   $("#go_pay").click(function(){
     $("#pay_again").submit();
   });
+  // 20171005更新
   $(".order div").addClass("active");
   $(".order img").attr("src","images/menu_icon_order_1.png");
   $(".order a").css("color","white");
